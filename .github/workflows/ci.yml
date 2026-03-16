@@ -686,7 +686,7 @@ jobs:
             -b PowerBIMsiDir="${{ github.workspace }}\installer\staging\powerbi" `
             -b "${{ github.workspace }}\installer-bundle" `
             -o "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
-            -ext WixToolset.Bal.wixext
+            -ext WixToolset.BootstrapperApplications.wixext
 
       - name: Detach Burn engine for signing
         run: |
