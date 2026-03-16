@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+  <Bundle Name="GizmoSQL Setup"
+          Manufacturer="GizmoData LLC"
+          Version="!(bind.packageVersion.CoreMsi)"
+          UpgradeCode="{BE002DA7-6D4E-447E-9E01-E2F1C198DA95}"
+          Compressed="yes">
+
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication
+          LicenseFile="assets\license.rtf"
+          LogoFile="assets\bundle-theme\gizmosql_logo.png"
+          Theme="none"
+          ThemeFile="assets\bundle-theme\GizmoSQLTheme.xml"
+          LocalizationFile="assets\bundle-theme\GizmoSQLTheme.wxl"
+          SuppressOptionsUI="no"
+          ShowVersion="yes"
+          LaunchTarget="[ProgramFiles64Folder]GizmoSQL\gizmosql-shell.cmd"
+          LaunchArguments="[PostInstallAction]"
+          LaunchWorkingFolder="[ProgramFiles64Folder]GizmoSQL" />
+    </BootstrapperApplication>
+
+    <Variable Name="InstallCore" Type="numeric" Value="1" />
+    <Variable Name="InstallSampleDb" Type="numeric" Value="1" bal:Overridable="yes" />
+    <Variable Name="InstallUi" Type="numeric" Value="1" bal:Overridable="yes" />
+    <Variable Name="InstallPowerBI" Type="numeric" Value="0" bal:Overridable="yes" />
+    <Variable Name="PostInstallAction" Type="string" Value="open-ui" />
+
+    <Chain>
+      <MsiPackage Id="CoreMsi"
+                  SourceFile="!(bindpath.CoreMsiDir)\GizmoSQL-Core-x64.msi"
+                  DisplayName="GizmoSQL Core"
+                  DisplayInternalUI="no"
+                  Visible="no"
+                  Vital="yes">
+        <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]" />
+        <MsiProperty Name="INSTALL_SAMPLE_DB" Value="[InstallSampleDb]" />
+      </MsiPackage>
+
+      <MsiPackage Id="UiMsi"
+                  SourceFile="!(bindpath.UiMsiDir)\GizmoSQL-UI-x64.msi"
+                  DisplayName="GizmoSQL UI"
+                  DisplayInternalUI="no"
+                  Visible="no"
+                  Vital="yes"
+                  InstallCondition="InstallUi = 1" />
+
+      <MsiPackage Id="PowerBiMsi"
+                  SourceFile="!(bindpath.PowerBIMsiDir)\GizmoSQL-PowerBI-Setup-x64.msi"
+                  DisplayName="GizmoSQL Power BI Connector"
+                  DisplayInternalUI="no"
+                  Visible="no"
+                  Vital="no"
+                  InstallCondition="InstallPowerBI = 1" />
+    </Chain>
+  </Bundle>
+</Wix>

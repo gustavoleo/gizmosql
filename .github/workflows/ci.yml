@@ -24,6 +24,8 @@ env:
   DOCKERHUB_IMAGE_NAME: gizmodata/gizmosql
   GITHUB_IMAGE_NAME: ghcr.io/gizmodata/gizmosql
   CMAKE_BUILD_TYPE: ${{ github.event.inputs.cmake_build_type || 'Release' }}
+  WINDOWS_UI_MSI_URL: ${{ vars.WINDOWS_UI_MSI_URL }}
+  WINDOWS_POWERBI_MSI_URL: ${{ vars.WINDOWS_POWERBI_MSI_URL }}
 
 jobs:
   build-project-macos:
@@ -561,7 +563,7 @@ jobs:
           path: gizmosql_cli_windows_amd64.zip
 
   build-msi:
-    name: Build MSI (amd64)
+    name: Build Windows Installers (amd64)
     needs: sign-windows
     runs-on: windows-latest
     environment: production
@@ -578,6 +580,30 @@ jobs:
           name: gizmosql-windows-amd64-signed
           path: installer/bin
 
+      - name: Stage sample database
+        run: .\scripts\prepare-sample-db.ps1
+
+      - name: Validate external MSI URLs
+        run: |
+          if (-not "${{ env.WINDOWS_UI_MSI_URL }}") {
+            throw "Repository variable WINDOWS_UI_MSI_URL must point at the published GizmoSQL UI MSI."
+          }
+          if (-not "${{ env.WINDOWS_POWERBI_MSI_URL }}") {
+            throw "Repository variable WINDOWS_POWERBI_MSI_URL must point at the published Power BI connector MSI."
+          }
+
+      - name: Fetch GizmoSQL UI MSI
+        run: |
+          .\scripts\fetch-ui-msi.ps1 `
+            -Url "${{ env.WINDOWS_UI_MSI_URL }}" `
+            -DestinationPath "installer\staging\ui\GizmoSQL-UI-x64.msi"
+
+      - name: Fetch Power BI MSI
+        run: |
+          .\scripts\fetch-powerbi-msi.ps1 `
+            -Url "${{ env.WINDOWS_POWERBI_MSI_URL }}" `
+            -DestinationPath "installer\staging\powerbi\GizmoSQL-PowerBI-Setup-x64.msi"
+
       - name: Copy VC++ runtime DLLs
         run: |
           Copy-Item "$env:SystemRoot\System32\vcruntime140.dll" installer\bin\
@@ -588,6 +614,7 @@ jobs:
         run: |
           dotnet tool install --global wix --version 6.0.2
           wix extension add WixToolset.UI.wixext/6.0.2
+          wix extension add WixToolset.Bal.wixext/6.0.2
 
       - name: Convert logo to BMP
         run: |
@@ -614,15 +641,17 @@ jobs:
           $license = Get-Content "${{ github.workspace }}\LICENSE" -Raw
           $rtf = "{\rtf1\ansi\deff0 {\fonttbl {\f0 Consolas;}}\f0\fs18 " + ($license -replace "`n", "\par ") + "}"
           Set-Content -Path "${{ github.workspace }}\installer\license.rtf" -Value $rtf
+          Set-Content -Path "${{ github.workspace }}\installer-bundle\assets\license.rtf" -Value $rtf
 
-      - name: Build MSI
+      - name: Build Core MSI
         run: |
           wix build `
             "${{ github.workspace }}\installer\GizmoSQL.wxs" `
             -arch x64 `
             -b BinDir="${{ github.workspace }}\installer\bin" `
+            -b SampleDataDir="${{ github.workspace }}\installer\staging\sample-data" `
             -b "${{ github.workspace }}\installer" `
-            -o "${{ github.workspace }}\installer\GizmoSQL-amd64.msi" `
+            -o "${{ github.workspace }}\installer\GizmoSQL-Core-x64.msi" `
             -ext WixToolset.UI.wixext
 
       - name: Azure Login
@@ -635,7 +664,7 @@ jobs:
       - name: Install AzureSignTool
         run: dotnet tool install --global AzureSignTool
 
-      - name: Sign MSI
+      - name: Sign Core MSI
         run: |
           AzureSignTool sign `
             --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
@@ -645,13 +674,85 @@ jobs:
             --timestamp-digest sha256 `
             --file-digest sha256 `
             --verbose `
-            "${{ github.workspace }}\installer\GizmoSQL-amd64.msi"
+            "${{ github.workspace }}\installer\GizmoSQL-Core-x64.msi"
 
-      - name: Upload MSI
+      - name: Build unsigned Burn bundle
+        run: |
+          wix build `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL.Bundle.wxs" `
+            -arch x64 `
+            -b CoreMsiDir="${{ github.workspace }}\installer" `
+            -b UiMsiDir="${{ github.workspace }}\installer\staging\ui" `
+            -b PowerBIMsiDir="${{ github.workspace }}\installer\staging\powerbi" `
+            -b "${{ github.workspace }}\installer-bundle" `
+            -o "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -ext WixToolset.Bal.wixext
+
+      - name: Detach Burn engine for signing
+        run: |
+          # Burn signing requires a signed engine plus a separately signed
+          # final bundle EXE.
+          wix burn detach `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -engine "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe"
+
+      - name: Sign detached Burn engine
+        run: |
+          AzureSignTool sign `
+            --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
+            --azure-key-vault-certificate "${{ secrets.AZURE_CERT_NAME }}" `
+            --azure-key-vault-managed-identity `
+            --timestamp-rfc3161 http://timestamp.digicert.com `
+            --timestamp-digest sha256 `
+            --file-digest sha256 `
+            --verbose `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe"
+
+      - name: Reattach signed Burn engine
+        run: |
+          wix burn reattach `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -engine "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe" `
+            -o "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64.exe"
+
+      - name: Sign bundle EXE
+        run: |
+          AzureSignTool sign `
+            --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
+            --azure-key-vault-certificate "${{ secrets.AZURE_CERT_NAME }}" `
+            --azure-key-vault-managed-identity `
+            --timestamp-rfc3161 http://timestamp.digicert.com `
+            --timestamp-digest sha256 `
+            --file-digest sha256 `
+            --verbose `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64.exe"
+
+      - name: Upload Core MSI
         uses: actions/upload-artifact@v4
         with:
-          name: GizmoSQL-amd64-msi.zip
-          path: installer/GizmoSQL-amd64.msi
+          name: GizmoSQL-Core-x64-msi.zip
+          path: installer/GizmoSQL-Core-x64.msi
+          if-no-files-found: error
+
+      - name: Upload UI MSI
+        uses: actions/upload-artifact@v4
+        with:
+          name: GizmoSQL-UI-x64-msi.zip
+          path: installer/staging/ui/GizmoSQL-UI-x64.msi
+          if-no-files-found: error
+
+      - name: Upload Power BI MSI
+        uses: actions/upload-artifact@v4
+        with:
+          name: GizmoSQL-PowerBI-Setup-x64-msi.zip
+          path: installer/staging/powerbi/GizmoSQL-PowerBI-Setup-x64.msi
+          if-no-files-found: error
+
+      - name: Upload bundle EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: GizmoSQL-Setup-x64-exe.zip
+          path: installer-bundle/GizmoSQL-Setup-x64.exe
           if-no-files-found: error
 
   create-release:
@@ -674,11 +775,11 @@ jobs:
           pattern: gizmosql_cli_*.zip
           merge-multiple: true
 
-      - name: Download MSI artifacts
+      - name: Download Windows installer artifacts
         uses: actions/download-artifact@v4
         with:
           path: artifacts
-          pattern: GizmoSQL-*-msi.zip
+          pattern: GizmoSQL-*
           merge-multiple: true
 
       - name: Attest build provenance - Linux AMD64
@@ -701,10 +802,15 @@ jobs:
         with:
           subject-path: artifacts/gizmosql_cli_windows_amd64.zip
 
-      - name: Attest build provenance - Windows AMD64 MSI
+      - name: Attest build provenance - Windows AMD64 Core MSI
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: artifacts/GizmoSQL-amd64.msi
+          subject-path: artifacts/GizmoSQL-Core-x64.msi
+
+      - name: Attest build provenance - Windows AMD64 Bundle
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: artifacts/GizmoSQL-Setup-x64.exe
 
       - name: Release
         uses: softprops/action-gh-release@v2
@@ -712,6 +818,7 @@ jobs:
           files: |
             artifacts/gizmosql_cli_*.zip
             artifacts/GizmoSQL-*.msi
+            artifacts/GizmoSQL-Setup-x64.exe
             LICENSE
 
   update-image-manifest:

@@ -3,6 +3,8 @@
 * [Home](/)
 
 * Getting Started
+  * [Windows Install](windows-install.md)
+  * [Windows Quickstart](quickstart-windows.md)
   * [Editions](editions.md)
   * [Python ADBC Driver](python_adbc.md)
   * [Client Shell](client.md)

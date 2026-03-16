@@ -9,6 +9,7 @@
 
     <Icon Id="gizmosql.ico" SourceFile="gizmosql.ico" />
     <Property Id="ARPPRODUCTICON" Value="gizmosql.ico" />
+    <Property Id="INSTALL_SAMPLE_DB" Value="1" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of GizmoSQL is already installed." />
     <Media Id="1" Cabinet="gizmosql.cab" EmbedCab="yes" />
@@ -20,6 +21,9 @@
     <Feature Id="ProductFeature" Title="GizmoSQL" Level="1">
       <ComponentGroupRef Id="ServerComponents" />
       <ComponentGroupRef Id="PathComponents" />
+      <ComponentGroupRef Id="OnboardingComponents" />
+      <ComponentGroupRef Id="ShortcutComponents" />
+      <ComponentGroupRef Id="SampleDataComponents" />
     </Feature>
 
     <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLFOLDER" />
@@ -28,6 +32,14 @@
   <Fragment>
     <StandardDirectory Id="ProgramFiles64Folder">
       <Directory Id="INSTALLFOLDER" Name="GizmoSQL" />
+    </StandardDirectory>
+    <StandardDirectory Id="CommonAppDataFolder">
+      <Directory Id="GizmoSQLDataFolder" Name="GizmoSQL">
+        <Directory Id="GizmoSQLSamplesFolder" Name="samples" />
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="GizmoSQLProgramMenuFolder" Name="GizmoSQL" />
     </StandardDirectory>
   </Fragment>
 
@@ -50,6 +62,59 @@
       <Component Id="PathEntry" Guid="{AEBEAC22-3F2E-4663-93E2-F9C9325BFD6F}">
         <Environment Id="PATH" Name="PATH" Value="[INSTALLFOLDER]" Permanent="no"
                      Part="last" Action="set" System="yes" />
+      </Component>
+    </ComponentGroup>
+
+    <ComponentGroup Id="OnboardingComponents" Directory="INSTALLFOLDER">
+      <Component Id="QuickstartHtmlComponent" Guid="{AB6D706A-40AB-4AA1-9B8A-6459B0548385}">
+        <File Id="QuickstartHtml" Source="assets\quickstart.html" KeyPath="yes" />
+      </Component>
+      <Component Id="DemoLauncherPs1Component" Guid="{91B04DC4-5C2C-49A1-891E-85DB175340C6}">
+        <File Id="LaunchDemoServerPs1" Source="assets\launch-demo-server.ps1" KeyPath="yes" />
+      </Component>
+      <Component Id="ShellCmdComponent" Guid="{DF7A6E09-77C8-4D0B-A81B-13B6CA30350E}">
+        <File Id="GizmoSqlShellCmd" Source="assets\gizmosql-shell.cmd" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+
+    <ComponentGroup Id="SampleDataComponents" Directory="GizmoSQLSamplesFolder">
+      <Component Id="SampleDatabaseComponent" Guid="{9552B18B-631F-4FB5-8B57-513A7A0C6DDE}">
+        <Condition>INSTALL_SAMPLE_DB = 1</Condition>
+        <File Id="GizmoSqlDemoDuckDb" Source="!(bindpath.SampleDataDir)\gizmosql-demo.duckdb" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+
+    <ComponentGroup Id="ShortcutComponents" Directory="GizmoSQLProgramMenuFolder">
+      <Component Id="LaunchDemoServerShortcutComponent" Guid="{B31516F6-71A8-4D12-960D-456C6E42D08B}">
+        <Shortcut Id="LaunchDemoServerShortcut"
+                  Name="Launch Demo Server"
+                  Description="Start GizmoSQL against the bundled demo database."
+                  Target="[INSTALLFOLDER]gizmosql-shell.cmd"
+                  Arguments="launch-demo-server"
+                  WorkingDirectory="INSTALLFOLDER"
+                  Icon="gizmosql.ico" />
+        <RegistryValue Root="HKLM" Key="Software\GizmoData\GizmoSQL" Name="LaunchDemoServerShortcut" Type="integer" Value="1" KeyPath="yes" />
+        <RemoveFolder Id="RemoveGizmoSQLProgramMenuFolder" On="uninstall" />
+      </Component>
+      <Component Id="OpenQuickstartShortcutComponent" Guid="{DFB084BC-5D65-484E-B876-330E6FA55C49}">
+        <Shortcut Id="OpenQuickstartShortcut"
+                  Name="Open Quickstart"
+                  Description="Open the Windows quickstart guide."
+                  Target="[INSTALLFOLDER]gizmosql-shell.cmd"
+                  Arguments="open-quickstart"
+                  WorkingDirectory="INSTALLFOLDER"
+                  Icon="gizmosql.ico" />
+        <RegistryValue Root="HKLM" Key="Software\GizmoData\GizmoSQL" Name="OpenQuickstartShortcut" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+      <Component Id="OpenUiShortcutComponent" Guid="{A8CA4504-5339-44F3-AC81-A91CB0B877D3}">
+        <Shortcut Id="OpenUiShortcut"
+                  Name="Open GizmoSQL UI"
+                  Description="Launch the GizmoSQL UI if it is installed."
+                  Target="[INSTALLFOLDER]gizmosql-shell.cmd"
+                  Arguments="open-ui"
+                  WorkingDirectory="INSTALLFOLDER"
+                  Icon="gizmosql.ico" />
+        <RegistryValue Root="HKLM" Key="Software\GizmoData\GizmoSQL" Name="OpenUiShortcut" Type="integer" Value="1" KeyPath="yes" />
       </Component>
     </ComponentGroup>
   </Fragment>

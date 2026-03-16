@@ -1,4 +1,4 @@
-name: Test MSI Build
+name: Test Windows Installer Build
 
 on:
   workflow_dispatch:
@@ -7,11 +7,15 @@ on:
       - 'feature/windows-build-support'
     paths:
       - 'installer/**'
+      - 'installer-bundle/**'
+      - 'scripts/fetch-*.ps1'
+      - 'scripts/prepare-sample-db.ps1'
+      - 'build/windows/sample-data/**'
       - '.github/workflows/test-msi.yml'
 
 jobs:
   test-msi:
-    name: Test MSI Build
+    name: Test Windows Installer Build
     runs-on: windows-latest
     environment: production
     permissions:
@@ -25,6 +29,7 @@ jobs:
         run: |
           dotnet tool install --global wix --version 6.0.2
           wix extension add WixToolset.UI.wixext/6.0.2
+          wix extension add WixToolset.Bal.wixext/6.0.2
 
       - name: Create dummy executables
         run: |
@@ -35,6 +40,9 @@ jobs:
           Copy-Item "$env:SystemRoot\System32\vcruntime140.dll" installer\bin\
           Copy-Item "$env:SystemRoot\System32\vcruntime140_1.dll" installer\bin\
           Copy-Item "$env:SystemRoot\System32\msvcp140.dll" installer\bin\
+
+      - name: Stage sample database
+        run: .\scripts\prepare-sample-db.ps1
 
       - name: Convert logo to BMP
         run: |
@@ -59,16 +67,45 @@ jobs:
           $license = Get-Content "${{ github.workspace }}\LICENSE" -Raw
           $rtf = "{\rtf1\ansi\deff0 {\fonttbl {\f0 Consolas;}}\f0\fs18 " + ($license -replace "`n", "\par ") + "}"
           Set-Content -Path "${{ github.workspace }}\installer\license.rtf" -Value $rtf
+          Set-Content -Path "${{ github.workspace }}\installer-bundle\assets\license.rtf" -Value $rtf
 
-      - name: Build MSI
+      - name: Build Core MSI
         run: |
           wix build `
             "${{ github.workspace }}\installer\GizmoSQL.wxs" `
             -arch x64 `
             -b BinDir="${{ github.workspace }}\installer\bin" `
+            -b SampleDataDir="${{ github.workspace }}\installer\staging\sample-data" `
             -b "${{ github.workspace }}\installer" `
-            -o "${{ github.workspace }}\installer\GizmoSQL-amd64.msi" `
+            -o "${{ github.workspace }}\installer\GizmoSQL-Core-x64.msi" `
             -ext WixToolset.UI.wixext
+
+      - name: Stage dummy chained MSIs
+        run: |
+          New-Item -ItemType Directory -Force -Path installer\staging\ui | Out-Null
+          New-Item -ItemType Directory -Force -Path installer\staging\powerbi | Out-Null
+          Copy-Item installer\GizmoSQL-Core-x64.msi installer\staging\ui\GizmoSQL-UI-x64.msi -Force
+          Copy-Item installer\GizmoSQL-Core-x64.msi installer\staging\powerbi\GizmoSQL-PowerBI-Setup-x64.msi -Force
+
+      - name: Build unsigned bundle
+        run: |
+          wix build `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL.Bundle.wxs" `
+            -arch x64 `
+            -b CoreMsiDir="${{ github.workspace }}\installer" `
+            -b UiMsiDir="${{ github.workspace }}\installer\staging\ui" `
+            -b PowerBIMsiDir="${{ github.workspace }}\installer\staging\powerbi" `
+            -b "${{ github.workspace }}\installer-bundle" `
+            -o "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -ext WixToolset.Bal.wixext
+
+      - name: Detach Burn engine for signing
+        run: |
+          # Burn bundles must sign the engine first, then reattach it and sign
+          # the final bundle EXE.
+          wix burn detach `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -engine "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe"
 
       - name: Azure Login
         uses: azure/login@v2
@@ -80,7 +117,7 @@ jobs:
       - name: Install AzureSignTool
         run: dotnet tool install --global AzureSignTool
 
-      - name: Sign MSI
+      - name: Sign Core MSI
         run: |
           AzureSignTool sign `
             --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
@@ -90,11 +127,44 @@ jobs:
             --timestamp-digest sha256 `
             --file-digest sha256 `
             --verbose `
-            "${{ github.workspace }}\installer\GizmoSQL-amd64.msi"
+            "${{ github.workspace }}\installer\GizmoSQL-Core-x64.msi"
 
-      - name: Upload MSI
+      - name: Sign detached Burn engine
+        run: |
+          AzureSignTool sign `
+            --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
+            --azure-key-vault-certificate "${{ secrets.AZURE_CERT_NAME }}" `
+            --azure-key-vault-managed-identity `
+            --timestamp-rfc3161 http://timestamp.digicert.com `
+            --timestamp-digest sha256 `
+            --file-digest sha256 `
+            --verbose `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe"
+
+      - name: Reattach signed Burn engine
+        run: |
+          wix burn reattach `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64-unsigned.exe" `
+            -engine "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-engine.exe" `
+            -o "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64.exe"
+
+      - name: Sign bundle EXE
+        run: |
+          AzureSignTool sign `
+            --azure-key-vault-url "${{ secrets.AZURE_KEY_VAULT_URI }}" `
+            --azure-key-vault-certificate "${{ secrets.AZURE_CERT_NAME }}" `
+            --azure-key-vault-managed-identity `
+            --timestamp-rfc3161 http://timestamp.digicert.com `
+            --timestamp-digest sha256 `
+            --file-digest sha256 `
+            --verbose `
+            "${{ github.workspace }}\installer-bundle\GizmoSQL-Setup-x64.exe"
+
+      - name: Upload Windows installer artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: GizmoSQL-test-amd64.zip
-          path: installer/GizmoSQL-amd64.msi
+          name: GizmoSQL-test-windows-installers.zip
+          path: |
+            installer/GizmoSQL-Core-x64.msi
+            installer-bundle/GizmoSQL-Setup-x64.exe
           if-no-files-found: error

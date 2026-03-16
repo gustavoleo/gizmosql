@@ -137,16 +137,38 @@ Then run the server (username defaults to `gizmosql_user`):
 GIZMOSQL_PASSWORD="gizmosql_password" gizmosql_server --database-filename your.duckdb --print-queries
 ```
 
-### Option 4: Windows Installer (MSI)
+### Option 4: Windows Installer (Recommended)
 
-Download the latest MSI installer from the [GitHub Releases](https://github.com/gizmodata/gizmosql/releases) page. The installer adds `gizmosql_server.exe` and `gizmosql_client.exe` to `C:\Program Files\GizmoSQL` and updates the system PATH.
+Download [`GizmoSQL-Setup-x64.exe`](https://github.com/gizmodata/gizmosql/releases) from GitHub Releases. This is the recommended Windows artifact and installs:
 
-Then run the server from PowerShell or Command Prompt:
+- GizmoSQL Core
+- the bundled demo DuckDB database by default
+- GizmoSQL UI by default
+- the Power BI connector as an optional recommended checkbox
 
-```powershell
-$env:GIZMOSQL_PASSWORD="gizmosql_password"
-gizmosql_server --database-filename your.duckdb --print-queries
-```
+The default evaluator journey is 8 steps:
+
+1. Download `GizmoSQL-Setup-x64.exe`
+2. Run setup
+3. Accept the default options
+4. Install
+5. Finish
+6. Open GizmoSQL UI
+7. Open the demo connection
+8. Run your first query
+
+The default `Open GizmoSQL UI` completion action attempts to start the bundled local demo server automatically so the UI remains the first-run surface.
+
+Advanced/manual Windows artifacts remain available separately:
+
+- `GizmoSQL-Core-x64.msi`
+- `GizmoSQL-UI-x64.msi`
+- `GizmoSQL-PowerBI-Setup-x64.msi`
+
+Windows install details and troubleshooting:
+
+- [Windows install guide](docs/windows-install.md)
+- [Windows quickstart](docs/quickstart-windows.md)
 
 ---
 
@@ -298,6 +320,8 @@ gizmosql_server -B sqlite --database-filename data/foo.sqlite
 - 🐍 [Python ADBC Driver (with OAuth/SSO)](https://github.com/gizmodata/adbc-driver-gizmosql) **NEW!**
 - 🔌 [ODBC Driver](https://github.com/gizmodata/gizmosql-odbc-driver) **NEW!**
 - 📊 [Power BI Connector](https://github.com/gizmodata/gizmosql-powerbi-connector) **NEW!**
+
+For Windows users, `GizmoSQL-Setup-x64.exe` is the recommended entry point. The standalone UI and Power BI connector MSIs remain available as advanced/manual options.
 ---
 
 ## 📊 Performance

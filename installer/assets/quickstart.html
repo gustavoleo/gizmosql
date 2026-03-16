@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GizmoSQL Windows Quickstart</title>
+    <style>
+      :root {
+        --ink: #14213d;
+        --accent: #f77f00;
+        --accent-soft: #ffe8cc;
+        --paper: #f7f4ea;
+        --panel: #ffffff;
+        --line: #d6d0bf;
+        --muted: #5c6473;
+        --ok: #1c7c54;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Aptos", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(247, 127, 0, 0.18), transparent 24rem),
+          linear-gradient(180deg, #fffdf8 0%, var(--paper) 100%);
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, rgba(20, 33, 61, 0.96), rgba(31, 44, 76, 0.92));
+        color: #fff;
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: 0 24px 48px rgba(20, 33, 61, 0.18);
+      }
+
+      .hero p,
+      .hero li {
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 { margin: 14px 0 10px; font-size: 38px; line-height: 1.05; }
+      h2 { margin: 0 0 12px; font-size: 25px; }
+      h3 { margin: 0 0 8px; font-size: 18px; }
+      p, li { font-size: 16px; line-height: 1.6; }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: 0 12px 30px rgba(20, 33, 61, 0.07);
+      }
+
+      .callout {
+        margin-top: 18px;
+        padding: 14px 16px;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+        border-radius: 14px;
+      }
+
+      .success {
+        color: var(--ok);
+        font-weight: 700;
+      }
+
+      code, pre {
+        font-family: "Cascadia Code", "Consolas", monospace;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 16px;
+        border-radius: 16px;
+        background: #111827;
+        color: #f9fafb;
+      }
+
+      ol, ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      .two-up {
+        display: grid;
+        gap: 18px;
+      }
+
+      @media (min-width: 760px) {
+        .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .two-up { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <span class="pill">Windows first run</span>
+        <h1>GizmoSQL is ready</h1>
+        <p class="success">Install complete. The sample database is installed at <code>C:\ProgramData\GizmoSQL\samples\gizmosql-demo.duckdb</code>.</p>
+        <ol>
+          <li>Open <strong>GizmoSQL UI</strong> from the Finish screen or Start Menu.</li>
+          <li>Use the demo connection details below.</li>
+          <li>Run the first query.</li>
+        </ol>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>1. Welcome</h2>
+          <p>Core is installed to <code>C:\Program Files\GizmoSQL\</code>. The bundled demo database is machine-wide so every Windows user gets the same path.</p>
+          <div class="callout">
+            <strong>Demo server shortcut:</strong> Start Menu &gt; GizmoSQL &gt; Launch Demo Server
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>2. Query in GizmoSQL UI</h2>
+          <ol>
+            <li>Open <strong>GizmoSQL UI</strong>. The default launcher also attempts to start the demo server automatically.</li>
+            <li>If the demo server is not already running, use <strong>Start Menu &gt; GizmoSQL &gt; Launch Demo Server</strong>.</li>
+            <li>Create or open a connection with:
+              <ul>
+                <li>Host: <code>127.0.0.1</code></li>
+                <li>Port: <code>31337</code></li>
+                <li>Username: <code>gizmosql_user</code></li>
+                <li>Password: <code>gizmosql_password</code></li>
+                <li>TLS: <code>Off</code></li>
+              </ul>
+            </li>
+            <li>Run:</li>
+          </ol>
+          <pre>SELECT customer_name, order_total
+FROM demo_recent_orders
+ORDER BY order_total DESC
+LIMIT 10;</pre>
+        </article>
+
+        <article class="card">
+          <h2>3. Query in Power BI</h2>
+          <ol>
+            <li>Restart Power BI Desktop after connector installation.</li>
+            <li>Select <strong>Get Data</strong> &gt; <strong>Database</strong> &gt; <strong>GizmoSQL</strong>.</li>
+            <li>Enter host <code>127.0.0.1</code> and port <code>31337</code>.</li>
+            <li>Authenticate with <code>gizmosql_user</code> / <code>gizmosql_password</code>.</li>
+            <li>Browse the demo schema or paste the sample query above.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h2>4. Query from CLI / DBeaver</h2>
+          <p>Local connection details:</p>
+          <ul>
+            <li>Host: <code>127.0.0.1</code></li>
+            <li>Port: <code>31337</code></li>
+            <li>Username: <code>gizmosql_user</code></li>
+            <li>Password: <code>gizmosql_password</code></li>
+            <li>Database file: <code>C:\ProgramData\GizmoSQL\samples\gizmosql-demo.duckdb</code></li>
+          </ul>
+          <pre>gizmosql_client --host 127.0.0.1 --port 31337 --username gizmosql_user --password gizmosql_password</pre>
+          <pre>SELECT region_name, SUM(order_total) AS revenue
+FROM demo_recent_orders
+GROUP BY 1
+ORDER BY revenue DESC;</pre>
+        </article>
+      </section>
+
+      <section class="two-up" style="margin-top: 18px;">
+        <article class="card">
+          <h2>5. Troubleshooting</h2>
+          <h3>Demo server fails</h3>
+          <p>Run the Start Menu launcher again and read the PowerShell window. It checks for a missing database, missing server executable, and port 31337 conflicts before the server starts.</p>
+          <h3>UI missing</h3>
+          <p>Re-run <code>GizmoSQL-Setup-x64.exe</code> and keep <strong>GizmoSQL UI</strong> checked, or install the advanced/manual UI MSI.</p>
+          <h3>Connector not visible</h3>
+          <p>Restart Power BI Desktop. If it still does not appear, re-run setup with <strong>Power BI Connector</strong> selected.</p>
+        </article>
+
+        <article class="card">
+          <h2>Installed assets</h2>
+          <ul>
+            <li><code>C:\Program Files\GizmoSQL\quickstart.html</code></li>
+            <li><code>C:\Program Files\GizmoSQL\launch-demo-server.ps1</code></li>
+            <li><code>C:\Program Files\GizmoSQL\gizmosql-shell.cmd</code></li>
+            <li><code>C:\ProgramData\GizmoSQL\samples\gizmosql-demo.duckdb</code></li>
+          </ul>
+          <div class="callout">
+            <strong>Upgrade note:</strong> uninstall removes Start Menu shortcuts and the installed GizmoSQL program files. The sample database is removed when it is still owned by the installer at the default path.
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
