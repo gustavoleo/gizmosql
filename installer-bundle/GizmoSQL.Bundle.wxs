@@ -30,6 +30,7 @@
     <Chain>
       <MsiPackage Id="CoreMsi"
                   SourceFile="!(bindpath.CoreMsiDir)\GizmoSQL-Core-x64.msi"
+                  CacheId="gizmosql-core-!(bind.packageVersion.CoreMsi)"
                   DisplayName="GizmoSQL Core"
                   Visible="no"
                   Vital="yes">
@@ -39,6 +40,7 @@
 
       <MsiPackage Id="UiMsi"
                   SourceFile="!(bindpath.UiMsiDir)\GizmoSQL-UI-x64.msi"
+                  CacheId="gizmosql-ui-!(bind.packageVersion.UiMsi)"
                   DisplayName="GizmoSQL UI"
                   Visible="no"
                   Vital="yes"
@@ -46,6 +48,7 @@
 
       <MsiPackage Id="PowerBiMsi"
                   SourceFile="!(bindpath.PowerBIMsiDir)\GizmoSQL-PowerBI-Setup-x64.msi"
+                  CacheId="gizmosql-powerbi-!(bind.packageVersion.PowerBiMsi)"
                   DisplayName="GizmoSQL Power BI Connector"
                   Visible="no"
                   Vital="no"
