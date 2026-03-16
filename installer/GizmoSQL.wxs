@@ -78,8 +78,7 @@
     </ComponentGroup>
 
     <ComponentGroup Id="SampleDataComponents" Directory="GizmoSQLSamplesFolder">
-      <Component Id="SampleDatabaseComponent" Guid="{9552B18B-631F-4FB5-8B57-513A7A0C6DDE}">
-        <Condition>INSTALL_SAMPLE_DB = 1</Condition>
+      <Component Id="SampleDatabaseComponent" Guid="{9552B18B-631F-4FB5-8B57-513A7A0C6DDE}" Condition="INSTALL_SAMPLE_DB = 1">
         <File Id="GizmoSqlDemoDuckDb" Source="!(bindpath.SampleDataDir)\gizmosql-demo.duckdb" KeyPath="yes" />
       </Component>
     </ComponentGroup>
