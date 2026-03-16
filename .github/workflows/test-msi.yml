@@ -29,7 +29,7 @@ jobs:
         run: |
           dotnet tool install --global wix --version 6.0.2
           wix extension add WixToolset.UI.wixext/6.0.2
-          wix extension add WixToolset.Bal.wixext/6.0.2
+          wix extension add WixToolset.BootstrapperApplications.wixext/6.0.2
 
       - name: Create dummy executables
         run: |
