@@ -31,7 +31,6 @@
       <MsiPackage Id="CoreMsi"
                   SourceFile="!(bindpath.CoreMsiDir)\GizmoSQL-Core-x64.msi"
                   DisplayName="GizmoSQL Core"
-                  DisplayInternalUI="no"
                   Visible="no"
                   Vital="yes">
         <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]" />
@@ -41,7 +40,6 @@
       <MsiPackage Id="UiMsi"
                   SourceFile="!(bindpath.UiMsiDir)\GizmoSQL-UI-x64.msi"
                   DisplayName="GizmoSQL UI"
-                  DisplayInternalUI="no"
                   Visible="no"
                   Vital="yes"
                   InstallCondition="InstallUi = 1" />
@@ -49,7 +47,6 @@
       <MsiPackage Id="PowerBiMsi"
                   SourceFile="!(bindpath.PowerBIMsiDir)\GizmoSQL-PowerBI-Setup-x64.msi"
                   DisplayName="GizmoSQL Power BI Connector"
-                  DisplayInternalUI="no"
                   Visible="no"
                   Vital="no"
                   InstallCondition="InstallPowerBI = 1" />
