@@ -71,9 +71,161 @@ For more details, see the [Editions documentation](https://docs.gizmosql.com/#/e
 
 ## 📚 Documentation
 
-For detailed instructions and configuration information, see our full documentation:
+Primary docs:
 
-[GizmoSQL Documentation](https://docs.gizmosql.com)
+- [GizmoSQL Documentation](https://docs.gizmosql.com)
+- [Windows install guide](docs/windows-install.md)
+- [Windows quickstart](docs/quickstart-windows.md)
+- [Client shell documentation](docs/client.md)
+- [Editions](docs/editions.md)
+- [Contributing guide](CONTRIBUTING.md)
+
+Internal engineering docs and tooling:
+
+- [CaptureRunner README](CaptureRunner/README.md)
+- [CaptureRunner Authoring Guide](CaptureRunner/AuthoringGuide.md)
+- [CaptureRunner Navigation Map](CaptureRunner/NavigationMap.md)
+
+---
+
+## 🗂️ Repository Inventory
+
+This is the top-level map of the repository. Use it to find the right starting point before you edit anything.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [README.md](/mnt/e/DDD/GitHub/gizmosql/README.md) | Product overview, install paths, client entry points. | Understand the repo at a high level. |
+| [CMakeLists.txt](/mnt/e/DDD/GitHub/gizmosql/CMakeLists.txt) | Root build orchestration for the server, client, and tests. | Change how the core project builds. |
+| [src/client](/mnt/e/DDD/GitHub/gizmosql/src/client) | CLI client, shell loop, command processing, output rendering, auth flows. | Work on the interactive client or CLI behavior. |
+| [src/common](/mnt/e/DDD/GitHub/gizmosql/src/common) | Shared server/runtime code: logging, telemetry, security, middleware, health. | Change shared runtime behavior used by multiple backends. |
+| [src/duckdb](/mnt/e/DDD/GitHub/gizmosql/src/duckdb) | DuckDB backend implementation. | Change DuckDB execution behavior. |
+| [src/sqlite](/mnt/e/DDD/GitHub/gizmosql/src/sqlite) | SQLite backend implementation. | Change SQLite execution behavior. |
+| [src/enterprise](/mnt/e/DDD/GitHub/gizmosql/src/enterprise) | Enterprise-only features such as instrumentation, OAuth, JWKS, kill session, permissions. | Work on licensed features. |
+| [src/protos](/mnt/e/DDD/GitHub/gizmosql/src/protos) | Protobuf and gRPC contract sources. | Change wire contracts or generated protocol inputs. |
+| [src/gizmosql_server.cpp](/mnt/e/DDD/GitHub/gizmosql/src/gizmosql_server.cpp) | Main server entry point. | Change server startup wiring. |
+| [tests](/mnt/e/DDD/GitHub/gizmosql/tests) | Integration and script-driven tests for server, client, auth, telemetry, and backends. | Add or run automated verification. |
+| [docs](/mnt/e/DDD/GitHub/gizmosql/docs) | Public documentation site content. | Update user-facing docs. |
+| [installer](/mnt/e/DDD/GitHub/gizmosql/installer) | Core Windows MSI authoring and installed assets such as quickstart and demo launcher. | Change the core Windows MSI. |
+| [installer-bundle](/mnt/e/DDD/GitHub/gizmosql/installer-bundle) | WiX Burn bundle for `GizmoSQL-Setup-x64.exe`, including theme and license assets. | Change the top-level Windows installer EXE. |
+| [build/windows/sample-data](/mnt/e/DDD/GitHub/gizmosql/build/windows/sample-data) | Bundled demo DuckDB database payload used by the Windows installer. | Update the shipped sample database. |
+| [scripts](/mnt/e/DDD/GitHub/gizmosql/scripts) | Build helpers, release fetch scripts, sample-data prep, test helpers, installer validation scripts. | Automate packaging, downloads, or repo workflows. |
+| [queries](/mnt/e/DDD/GitHub/gizmosql/queries) | TPC-H and benchmark SQL assets. | Run or adjust benchmark queries. |
+| [helm-chart](/mnt/e/DDD/GitHub/gizmosql/helm-chart) | Kubernetes packaging for GizmoSQL deployment. | Change Helm-based deployment behavior. |
+| [third_party](/mnt/e/DDD/GitHub/gizmosql/third_party) | Dependency build definitions and patching glue for vendored components. | Adjust dependency versions or build integration. |
+| [tls](/mnt/e/DDD/GitHub/gizmosql/tls) | Local certificate generation helpers and TLS notes. | Work on development TLS setup. |
+| [CaptureRunner](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner) | Windows UI automation scanner, capture tooling, navigation plans, reports, and reference-guide workflow docs. | Work on AnalyticsCreator screen discovery and screenshot automation. |
+| [CaptureRunner.Tests](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner.Tests) | Unit tests for CaptureRunner monitor logic, placement logic, and toolbar navigation helpers. | Verify CaptureRunner behavior safely. |
+
+### Quick Orientation By Task
+
+- Want to change server behavior: start in [src/common](/mnt/e/DDD/GitHub/gizmosql/src/common), [src/duckdb](/mnt/e/DDD/GitHub/gizmosql/src/duckdb), or [src/sqlite](/mnt/e/DDD/GitHub/gizmosql/src/sqlite).
+- Want to change the CLI: start in [src/client](/mnt/e/DDD/GitHub/gizmosql/src/client).
+- Want to change public docs: start in [docs](/mnt/e/DDD/GitHub/gizmosql/docs).
+- Want to change Windows packaging: start in [installer](/mnt/e/DDD/GitHub/gizmosql/installer) and [installer-bundle](/mnt/e/DDD/GitHub/gizmosql/installer-bundle).
+- Want to change screenshot automation: start in [CaptureRunner](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner).
+
+### Second-Level Engineering Map
+
+#### `src/`
+
+Use this when you need to know where server and client code actually lives under the main source tree.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [src/client](/mnt/e/DDD/GitHub/gizmosql/src/client) | Interactive shell, CLI commands, rendering, connection handling, auth prompts. | Change what the user sees and does in the CLI. |
+| [src/common](/mnt/e/DDD/GitHub/gizmosql/src/common) | Shared runtime code used by the server and backends. | Change core behavior that cuts across the product. |
+| [src/common/include](/mnt/e/DDD/GitHub/gizmosql/src/common/include) | Shared public headers for common runtime code. | Change common interfaces or shared declarations. |
+| [src/duckdb](/mnt/e/DDD/GitHub/gizmosql/src/duckdb) | DuckDB adapter and execution integration. | Work on DuckDB-specific query execution or connection behavior. |
+| [src/sqlite](/mnt/e/DDD/GitHub/gizmosql/src/sqlite) | SQLite adapter and execution integration. | Work on SQLite-specific behavior. |
+| [src/enterprise](/mnt/e/DDD/GitHub/gizmosql/src/enterprise) | Enterprise feature area root. | Work on licensed or gated capabilities. |
+| [src/enterprise/catalog_permissions](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/catalog_permissions) | Catalog-level permissions logic. | Change enterprise authorization over schemas, tables, or catalogs. |
+| [src/enterprise/instrumentation](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/instrumentation) | Enterprise instrumentation and observability hooks. | Change enterprise telemetry or tracing behavior. |
+| [src/enterprise/jwks](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/jwks) | JWKS resolution and key management. | Work on token verification key loading. |
+| [src/enterprise/kill_session](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/kill_session) | Session termination controls. | Change enterprise session management. |
+| [src/enterprise/license_mgr](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/license_mgr) | License validation and enterprise gating. | Change license checks or tier enforcement. |
+| [src/enterprise/oauth](/mnt/e/DDD/GitHub/gizmosql/src/enterprise/oauth) | OAuth and enterprise identity integration. | Work on enterprise authentication flows. |
+| [src/protos](/mnt/e/DDD/GitHub/gizmosql/src/protos) | Protocol source definitions. | Change request/response contracts. |
+| [src/protos/grpc](/mnt/e/DDD/GitHub/gizmosql/src/protos/grpc) | gRPC-facing protocol definitions and generated-input sources. | Change gRPC service boundaries. |
+| [src/gizmosql_server.cpp](/mnt/e/DDD/GitHub/gizmosql/src/gizmosql_server.cpp) | Main server process entry point. | Change startup wiring, initialization order, or process boot behavior. |
+
+#### `installer/`
+
+Use this when you are changing the Windows Core MSI or the assets it installs.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [installer/GizmoSQL.wxs](/mnt/e/DDD/GitHub/gizmosql/installer/GizmoSQL.wxs) | Main WiX authoring for the Core MSI. | Change MSI components, features, shortcuts, or installed files. |
+| [installer/assets](/mnt/e/DDD/GitHub/gizmosql/installer/assets) | Files installed with the MSI for onboarding and launch flows. | Change the files users receive after install. |
+| [installer/assets/quickstart.html](/mnt/e/DDD/GitHub/gizmosql/installer/assets/quickstart.html) | Local Windows quickstart page. | Change post-install onboarding content. |
+| [installer/assets/launch-demo-server.ps1](/mnt/e/DDD/GitHub/gizmosql/installer/assets/launch-demo-server.ps1) | Demo server launcher script. | Change first-run demo startup behavior. |
+| [installer/assets/gizmosql-shell.cmd](/mnt/e/DDD/GitHub/gizmosql/installer/assets/gizmosql-shell.cmd) | Windows shell helper entry point. | Change how the installed shell is invoked from shortcuts or Start Menu entries. |
+| [installer/gizmosql.ico](/mnt/e/DDD/GitHub/gizmosql/installer/gizmosql.ico) | Primary installer or app icon asset. | Change Windows icon branding. |
+| [installer/gizmosql_client.ico](/mnt/e/DDD/GitHub/gizmosql/installer/gizmosql_client.ico) | Client-specific icon asset. | Change client shortcut branding. |
+| [installer/gizmosql_logo.png](/mnt/e/DDD/GitHub/gizmosql/installer/gizmosql_logo.png) | Installer/logo bitmap asset. | Change Windows packaging visuals. |
+
+#### `scripts/`
+
+Use this when you need automation around builds, releases, sample data, or validation.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [scripts/fetch-ui-msi.ps1](/mnt/e/DDD/GitHub/gizmosql/scripts/fetch-ui-msi.ps1) | Fetch or stage the GizmoSQL UI MSI. | Control how the Windows bundle gets the UI installer. |
+| [scripts/fetch-powerbi-msi.ps1](/mnt/e/DDD/GitHub/gizmosql/scripts/fetch-powerbi-msi.ps1) | Fetch or stage the Power BI connector MSI. | Control how the Windows bundle gets the Power BI installer. |
+| [scripts/prepare-sample-db.ps1](/mnt/e/DDD/GitHub/gizmosql/scripts/prepare-sample-db.ps1) | Prepare or stage the bundled sample database payload. | Update the Windows demo database flow. |
+| [scripts/test-windows-installer-flow.ps1](/mnt/e/DDD/GitHub/gizmosql/scripts/test-windows-installer-flow.ps1) | Installer verification helper. | Validate the Windows setup journey. |
+| [scripts/create_duckdb_database_file.py](/mnt/e/DDD/GitHub/gizmosql/scripts/create_duckdb_database_file.py) | Python helper for creating DuckDB test or sample files. | Generate local DuckDB assets. |
+| [scripts/start_gizmosql.sh](/mnt/e/DDD/GitHub/gizmosql/scripts/start_gizmosql.sh) | Main Linux/macOS server start helper. | Start the server locally with the standard script path. |
+| [scripts/start_gizmosql_slim.sh](/mnt/e/DDD/GitHub/gizmosql/scripts/start_gizmosql_slim.sh) | Slim server start helper. | Start a leaner local runtime variant. |
+| [scripts/test_gizmosql.py](/mnt/e/DDD/GitHub/gizmosql/scripts/test_gizmosql.py) | Python-based test helper for GizmoSQL validation. | Run or extend scripted validation in Python. |
+| [scripts/test_gizmosql.sh](/mnt/e/DDD/GitHub/gizmosql/scripts/test_gizmosql.sh) | Shell-based test helper for GizmoSQL validation. | Run shell-driven verification quickly. |
+| [scripts/test_telemetry.sh](/mnt/e/DDD/GitHub/gizmosql/scripts/test_telemetry.sh) | Telemetry test helper. | Validate telemetry flows. |
+| [scripts/docker-compose.telemetry-test.yaml](/mnt/e/DDD/GitHub/gizmosql/scripts/docker-compose.telemetry-test.yaml) | Docker Compose setup for telemetry testing. | Stand up the telemetry test environment. |
+
+#### `tests/`
+
+Use this when you need to find the right verification entry point before adding or changing behavior.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [tests/CMakeLists.txt](/mnt/e/DDD/GitHub/gizmosql/tests/CMakeLists.txt) | Test build wiring for the C++ test targets. | Change how the compiled test suite is built. |
+| [tests/integration](/mnt/e/DDD/GitHub/gizmosql/tests/integration) | Main C++ integration test suite for server, backends, auth, and enterprise behavior. | Add or debug deeper product-level integration coverage. |
+| [tests/integration/test_authentication.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_authentication.cpp) | Authentication path coverage. | Change login or auth behavior and need to verify it. |
+| [tests/integration/test_catalog_access.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_catalog_access.cpp) | Catalog access behavior coverage. | Validate schema or catalog visibility behavior. |
+| [tests/integration/test_catalog_permissions_enterprise.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_catalog_permissions_enterprise.cpp) | Enterprise catalog-permission coverage. | Verify enterprise authorization behavior. |
+| [tests/integration/test_interactive_client.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_interactive_client.cpp) | Interactive client integration coverage. | Validate CLI shell behavior from compiled tests. |
+| [tests/integration/test_sqlite_backend.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_sqlite_backend.cpp) | SQLite backend integration coverage. | Validate SQLite-specific changes. |
+| [tests/integration/test_tpch_benchmark.cpp](/mnt/e/DDD/GitHub/gizmosql/tests/integration/test_tpch_benchmark.cpp) | Benchmark-oriented TPC-H coverage. | Check performance-oriented or benchmark query behavior. |
+| [tests/test_bulk_ingest.py](/mnt/e/DDD/GitHub/gizmosql/tests/test_bulk_ingest.py) | Python-level bulk-ingest validation. | Quickly test ingestion flows from Python. |
+| [tests/test_geoarrow.py](/mnt/e/DDD/GitHub/gizmosql/tests/test_geoarrow.py) | Python-level GeoArrow validation. | Check geometry/GeoArrow behavior quickly. |
+| [tests/test_pivot_multi_statement.py](/mnt/e/DDD/GitHub/gizmosql/tests/test_pivot_multi_statement.py) | Python-level multi-statement pivot validation. | Validate multi-statement SQL behavior from Python. |
+| [tests/test_client_shell.sh](/mnt/e/DDD/GitHub/gizmosql/tests/test_client_shell.sh) | Shell-driven CLI verification. | Smoke test the client shell quickly from a script. |
+
+#### `docs/`
+
+Use this when you need to update the public documentation site or find the right user-facing page.
+
+| Path | What it contains | Start here when you need to... |
+|---|---|---|
+| [docs/index.html](/mnt/e/DDD/GitHub/gizmosql/docs/index.html) | Docs site entry page. | Change the public landing experience for the docs site. |
+| [docs/documentation.md](/mnt/e/DDD/GitHub/gizmosql/docs/documentation.md) | General documentation hub content. | Change top-level public documentation structure. |
+| [docs/client.md](/mnt/e/DDD/GitHub/gizmosql/docs/client.md) | CLI and client documentation. | Update shell usage or client-facing instructions. |
+| [docs/windows-install.md](/mnt/e/DDD/GitHub/gizmosql/docs/windows-install.md) | Windows installer guidance. | Update Windows installation steps or troubleshooting. |
+| [docs/quickstart-windows.md](/mnt/e/DDD/GitHub/gizmosql/docs/quickstart-windows.md) | Windows first-run quickstart. | Update the post-install Windows journey. |
+| [docs/editions.md](/mnt/e/DDD/GitHub/gizmosql/docs/editions.md) | Edition and packaging comparison. | Clarify product tiers or feature packaging. |
+| [docs/integrations.md](/mnt/e/DDD/GitHub/gizmosql/docs/integrations.md) | Integration entry points and ecosystem docs. | Update client or tool integration guidance. |
+| [docs/oauth_sso_setup.md](/mnt/e/DDD/GitHub/gizmosql/docs/oauth_sso_setup.md) | OAuth SSO setup guide. | Update identity-provider setup instructions. |
+| [docs/token_authentication.md](/mnt/e/DDD/GitHub/gizmosql/docs/token_authentication.md) | Token-authentication guide. | Change token-based auth documentation. |
+| [docs/opentelemetry.md](/mnt/e/DDD/GitHub/gizmosql/docs/opentelemetry.md) | OpenTelemetry guide. | Update telemetry or tracing documentation. |
+| [docs/session_instrumentation.md](/mnt/e/DDD/GitHub/gizmosql/docs/session_instrumentation.md) | Session instrumentation documentation. | Update observability guidance for sessions. |
+| [docs/ducklake.md](/mnt/e/DDD/GitHub/gizmosql/docs/ducklake.md) | DuckLake documentation. | Update DuckLake integration or usage guidance. |
+| [docs/bulk_ingestion.md](/mnt/e/DDD/GitHub/gizmosql/docs/bulk_ingestion.md) | Bulk ingestion guide. | Update ingestion workflow documentation. |
+| [docs/geometry.md](/mnt/e/DDD/GitHub/gizmosql/docs/geometry.md) | Geometry feature documentation. | Update geospatial or geometry user guidance. |
+| [docs/python_adbc.md](/mnt/e/DDD/GitHub/gizmosql/docs/python_adbc.md) | Python ADBC integration guide. | Update Python client or ADBC instructions. |
+| [docs/adbc_scanner_duckdb.md](/mnt/e/DDD/GitHub/gizmosql/docs/adbc_scanner_duckdb.md) | ADBC scanner with DuckDB documentation. | Update ADBC scanning usage details. |
+| [docs/one_trillion_row_challenge.md](/mnt/e/DDD/GitHub/gizmosql/docs/one_trillion_row_challenge.md) | Large-scale benchmark narrative. | Update benchmark showcase or performance story content. |
+| [docs/VIEW_DOCS_LOCALLY.md](/mnt/e/DDD/GitHub/gizmosql/docs/VIEW_DOCS_LOCALLY.md) | Local docs-site development instructions. | Run or preview the docs site locally. |
+| [docs/_sidebar.md](/mnt/e/DDD/GitHub/gizmosql/docs/_sidebar.md) | Docs site navigation sidebar. | Change docs navigation structure. |
+| [docs/_navbar.md](/mnt/e/DDD/GitHub/gizmosql/docs/_navbar.md) | Docs site top navigation. | Change docs site top-level links. |
 
 ---
 

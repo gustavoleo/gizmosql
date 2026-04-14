@@ -14,8 +14,8 @@ It also supports a discovery mode which dumps the current window's likely module
 
 ## Documentation
 
+- [AuthoringGuide.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/AuthoringGuide.md) - single guide for adding screens, adding paths, and understanding the plan format
 - [JsonMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/JsonMap.md)
-- [AuthoringGuide.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/AuthoringGuide.md)
 - [ScreenshotIntegrationPlan.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/ScreenshotIntegrationPlan.md)
 - [CurrentStatus.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/CurrentStatus.md)
 - [QuickStart_EN.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/QuickStart_EN.md)

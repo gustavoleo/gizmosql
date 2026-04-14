@@ -1,110 +1,78 @@
 # CaptureRunner Authoring Guide
 
-This guide explains how to extend `CaptureRunner` safely: how it runs, how to discover new screens, how to add new plan rows, how to choose anchors, and how to interpret the results.
+This is the single human guide for adding new screens and new navigation paths to `CaptureRunner`.
 
-Start here if you want to add:
+Use this file for instructions. It is written in **Markdown** for humans.
 
-- a new screen
-- a new left-navigation node
-- a new editor tab
-- a toolbar, menu, or ribbon route
-- a keyboard shortcut fallback
-- stronger validation anchors
+Use JSON for files that `CaptureRunner` executes:
 
-## What CaptureRunner Does
+- `*-plan.json` for screen plans
+- `Profiles/*.json` for environment profiles
 
-`CaptureRunner` is a Windows-only scanner for WPF UI automation feasibility. It is not a production execution engine. For each planned screen it:
+YAML is not supported today. The loader in [Program.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Program.cs) uses `System.Text.Json` for plans and profiles.
 
-1. attaches to or launches the target executable
-2. shows an operator notice on the resolved `operator_display` from the selected environment profile
-3. parks the mouse on that same certified operator display during parent runs
-4. opens the target screen using the declared navigation hints
-5. scans the UI Automation tree twice
-6. validates that the intended screen is really active
-7. classifies the result as `full`, `partial`, or `none`
-8. writes a JSON report
+## The 5-Minute Version
 
-## Runtime Model
+1. Find the closest screen in [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md).
+2. Copy the closest existing JSON row.
+3. Change the route and validation anchors.
+4. Test one row only.
+5. Trust the report, not your guess.
+6. Promote the row only after the report proves it.
 
-Key runtime behavior:
+## What File Type To Use
 
-- Exactly one target application instance is allowed.
-  If multiple `AnalyticsCreator.exe` processes exist, the scan fails fast.
-- Parent scans run each screen in its own worker process.
-  This prevents one hung screen from blocking the whole batch forever.
-- The parent process rewrites the output JSON after every completed row.
-  A timed-out row still leaves a usable partial report.
-- The operator should keep the application open and avoid using the mouse or keyboard during the run.
-- During active parent runs, the cursor is parked on the resolved certified operator display. If it drifts to another display, CaptureRunner moves it back to the center of that operator display.
+| file | format | purpose |
+|---|---|---|
+| [AuthoringGuide.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/AuthoringGuide.md) | Markdown | Human instructions for contributors. |
+| `temp-one-row-plan.json` | JSON | One-row plan file for testing a new screen. |
+| [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json) | JSON | Canonical combined plan baseline. |
+| `Profiles/*.json` | JSON | Certified monitor and environment profiles. |
 
-Relevant code:
+## How To Add A New Screen
 
-- [Program.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Program.cs)
-- [WindowService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/WindowService.cs)
-- [MouseParkingService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/MouseParkingService.cs)
-- [OperatorNoticeService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/OperatorNoticeService.cs)
+### Step 1: Identify the screen family
 
-## Command Line Options
+Start from [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md). Find the closest existing screen in one of these families:
 
-| option | meaning |
-|---|---|
-| `--exe <path>` | Required. Path to the target executable. |
-| `--plan <file>` | Plan JSON to scan. |
-| `--discover-output <file>` | Write discovery JSON for the current app window. |
-| `--output <file>` | Final or partial report path. |
-| `--startup-timeout-ms <n>` | Timeout for app startup and initial window discovery. |
-| `--navigation-timeout-ms <n>` | Timeout for post-navigation window settling. |
-| `--screen-timeout-ms <n>` | Hard timeout per screen worker. |
-| `--capture-timeout-ms <n>` | How long to wait for Snagit output. |
-| `--keep-open` | Leave the target app open after the run. |
-| `--no-operator-notice` | Disable the operator message window. |
-| `--operator-message "<text>"` | Override the default operator message. |
-| `--snagit-hotkey "<keys>"` | Trigger Snagit capture through a hotkey. |
-| `--snagit-exe <path>` | Path to `SnagitCapture.exe`. |
-| `--snagit-watch-dir <folder>` | Folder to watch for new Snagit output. |
-| `--capture-output-dir <folder>` | Folder where managed screenshots are written. |
-| `--worker-mode` | Internal mode used by the parent process. Do not use this manually. |
+- `left-nav list`
+- `toolbar dialog`
+- `toolbar wizard`
+- `left-nav detail`
+- `context page`
+- `context dialog`
 
-Typical commands:
+If the closest route is marked `seed-data`, `harness`, or `manual`, do not treat it like a normal simple row. See [When Not To Author A Normal Row](#when-not-to-author-a-normal-row).
 
-```powershell
-dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
-  --exe "C:\Path\To\AnalyticsCreator.exe" `
-  --discover-output .\CaptureRunner\Output\discovery.json
-```
+### Step 2: Copy the closest JSON row
 
-```powershell
-dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
-  --exe "C:\Path\To\AnalyticsCreator.exe" `
-  --plan .\CaptureRunner\analyticscreator-master-plan.json `
-  --screen-timeout-ms 120000 `
-  --output .\CaptureRunner\Output\analyticscreator-master-report.json `
-  --keep-open
-```
+Do not start from an empty file unless you have to.
 
-## Recommended Workflow For New Screens
+Recommended starting points:
 
-Use this flow every time:
+- `left-nav list`: copy from [wave1-startnow-native-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-startnow-native-plan.json)
+- `toolbar dialog/wizard`: copy from [referenceguide-toolbar-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-toolbar-plan.json)
+- `authored but not verified`: copy from [referenceguide-laneb-first10-pass2-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-laneb-first10-pass2-plan.json)
 
-1. Run discovery on the target app state.
-2. Inspect `likely_screens`, `likely_modules`, and `interesting_controls`.
-3. Decide the navigation route.
-4. Choose the strongest validation anchors.
-5. Create one new plan row.
-6. Run that single row by itself.
-7. Inspect the result JSON.
-8. Promote the row into a curated plan only after it is stable.
+### Step 3: Update the row
 
-If screenshot capture is enabled, only promote the row after:
+At minimum, update:
 
-9. the scan report shows `capture.success: true`
-10. the managed output screenshot lands in the requested capture output folder
+- `row_id`
+- `screen_name`
+- `module`
+- `hints`
+- `actions`
 
-## Step 1: Run Discovery
+Use the real schema from:
 
-Discovery mode gives you the raw UIA surface for the current app window.
+- [InputPlan.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/InputPlan.cs)
+- [PlanAction.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/PlanAction.cs)
+- [CaptureHints.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/CaptureHints.cs)
 
-Use:
+### Step 4: Run discovery
+
+Use discovery before you lock anchors:
 
 ```powershell
 dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
@@ -113,442 +81,476 @@ dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
   --keep-open
 ```
 
-Look at:
+Look for:
 
-- `likely_screens`
-- `likely_modules`
-- `interesting_controls`
-- `notes`
+- likely screen names
+- likely modules
+- `automation_id` values
+- visible control names you can validate against
 
-Prefer anchors that expose a real `automation_id`.
+### Step 5: Test one row only
 
-## Step 2: Choose The Right Navigation Strategy
+Never start by adding many new rows at once.
 
-`CaptureRunner` uses navigation in this order:
+Create a one-row plan file, run it, inspect the result, then decide if the route is real.
 
-1. `tree_navigation`
-2. `keyboard`
-3. `focus_change`
+### Step 6: Read the result
 
-This is controlled by [NavigationEngine.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/NavigationEngine.cs).
+Use the report to decide what happened:
 
-Important current limitation:
+- `full/high`: strong candidate
+- `partial`: route may open, but anchors are weak or wrong
+- `none`: wrong route or wrong anchors
+- `capture.success = true`: screenshot path worked
 
-- the existing plan schema can express only `tree_path`, `shortcut`, and focus fallback
-- it cannot yet express explicit post-navigation actions such as `List Parameters`
-- this is the main blocker for the failing Wave 1 list-family routes
+### Step 7: Promote the row
 
-### Use `tree_path` when:
+Promotion order:
 
-- the screen is reachable by tree node
-- the route is visible as tabs, menu items, tree items, list items, or buttons
-- selection state matters
+1. one-row test plan
+2. authored plan file
+3. curated plan
+4. navigation map or production batch once stable
 
-Example:
+Do not call a row verified until the report proves it.
+
+## How To Add A New Path
+
+### Left-nav list
+
+Use this for screens like:
+
+- `Parameters`
+- `Layers`
+- `Macros`
+- `Snapshots`
+
+Typical shape:
+
+- `tree_path` points to the left navigation entry
+- `expected_automation_ids` prove the shell
+- `require_selected_navigation = true` prevents false positives
+
+Use this when the page opens by selecting a normal navigation node.
+
+### Toolbar dialog or wizard
+
+Use this for screens like:
+
+- `File -> DWH Wizard`
+- `Help -> About`
+- `Options -> DWH settings`
+
+Typical shape:
+
+- `tree_path` points to the top-level toolbar tab such as `File`, `Options`, or `Help`
+- first action is usually `Invoke`
+- second action is often `WaitForWindow`
+
+Use `WaitForWindow` when a new dialog or wizard should appear.
+
+### Context/detail route
+
+Use this for screens that need an already-selected object, such as:
+
+- `Pages > Source`
+- `Pages > Table`
+- `Pages > Model Dimension`
+
+Typical shape:
+
+- start from a left-nav family
+- use `actions` to move deeper
+- select or open the object-specific surface
+- validate with stronger anchors than the shared shell
+
+### When to use `WaitForWindow`
+
+Use `WaitForWindow` when success means:
+
+- a dialog opened
+- a wizard opened
+- a modal changed the active surface
+
+Good examples:
+
+- `About`
+- `DWH Wizard`
+- `EULA`
+
+### When to use `WaitForElement`
+
+Use `WaitForElement` when success means:
+
+- the screen stayed inside the main shell
+- a tab, list, or editor surface changed
+- a stable control should appear
+
+Good examples:
+
+- `cboSchema`
+- `cmdSave`
+- `cmbGroup`
+- `leftall`
+
+### When `SendKeys` is allowed
+
+Use `SendKeys` only when:
+
+- direct UIA invocation is not available
+- the target is real but not exposed cleanly
+- you already tried a direct route first
+
+It is fallback only, not the default authoring strategy.
+
+## Copy-Paste JSON Templates
+
+All examples below are **plan JSON**, not documentation format. Save them as `.json`.
+
+### 1. Left-nav list template
+
+Based on the current `Parameters` pattern:
 
 ```json
-"tree_path": ["Sources", "Connectors"]
+[
+  {
+    "row_id": "1.6.18",
+    "screen_name": "Parameters",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Parameters"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  }
+]
 ```
 
-Current caveat:
+Use this shape for simple list pages like `Layers`, `Macros`, and `Snapshots`.
 
-- some reference-guide list routes need one more action after the family node is selected
-- if a screen requires `tree_path` plus a secondary command, the current model is not enough yet
-- that work should be implemented in the next schema/navigation revision rather than hardcoded per row
+### 2. Toolbar wizard template
 
-### Use `shortcut` when:
-
-- the app has a reliable accelerator
-- the screen is easier to reach by keyboard than by tree selection
-
-Supported modifiers:
-
-- `Alt`
-- `Ctrl`
-- `Shift`
-
-Supported special keys include:
-
-- `Enter`
-- `Esc`
-- `Tab`
-- `Up`
-- `Down`
-- `Left`
-- `Right`
-- function keys such as `F5`
-
-Example:
+Based on the current `DWH Wizard` pattern:
 
 ```json
-"shortcut": ["Alt+2"]
+[
+  {
+    "row_id": "1.8.3",
+    "screen_name": "DWH Wizard",
+    "module": "Wizards",
+    "hints": {
+      "tree_path": ["File"],
+      "expected_controls": ["Cancel"],
+      "expected_automation_ids": ["cmdBack"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "DWH Wizard",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "DWH Wizard",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  }
+]
 ```
 
-### Use focus fallback only as a last resort
+Use this shape for:
 
-This mode tries to focus and click likely matches or uses a minimal `Tab` fallback. It is the weakest route and should not be your primary plan design.
+- toolbar dialogs
+- toolbar wizards
+- modal windows launched from `File`, `Options`, or `Help`
 
-## Step 3: Choose Validation Anchors
+### 3. Context/detail route template
 
-Anchor quality matters more than screen names.
+Based on the current `Model Dimension` authored pattern:
 
-Best-to-worst anchor order:
+```json
+[
+  {
+    "row_id": "1.5.8",
+    "screen_name": "Model Dimension",
+    "module": "Pages",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_controls": ["Dimensions"],
+      "expected_automation_ids": ["cmbGroup", "leftall", "rightall"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Dimensions",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmbGroup",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "leftall",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "rightall",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  }
+]
+```
+
+Use this shape when:
+
+- a normal left-nav selection is not enough
+- you need one or more deeper actions
+- the target is a detail surface rather than a top-level list
+
+### 4. Optional native capture block
+
+Use this only if you want the one-row test to save a screenshot too:
+
+```json
+"capture": {
+  "mode": "Default"
+}
+```
+
+Current recommended runtime defaults are controlled from the command line:
+
+- `--capture-backend native`
+- `--native-capture-area client`
+- `--png-dpi 600`
+
+## How To Choose Validation Anchors
+
+Anchor priority is:
 
 1. `expected_automation_ids`
 2. `require_selected_navigation`
 3. `expected_controls`
-4. `expected_control_types`
 
-### Prefer `expected_automation_ids`
+### 1. Prefer `expected_automation_ids`
 
-These are the most stable WPF anchors.
+These are the strongest anchors.
 
-Example:
+Good current examples:
 
-```json
-"expected_automation_ids": ["dfFilter", "txtName", "cmdSave"]
-```
-
-Use them when discovery shows stable IDs such as:
-
+- `dfFilter`
 - `txtName`
 - `cmdSave`
-- `dfFilter`
-- `dgAttributes`
-- `tabColumns`
+- `cboSchema`
+- `cmdBack`
+- `cmbGroup`
 
-### Use `require_selected_navigation`
+### 2. Use `require_selected_navigation`
 
-This is critical for shared-shell screens, especially left-navigation families where many pages expose the same `dfFilter`, `txtName`, and `cmdSave` controls.
+This matters for shared-shell pages where many screens expose the same controls.
 
-Example:
+Use it on list families like:
 
-```json
-"require_selected_navigation": true
-```
+- `Parameters`
+- `Layers`
+- `Macros`
+- `Packages`
 
-### Use `expected_controls`
+### 3. Use `expected_controls` only when needed
 
-These are plain visible names. Use them when AutomationIds are missing or incomplete.
+These are visible names, not stable internal IDs.
 
-Example:
+Use them when:
 
-```json
-"expected_controls": ["Save", "Connect", "Create in DWH"]
-```
+- there is no useful automation ID
+- the visible label is specific enough
 
-### Use `expected_control_types`
+Good examples:
 
-This is only a bias. It helps when the same name appears across multiple control types.
+- `Dimensions`
+- `Facts`
+- `Historizations`
+- `DWH Wizard`
 
-Example:
+Bad examples by themselves:
 
-```json
-"expected_control_types": ["TreeItem", "Button"]
-```
+- `Save`
+- `Close`
+- `Cancel`
 
-## Step 4: Write A Plan Row
+Those are too generic unless paired with stronger anchors.
 
-### Example: left-navigation screen
+## How To Test One Screen
 
-```json
-{
-  "row_id": "LeftNav.Parameters",
-  "screen_name": "Parameters",
-  "hints": {
-    "tree_path": ["Parameters"],
-    "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
-    "require_selected_navigation": true
-  }
-}
-```
-
-### Example: editor tab
-
-```json
-{
-  "row_id": "EditTable.Columns",
-  "screen_name": "Columns",
-  "hints": {
-    "tree_path": ["Columns"],
-    "expected_controls": ["Columns", "Save"],
-    "expected_automation_ids": ["dgAttributes", "dfFilter", "txtName"]
-  }
-}
-```
-
-### Example: keyboard-first screen
-
-```json
-{
-  "row_id": "Shortcut.Connectors",
-  "screen_name": "Connectors",
-  "module": "Sources",
-  "hints": {
-    "shortcut": ["Alt+2"],
-    "expected_controls": ["Connectors", "Save"],
-    "expected_automation_ids": ["cmdSave"]
-  }
-}
-```
-
-## Screenshot Capture Notes
-
-Current working Snagit behavior:
-
-- Snagit writes capture packages into:
-  - `C:\Users\lainoborgo\Documents\Snagit`
-- the current preset path uses `.snagx` packages
-- `CaptureRunner` now extracts the primary PNG from those packages automatically
-
-Use the screenshot switches like this:
-
-```powershell
-dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
-  --exe "C:\Path\To\AnalyticsCreator.exe" `
-  --plan .\CaptureRunner\wave1-snagit-poc-plan.json `
-  --output .\CaptureRunner\Output\wave1-snagit-poc-report-snagx.json `
-  --snagit-hotkey "Ctrl+Shift+Alt+5" `
-  --snagit-exe "C:\Program Files\TechSmith\Snagit\SnagitCapture.exe" `
-  --snagit-watch-dir "C:\Users\lainoborgo\Documents\Snagit" `
-  --capture-output-dir .\CaptureRunner\Output\captures `
-  --capture-timeout-ms 20000 `
-  --keep-open
-```
-
-Current known-good proof:
-
-- [wave1-snagit-poc-report-snagx.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/wave1-snagit-poc-report-snagx.json)
-- [1.6.18-parameters.png](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/captures/1.6.18-parameters.png)
-
-Important warning:
-
-- do not patch Snagit's live runtime file casually:
-  - `C:\Users\lainoborgo\AppData\Local\TechSmith\Snagit\25\Presets7.xml`
-- that broke capture with `Unable to capture`
-- editing the exported preset file in Documents is safer than editing the live runtime file
-
-## Step 5: Test The New Row In Isolation
-
-Do not add ten new rows and hope the batch explains itself. Run one row first.
-
-Create a temporary one-row plan and scan it:
+Recommended first-proof command:
 
 ```powershell
 dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
   --exe "C:\Path\To\AnalyticsCreator.exe" `
   --plan .\CaptureRunner\temp-one-row-plan.json `
   --output .\CaptureRunner\Output\temp-one-row-report.json `
-  --screen-timeout-ms 60000 `
+  --environment-profile .\CaptureRunner\Profiles\certified-dual-monitor.json `
+  --capture-backend native `
+  --native-capture-area client `
+  --png-dpi 600 `
+  --capture-output-dir .\CaptureRunner\Output\captures-temp `
+  --screen-timeout-ms 120000 `
   --keep-open
 ```
 
-Promote the row into a curated plan only when:
+Default rules:
 
-- navigation succeeds repeatedly
-- the expected anchors are found
-- the result is at least `partial`
-- the limitations are understandable
+- use native capture first
+- test one row only
+- keep the app open during iteration
+- do not move the mouse or use the keyboard during the run
 
-## How Classification Works
+## How To Read The Result
 
-Classification is decided in [ScreenScanner.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/ScreenScanner.cs).
+### `full/high`
 
-### `full`
+The route is a strong candidate.
 
-You usually need all of these:
+Usually means:
 
-- window found
-- navigation succeeded
-- stable target controls found
-- at least one target control has `automation_id`
-- validation passed by title or controls
+- navigation worked
+- validation anchors matched
+- the result is stable enough to promote
 
 ### `partial`
 
-You typically land here when:
+Something opened, but the proof is weak.
 
-- navigation works, but anchors are weak
-- controls exist, but IDs are missing
-- timing is unstable
-- validation is good enough to continue, but not strong enough for production certainty
+Typical reasons:
+
+- generic anchors matched
+- wrong screen inside the same shell
+- route opened but screen-specific controls did not appear
+
+Do not promote this as verified.
 
 ### `none`
 
-This is typical when:
+Treat this as failure.
 
-- no window is available
-- navigation times out
-- no target controls are found
-- the surface is custom-rendered and exposes too little UIA state
+Typical reasons:
 
-## How To Read The Limitations
+- wrong route
+- wrong anchors
+- screen never opened
 
-Common limitation messages and what they mean:
+### `capture.success = true`
 
-| message pattern | meaning | usual fix |
-|---|---|---|
-| `interactive controls without AutomationId` | WPF surface is usable, but weakly anchored | Prefer any available IDs, or ask product team to add them |
-| `Element set changed between repeated scans` | UI is dynamic or late-loading | Add waits, simplify state, or target a later stable point |
-| `Second scan contained more elements than the first` | Delayed loading | Increase wait time or navigation timeout |
-| `virtualized` | list/tree/grid may not realize all children | scroll, expand, or use a different anchor |
-| `custom-rendered` | canvas/diagram-like surface | likely high-risk or non-UIA |
-| `No target controls were found` | plan anchors are wrong or screen did not open | re-check discovery and selected route |
+This only tells you the screenshot path worked.
 
-## When To Create A New Plan File
+It does **not** automatically mean the route is verified.
 
-Create a new plan file when:
+The route still needs the validation result to be good.
 
-- you are exploring a new screen family
-- you need a temporary dry-run subset
-- you want to test a risky navigation route separately
+## When Not To Author A Normal Row
 
-Merge into the master plan when:
+Stop and classify the route instead if it belongs in one of these buckets.
 
-- the rows are already stable
-- the family behavior is understood
-- the output is part of the main baseline
+### `seed-data`
 
-## Naming Conventions
+Use this when the route needs real objects to exist first.
 
-Recommended `row_id` patterns:
+Examples:
 
-- `LeftNav.<ScreenName>`
-- `Navigation.<ScreenName>`
-- `EditTable.<TabName>`
-- `Dialog.<ScreenName>`
-- `Wizard.<ScreenName>`
+- `Source`
+- `Table`
+- `Package`
+- `Transformation`
 
-Keep them:
+### `harness`
 
-- short
-- stable
-- human-readable
-- unique
+Use this when the screen only appears after a forced state.
 
-## Buttons, Menus, Tabs, And Tree Nodes
+Examples:
 
-`tree_path` is broader than the name suggests. It can target:
+- `Error description`
+- `Login`
+- `Upgrade repository`
 
-- `TreeItem`
-- `MenuItem`
-- `TabItem`
-- `ListItem`
-- `Button`
-- `Hyperlink`
-- `Text`
+### `manual`
 
-That matching order is defined in [NavigationEngine.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/NavigationEngine.cs). This is why a route like `["Columns"]` can work against a tab, and a route like `["Sources", "Connectors"]` can work against a ribbon tab plus tree node.
+Use this when the route depends on unstable diagram or object-context behavior.
 
-## When A Screen Shares The Same Shell
+Examples:
 
-Many Analytics Creator screens share the same shell controls. In those cases:
+- `Star`
+- `Object groups`
+- `Source constraints`
+- `Hash keys`
 
-- use `require_selected_navigation: true`
-- anchor on shared stable IDs like `dfFilter`, `txtName`, `cmdSave`
-- still require the correct selected navigation node so the shell alone does not create a false positive
+If a route belongs here, do not pretend it is a simple authoring task.
 
-This pattern is already used in:
+## Advanced Reference
 
-- [analyticscreator-leftnav-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-leftnav-plan.json)
-- [analyticscreator-leftnav-remaining-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-leftnav-remaining-plan.json)
+### Current plan schema
 
-## Good Authoring Rules
+Main fields in a row:
 
-- Prefer one strong `automation_id` over five weak labels.
-- Keep plan rows minimal. Add only the anchors you need.
-- Use discovery before editing the plan.
-- Validate one row at a time before expanding a family.
-- Promote temporary findings into the master plan only after repeatable success.
-- Treat custom-rendered or diagram-heavy surfaces as high-risk until proven otherwise.
+- `row_id`
+- `screen_name`
+- `module`
+- `hints`
+- `required_profile`
+- `actions`
+- `capture`
 
-## Typical Extension Checklist
+See:
 
-Before adding a row:
+- [InputPlan.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/InputPlan.cs)
+- [PlanAction.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/PlanAction.cs)
+- [CaptureHints.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/CaptureHints.cs)
 
-1. Put the app in the target state.
-2. Run discovery.
-3. Find the navigation route.
-4. Choose the best anchors.
-5. Write one row.
-6. Run the row alone.
-7. Inspect the report.
-8. Merge it into the proper curated plan.
+### Supported action kinds
 
-## Where To Look In Code
+Current supported actions are:
 
-| file | role |
-|---|---|
-| [Program.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Program.cs) | CLI parsing, worker orchestration, discovery-or-scan entrypoint |
-| [WindowService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/WindowService.cs) | attach or launch logic, single-instance checks, window lookup |
-| [TreeService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/TreeService.cs) | UIA tree snapshotting, matching, discovery heuristics |
-| [NavigationEngine.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/NavigationEngine.cs) | tree, keyboard, and focus-based navigation |
-| [Validator.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/Validator.cs) | quick-match and final validation logic |
-| [UiaExplorer.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/UiaExplorer.cs) | two-pass UIA scan, candidate control extraction, limitations |
-| [ScreenScanner.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/ScreenScanner.cs) | classification, recommendations, per-screen orchestration |
-| [JsonMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/JsonMap.md) | JSON artifact reference |
+- `Invoke`
+- `WaitForElement`
+- `WaitForWindow`
+- `SendKeys`
+- `Delay`
 
-## Current Baseline Files
+### Current default authoring decisions
 
-Use these as the current reference set:
+- instructions format: Markdown
+- plan/profile format: JSON
+- first-proof screenshot backend: native
+- first test scope: one row
+- shell examples: PowerShell
+- promotion rule: report must prove the row
 
-- [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json)
-- [Output/analyticscreator-master-report.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/analyticscreator-master-report.json)
-- [Output/discovery.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/discovery.json)
+### Best source of truth before you add anything
 
-## Snagit Proof Of Concept
+Check these in this order:
 
-The current proof of concept supports:
+1. [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md)
+2. [referenceguide-laneb-first10-pass2-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-laneb-first10-pass2-plan.json)
+3. [referenceguide-toolbar-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-toolbar-plan.json)
+4. [wave1-startnow-native-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-startnow-native-plan.json)
+5. [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json)
 
-- one configured Snagit preset
-- one global hotkey
-- one Snagit watch folder
-- one managed output folder
-- one capture attempt per successfully opened screen
-
-Inputs:
-
-- `--snagit-hotkey`
-- `--snagit-exe`
-- `--snagit-watch-dir`
-- `--capture-output-dir`
-- `--capture-timeout-ms`
-
-Behavior:
-
-1. the screen opens and validates as usual
-2. CaptureRunner triggers the Snagit hotkey
-3. CaptureRunner watches the Snagit output folder for a new or updated image file
-4. CaptureRunner copies that file into its managed output folder using `<row-id>-<screen-name>.<ext>`
-5. the report JSON records the capture outcome under `capture`
-
-Starter plan:
-
-- [wave1-snagit-poc-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-snagit-poc-plan.json)
-
-Example command:
-
-```powershell
-dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
-  --exe "C:\Path\To\AnalyticsCreator.exe" `
-  --plan .\CaptureRunner\wave1-snagit-poc-plan.json `
-  --output .\CaptureRunner\Output\wave1-snagit-poc-report.json `
-  --snagit-hotkey "Ctrl+Shift+5" `
-  --snagit-exe "C:\Program Files\TechSmith\Snagit\SnagitCapture.exe" `
-  --snagit-watch-dir "C:\SnagitDrop" `
-  --capture-output-dir .\CaptureRunner\Output\captures `
-  --capture-timeout-ms 20000 `
-  --keep-open
-```
-
-Expected Snagit preset setup:
-
-1. Create one image capture preset in Snagit.
-2. Bind it to one global hotkey such as `Ctrl+Shift+5`.
-3. Set the preset to save directly to file.
-4. Point it to a fixed drop folder such as `C:\SnagitDrop`.
-5. Use PNG as the output format.
-
-If Snagit is installed in the default location, CaptureRunner now preflights and starts:
-
-- `C:\Program Files\TechSmith\Snagit\SnagitCapture.exe`
+If you cannot find a close example in those files, run discovery before you invent anything.

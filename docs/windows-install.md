@@ -78,3 +78,23 @@ That preserves the standard Burn signing model instead of treating the bundle li
 - Start Menu shortcuts are removed on uninstall.
 - The sample database is installed at a stable machine-wide path and is removed when the owning Core MSI component is removed.
 - The external UI and Power BI products retain their own MSI upgrade/uninstall behavior because the bundle reuses their published MSI packages instead of repackaging them.
+
+## Local validation
+
+Use `scripts/test-windows-installer-flow.ps1` on a real Windows 10/11 machine or VM to validate:
+
+- bundle install
+- installed onboarding assets
+- Start Menu shortcuts
+- demo server startup
+- first query through `gizmosql_client`
+- quickstart and UI handoff entry points
+
+Example:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\test-windows-installer-flow.ps1 `
+  -BundlePath C:\Downloads\GizmoSQL-Setup-x64.exe
+```
+
+For a real first-run validation, use a bundle built from the main packaging flow or a local bundle that chains the real `GizmoSQL-UI-x64.msi` and `GizmoSQL-PowerBI-Setup-x64.msi`. The branch smoke-test artifact from `test-msi.yml` is packaging-only and uses placeholder chained MSIs.
