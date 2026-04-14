@@ -1,0 +1,765 @@
+[
+  {
+    "row_id": "1.6.6",
+    "screen_name": "Connectors",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "timed_out",
+      "duration_ms": 90000
+    },
+    "uia_detection": {
+      "window_found": false,
+      "total_descendants": 0,
+      "elements_found": [],
+      "candidate_controls": [],
+      "missing_elements": [],
+      "stability": {
+        "consistent": false,
+        "first_scan_count": 0,
+        "second_scan_count": 0,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": false
+    },
+    "classification": {
+      "automatable": "none",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Screen scan timed out after 90000 ms."
+    ],
+    "recommendation": "Retry the screen individually, or increase the per-screen timeout after confirming the app is responsive.",
+    "diagnostics": {
+      "duration_ms": 90000,
+      "retry_count": 0,
+      "exception": "Screen scan timed out."
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0
+    }
+  },
+  {
+    "row_id": "1.6.3",
+    "screen_name": "Layers",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "timed_out",
+      "duration_ms": 90000
+    },
+    "uia_detection": {
+      "window_found": false,
+      "total_descendants": 0,
+      "elements_found": [],
+      "candidate_controls": [],
+      "missing_elements": [],
+      "stability": {
+        "consistent": false,
+        "first_scan_count": 0,
+        "second_scan_count": 0,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": false
+    },
+    "classification": {
+      "automatable": "none",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Screen scan timed out after 90000 ms."
+    ],
+    "recommendation": "Retry the screen individually, or increase the per-screen timeout after confirming the app is responsive.",
+    "diagnostics": {
+      "duration_ms": 90000,
+      "retry_count": 0,
+      "exception": "Screen scan timed out."
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0
+    }
+  },
+  {
+    "row_id": "1.6.17",
+    "screen_name": "Packages",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "timed_out",
+      "duration_ms": 90000
+    },
+    "uia_detection": {
+      "window_found": false,
+      "total_descendants": 0,
+      "elements_found": [],
+      "candidate_controls": [],
+      "missing_elements": [],
+      "stability": {
+        "consistent": false,
+        "first_scan_count": 0,
+        "second_scan_count": 0,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": false
+    },
+    "classification": {
+      "automatable": "none",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Screen scan timed out after 90000 ms."
+    ],
+    "recommendation": "Retry the screen individually, or increase the per-screen timeout after confirming the app is responsive.",
+    "diagnostics": {
+      "duration_ms": 90000,
+      "retry_count": 0,
+      "exception": "Screen scan timed out."
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0
+    }
+  },
+  {
+    "row_id": "1.6.18",
+    "screen_name": "Parameters",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "timed_out",
+      "duration_ms": 90000
+    },
+    "uia_detection": {
+      "window_found": false,
+      "total_descendants": 0,
+      "elements_found": [],
+      "candidate_controls": [],
+      "missing_elements": [],
+      "stability": {
+        "consistent": false,
+        "first_scan_count": 0,
+        "second_scan_count": 0,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": false
+    },
+    "classification": {
+      "automatable": "none",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Screen scan timed out after 90000 ms."
+    ],
+    "recommendation": "Retry the screen individually, or increase the per-screen timeout after confirming the app is responsive.",
+    "diagnostics": {
+      "duration_ms": 90000,
+      "retry_count": 0,
+      "exception": "Screen scan timed out."
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0
+    }
+  },
+  {
+    "row_id": "1.6.23",
+    "screen_name": "Scripts",
+    "module": "Lists",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 15377
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 858,
+      "elements_found": [
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "DataGrid",
+          "automation_id": "dgRefColumns"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "AC_LOG",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "ATTRIBUTE_DEFAULT_DISPLAY_FOLDER",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "AUTOCREATED_REFERENCES_USE_FRIENDLY_NAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "AZURE_BLOB_CONNECTION_STRING",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "COLUMNS_ANONYMIZATION_TYPES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "CSV_EMPTY_STRING_LENGTH",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "CSV_MIN_STRING_LENGTH",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "CSV_SCAN_ROWS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DACPAC_MODEL_STORAGE_TYPE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DATAVAULT2_CREATE_HUBS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DEFAULT_CALENDAR_MACRO",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DELETE_UNUSED_REFERENCES_ON_DELETE_COLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DEPLOYMENT_CREATE_SUBDIRECTORY",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DEPLOYMENT_DO_NOT_DROP_OBJECT_TYPES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TABLECOLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TABLES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TRANS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TRANSCOLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TRANSTABLES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_INHERIT_TRANSTABLE_COLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_CALENDAR_ID",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_DATEFROM",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_DATETO",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_HIST_ID",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_SNAPSHOT_ID",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_PATTERN_STATEMENT",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_SET_SPECIAL",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DESCRIPTION_USE_STATEMENTS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DIAGRAM_NAME_PATTERN",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DIAGRAM_TO_PICTURE_SCALE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DISPLAYFOLDER_INHERIT_TABLECOLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DISPLAYFOLDER_INHERIT_TRANSCOLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DISPLAYFOLDER_INHERIT_TRANSTABLE_COLUMNS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_CALENDAR",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_CALENDAR_FROM",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_CALENDAR_TO",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_CALENDAR_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_DIMNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_DWHTYPE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_FACT",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_FACTNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_FACT_CALENDAR",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_HISTPACKAGENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_HUB_PACKAGENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_HUB_TABLENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_HUB_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_IMPPACKAGENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_LINKSAT_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_LINK_PACKAGENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_LINK_TABLENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_LINK_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_PREDEFINED_TRANSFORMATIONS",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAP_DELTAQ",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAP_ODP",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAP_TABLES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAT_PACKAGENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAT_TABLENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SAT_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_SNAPSHOT",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_TABLENAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_TABLESPERPACKAGE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_TRANSNAME",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWHWIZARD_VAULTLINKSAT",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWH_CREATE_REFERENCES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "DWH_METADATA_IN_EXTENDED_PROPERTIES",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "FORCE_ANONYMIZATION_INHERITANCE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "FORCE_DISPLAYFOLDER_INHERITANCE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "FORCE_FRIENDLYNAMES_INHERITANCE",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "FRIENDLYNAME_INHERIT_TABLECOLUMNS",
+          "control_type": "TreeItem"
+        }
+      ],
+      "missing_elements": [
+        "Lists"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 858,
+        "second_scan_count": 858,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "full",
+      "confidence": "high"
+    },
+    "limitations": [
+      "Detected 226 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Use UIA tree navigation with element re-validation after the screen opens.",
+    "diagnostics": {
+      "duration_ms": 30180,
+      "retry_count": 0
+    },
+    "capture": {
+      "enabled": true,
+      "attempted": true,
+      "success": true,
+      "method": "snagit_hotkey",
+      "source_file": "C:\\Users\\lainoborgo\\Documents\\Snagit\\2026-04-10_17-07-12.snagx",
+      "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\captures-wave1-first5\\1.6.23-scripts.png",
+      "duration_ms": 2028,
+      "note": "Snagit hotkey triggered and the capture package was extracted into the managed output folder."
+    }
+  }
+]

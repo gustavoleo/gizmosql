@@ -1,0 +1,312 @@
+[
+  {
+    "row_id": "1.5.8",
+    "screen_name": "Model Dimension",
+    "module": "Pages",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_controls": ["Dimensions"],
+      "expected_automation_ids": ["cmbGroup", "leftall", "rightall"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Dimensions",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmbGroup",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "leftall",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "rightall",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.5.9",
+    "screen_name": "Model Fact",
+    "module": "Pages",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_controls": ["Facts"],
+      "expected_automation_ids": ["cmbGroup", "leftall", "rightall"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Facts",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmbGroup",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "leftall",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "rightall",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.1",
+    "screen_name": "Encrypted strings",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Options"],
+      "expected_controls": ["Encrypted strings"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Encrypted strings",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.5",
+    "screen_name": "Schemas",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Data warehouse"],
+      "expected_controls": ["Schemas"],
+      "expected_automation_ids": ["cboSchema"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Schemas",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cboSchema",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.8",
+    "screen_name": "Exports",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["ETL"],
+      "expected_controls": ["Exports"],
+      "expected_automation_ids": ["txtName", "cmdSave"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Exports",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "txtName",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmdSave",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.9",
+    "screen_name": "Object group content",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Groups"],
+      "expected_controls": ["List objects"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "List objects",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.11",
+    "screen_name": "Historizations",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["ETL"],
+      "expected_controls": ["Historizations"],
+      "expected_automation_ids": ["txtName", "cmdSave"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Historizations",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "txtName",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmdSave",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.12",
+    "screen_name": "Imports",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["ETL"],
+      "expected_controls": ["Imports"],
+      "expected_automation_ids": ["txtName", "cmdSave"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Imports",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "txtName",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmdSave",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.15",
+    "screen_name": "Tables",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Data warehouse"],
+      "expected_controls": ["Tables"],
+      "expected_automation_ids": ["cboSchema", "cmdSave"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Tables",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cboSchema",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cmdSave",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.21",
+    "screen_name": "Table references",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Data warehouse"],
+      "expected_controls": ["References"],
+      "expected_automation_ids": ["cboSchema", "cbInheritReferences"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "References",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cboSchema",
+        "required": true,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "cbInheritReferences",
+        "required": true,
+        "timeout_ms": 4000
+      }
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "row_id": "LeftNav.Filters",
+    "screen_name": "Filters",
+    "hints": {
+      "tree_path": ["Filters"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Galaxies",
+    "screen_name": "Galaxies",
+    "hints": {
+      "tree_path": ["Galaxies"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Groups",
+    "screen_name": "Groups",
+    "hints": {
+      "tree_path": ["Groups"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Hierarchies",
+    "screen_name": "Hierarchies",
+    "hints": {
+      "tree_path": ["Hierarchies"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Indexes",
+    "screen_name": "Indexes",
+    "hints": {
+      "tree_path": ["Indexes"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Layers",
+    "screen_name": "Layers",
+    "hints": {
+      "tree_path": ["Layers"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Macros",
+    "screen_name": "Macros",
+    "hints": {
+      "tree_path": ["Macros"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Models",
+    "screen_name": "Models",
+    "hints": {
+      "tree_path": ["Models"]
+    }
+  },
+  {
+    "row_id": "LeftNav.ObjectScripts",
+    "screen_name": "Object scripts",
+    "hints": {
+      "tree_path": ["Object scripts"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Partitions",
+    "screen_name": "Partitions",
+    "hints": {
+      "tree_path": ["Partitions"]
+    }
+  },
+  {
+    "row_id": "LeftNav.PredefinedTransformations",
+    "screen_name": "Predefined transformations",
+    "hints": {
+      "tree_path": ["Predefined transformations"]
+    }
+  },
+  {
+    "row_id": "LeftNav.TreeScripts",
+    "screen_name": "Scripts",
+    "hints": {
+      "tree_path": ["Scripts"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Snapshots",
+    "screen_name": "Snapshots",
+    "hints": {
+      "tree_path": ["Snapshots"]
+    }
+  },
+  {
+    "row_id": "LeftNav.TestCases",
+    "screen_name": "Test cases",
+    "hints": {
+      "tree_path": ["Test cases"]
+    }
+  }
+]

@@ -1,0 +1,1349 @@
+[
+  {
+    "row_id": "EditTable.TableDefinition",
+    "screen_name": "Table Definition",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 9427
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 302,
+      "elements_found": [
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDefinition"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 302,
+        "second_scan_count": 302,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 14990,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "EditTable.Columns",
+    "screen_name": "Columns",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 8867
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "DataGrid",
+          "automation_id": "dgAttributes"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 15491,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "EditTable.CalculatedColumns",
+    "screen_name": "Calculated columns",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 8338
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 353,
+      "elements_found": [
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "DataGrid",
+          "automation_id": "dgCalcColumns"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 353,
+        "second_scan_count": 353,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 59 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 13517,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "EditTable.Dependencies",
+    "screen_name": "Dependencies",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 8285
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 363,
+      "elements_found": [
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "DataGrid",
+          "automation_id": "dgRefColumns"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 363,
+        "second_scan_count": 363,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 61 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 13099,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "EditTable.Measures",
+    "screen_name": "Measures",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 17532
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 363,
+      "elements_found": [
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Measures",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "DataGrid",
+          "automation_id": "dgRefColumns"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 363,
+        "second_scan_count": 363,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 61 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 23532,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "EditTable.Scripts",
+    "screen_name": "Scripts",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 7224
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 11824,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  }
+]

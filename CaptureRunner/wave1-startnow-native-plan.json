@@ -1,0 +1,163 @@
+[
+  {
+    "row_id": "1.6.2",
+    "screen_name": "Galaxies",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Galaxies"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.3",
+    "screen_name": "Layers",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Layers"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.4",
+    "screen_name": "Models",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.6",
+    "screen_name": "Connectors",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Connectors"],
+      "expected_controls": ["Connect", "Save", "Create in DWH"],
+      "expected_automation_ids": ["btnHome", "cmdCreate", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.7",
+    "screen_name": "Deployments",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Deployments"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.10",
+    "screen_name": "Hierarchies",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Hierarchies"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.13",
+    "screen_name": "Indexes",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Indexes"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.14",
+    "screen_name": "Macros",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Macros"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.16",
+    "screen_name": "Object Scripts",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Object scripts"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.17",
+    "screen_name": "Packages",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Packages"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.18",
+    "screen_name": "Parameters",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Parameters"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.19",
+    "screen_name": "Partitions",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Partitions"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.20",
+    "screen_name": "Predefined Transformations",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Predefined transformations"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.22",
+    "screen_name": "OLAP Roles",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Roles"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.23",
+    "screen_name": "SQL Script",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Scripts"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.25",
+    "screen_name": "Snapshots",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Snapshots"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "row_id": "Navigation.Connectors",
+    "screen_name": "Connectors",
+    "module": "Sources",
+    "hints": {
+      "tree_path": ["Connectors"],
+      "expected_controls": ["Connect", "Save", "Create in DWH"],
+      "expected_automation_ids": ["btnHome", "cmdCreate", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "EditTable.TableDefinition",
+    "screen_name": "Table Definition",
+    "hints": {
+      "tree_path": ["Table Definition"],
+      "expected_controls": ["Table Definition", "Save"],
+      "expected_automation_ids": ["txtDefinition", "txtName", "cmbGroup"]
+    }
+  },
+  {
+    "row_id": "EditTable.Columns",
+    "screen_name": "Columns",
+    "hints": {
+      "tree_path": ["Columns"],
+      "expected_controls": ["Columns", "Save"],
+      "expected_automation_ids": ["dgAttributes", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.CalculatedColumns",
+    "screen_name": "Calculated columns",
+    "hints": {
+      "tree_path": ["Calculated columns"],
+      "expected_controls": ["Calculated columns", "Save"],
+      "expected_automation_ids": ["dgCalcColumns", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.Dependencies",
+    "screen_name": "Dependencies",
+    "hints": {
+      "tree_path": ["Dependencies"],
+      "expected_controls": ["Dependencies", "Save"],
+      "expected_automation_ids": ["dgRefColumns", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.Scripts",
+    "screen_name": "Scripts",
+    "hints": {
+      "tree_path": ["Scripts"],
+      "expected_controls": ["Scripts", "Save", "Parsed"],
+      "expected_automation_ids": ["txtPreScript", "txtPostScript", "rbPreParsed"]
+    }
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "row_id": "1.8.3",
+    "screen_name": "DWH Wizard",
+    "module": "Wizards",
+    "hints": {
+      "tree_path": ["File"],
+      "expected_controls": ["Cancel"],
+      "expected_automation_ids": ["cmdBack"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "DWH Wizard",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "DWH Wizard",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.8",
+    "screen_name": "Load from cloud",
+    "module": "Dialogs",
+    "hints": {
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Load from cloud",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "Load from cloud",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.17",
+    "screen_name": "Synchronize DWH",
+    "module": "Dialogs",
+    "hints": {
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Sync DWH",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "Synchronize DWH",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.2",
+    "screen_name": "Interface settings",
+    "module": "Dialogs",
+    "hints": {
+      "tree_path": ["Options"],
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Interface settings",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "Interface settings",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.3",
+    "screen_name": "DWH settings",
+    "module": "Dialogs",
+    "hints": {
+      "tree_path": ["Options"],
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "DWH settings",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "DWH settings",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.1",
+    "screen_name": "About",
+    "module": "Dialogs",
+    "hints": {
+      "tree_path": ["Help"],
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "About",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "About",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  },
+  {
+    "row_id": "1.7.5",
+    "screen_name": "EULA",
+    "module": "Dialogs",
+    "hints": {
+      "tree_path": ["Help"],
+      "expected_controls": ["Close"],
+      "use_only_expected_controls": true,
+      "require_expected_control_match": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "EULA",
+        "control_type": "Button",
+        "required": true,
+        "timeout_ms": 4000,
+        "post_action_delay_ms": 600
+      },
+      {
+        "kind": "WaitForWindow",
+        "window_title": "EULA",
+        "match_mode": "Contains",
+        "required": true,
+        "timeout_ms": 8000,
+        "post_action_delay_ms": 400
+      }
+    ]
+  }
+]

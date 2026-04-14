@@ -1,0 +1,19 @@
+{
+  "name": "certified-single-4k",
+  "display_profile": {
+    "name": "certified-single-4k",
+    "capture_display": {
+      "role": "Capture",
+      "device_name": "\\\\.\\DISPLAY5",
+      "primary": true,
+      "width": 3840,
+      "height": 2160,
+      "scale_percent": 125
+    }
+  },
+  "require_unlocked_session": true,
+  "require_single_target_process": true,
+  "require_snagit_when_capture_enabled": true,
+  "required_capture_width": 3840,
+  "required_capture_height": 2160
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "row_id": "LeftNav.DataWarehouse",
+    "screen_name": "Data warehouse",
+    "hints": {
+      "tree_path": ["Data warehouse"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Deployments",
+    "screen_name": "Deployments",
+    "hints": {
+      "tree_path": ["Deployments"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Packages",
+    "screen_name": "Packages",
+    "hints": {
+      "tree_path": ["Packages"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Parameters",
+    "screen_name": "Parameters",
+    "hints": {
+      "tree_path": ["Parameters"]
+    }
+  },
+  {
+    "row_id": "LeftNav.Roles",
+    "screen_name": "Roles",
+    "hints": {
+      "tree_path": ["Roles"]
+    }
+  }
+]

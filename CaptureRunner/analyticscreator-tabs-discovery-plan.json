@@ -1,0 +1,44 @@
+[
+  {
+    "row_id": "EditTable.TableDefinition",
+    "screen_name": "Table Definition",
+    "hints": {
+      "tree_path": ["Table Definition"]
+    }
+  },
+  {
+    "row_id": "EditTable.Columns",
+    "screen_name": "Columns",
+    "hints": {
+      "tree_path": ["Columns"]
+    }
+  },
+  {
+    "row_id": "EditTable.CalculatedColumns",
+    "screen_name": "Calculated columns",
+    "hints": {
+      "tree_path": ["Calculated columns"]
+    }
+  },
+  {
+    "row_id": "EditTable.Dependencies",
+    "screen_name": "Dependencies",
+    "hints": {
+      "tree_path": ["Dependencies"]
+    }
+  },
+  {
+    "row_id": "EditTable.Measures",
+    "screen_name": "Measures",
+    "hints": {
+      "tree_path": ["Measures"]
+    }
+  },
+  {
+    "row_id": "EditTable.Scripts",
+    "screen_name": "Scripts",
+    "hints": {
+      "tree_path": ["Scripts"]
+    }
+  }
+]

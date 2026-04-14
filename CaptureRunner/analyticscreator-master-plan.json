@@ -1,0 +1,229 @@
+[
+  {
+    "row_id": "Navigation.Connectors",
+    "screen_name": "Connectors",
+    "module": "Sources",
+    "hints": {
+      "tree_path": ["Connectors"],
+      "expected_controls": ["Connect", "Save", "Create in DWH"],
+      "expected_automation_ids": ["btnHome", "cmdCreate", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "EditTable.TableDefinition",
+    "screen_name": "Table Definition",
+    "hints": {
+      "tree_path": ["Table Definition"],
+      "expected_controls": ["Table Definition", "Save"],
+      "expected_automation_ids": ["txtDefinition", "txtName", "cmbGroup"]
+    }
+  },
+  {
+    "row_id": "EditTable.Columns",
+    "screen_name": "Columns",
+    "hints": {
+      "tree_path": ["Columns"],
+      "expected_controls": ["Columns", "Save"],
+      "expected_automation_ids": ["dgAttributes", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.CalculatedColumns",
+    "screen_name": "Calculated columns",
+    "hints": {
+      "tree_path": ["Calculated columns"],
+      "expected_controls": ["Calculated columns", "Save"],
+      "expected_automation_ids": ["dgCalcColumns", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.Dependencies",
+    "screen_name": "Dependencies",
+    "hints": {
+      "tree_path": ["Dependencies"],
+      "expected_controls": ["Dependencies", "Save"],
+      "expected_automation_ids": ["dgRefColumns", "dfFilter", "txtName"]
+    }
+  },
+  {
+    "row_id": "EditTable.Scripts",
+    "screen_name": "Scripts",
+    "hints": {
+      "tree_path": ["Scripts"],
+      "expected_controls": ["Scripts", "Save", "Parsed"],
+      "expected_automation_ids": ["txtPreScript", "txtPostScript", "rbPreParsed"]
+    }
+  },
+  {
+    "row_id": "LeftNav.DataWarehouse",
+    "screen_name": "Data warehouse",
+    "hints": {
+      "tree_path": ["Data warehouse"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Deployments",
+    "screen_name": "Deployments",
+    "hints": {
+      "tree_path": ["Deployments"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Packages",
+    "screen_name": "Packages",
+    "hints": {
+      "tree_path": ["Packages"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Parameters",
+    "screen_name": "Parameters",
+    "hints": {
+      "tree_path": ["Parameters"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Roles",
+    "screen_name": "Roles",
+    "hints": {
+      "tree_path": ["Roles"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Galaxies",
+    "screen_name": "Galaxies",
+    "hints": {
+      "tree_path": ["Galaxies"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Filters",
+    "screen_name": "Filters",
+    "hints": {
+      "tree_path": ["Filters"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Groups",
+    "screen_name": "Groups",
+    "hints": {
+      "tree_path": ["Groups"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Hierarchies",
+    "screen_name": "Hierarchies",
+    "hints": {
+      "tree_path": ["Hierarchies"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Indexes",
+    "screen_name": "Indexes",
+    "hints": {
+      "tree_path": ["Indexes"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Layers",
+    "screen_name": "Layers",
+    "hints": {
+      "tree_path": ["Layers"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Macros",
+    "screen_name": "Macros",
+    "hints": {
+      "tree_path": ["Macros"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Models",
+    "screen_name": "Models",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.ObjectScripts",
+    "screen_name": "Object scripts",
+    "hints": {
+      "tree_path": ["Object scripts"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Partitions",
+    "screen_name": "Partitions",
+    "hints": {
+      "tree_path": ["Partitions"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.PredefinedTransformations",
+    "screen_name": "Predefined transformations",
+    "hints": {
+      "tree_path": ["Predefined transformations"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.Snapshots",
+    "screen_name": "Snapshots",
+    "hints": {
+      "tree_path": ["Snapshots"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.TestCases",
+    "screen_name": "Test cases",
+    "hints": {
+      "tree_path": ["Test cases"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "LeftNav.TreeScripts",
+    "screen_name": "Scripts",
+    "hints": {
+      "tree_path": ["Scripts"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  }
+]

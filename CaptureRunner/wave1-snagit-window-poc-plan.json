@@ -1,0 +1,29 @@
+[
+  {
+    "row_id": "1.6.18",
+    "screen_name": "Parameters",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "Parameters"
+      ],
+      "expected_automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "require_selected_navigation": true
+    },
+    "capture": {
+      "mode": "Window",
+      "preset_hotkey": "Ctrl+Shift+Alt+6",
+      "watch_dir": "C:\\Users\\lainoborgo\\Documents\\Snagit\\ReferenceGuideDrop",
+      "click_strategy": "TitleBarCenter",
+      "retry_click_strategies": [
+        "ClientCenter",
+        "TopLeftInset"
+      ],
+      "selection_settle_ms": 500
+    }
+  }
+]

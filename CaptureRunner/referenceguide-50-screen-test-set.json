@@ -1,0 +1,73 @@
+{
+  "campaign_name": "reference-guide-first-50",
+  "total_screens": 50,
+  "lanes": [
+    {
+      "name": "Lane A",
+      "readiness": "start_now",
+      "count": 16
+    },
+    {
+      "name": "Lane B",
+      "readiness": "needs_exact_plan_row",
+      "count": 26
+    },
+    {
+      "name": "Lane C",
+      "readiness": "needs_seeded_data",
+      "count": 8
+    }
+  ],
+  "screens": [
+    { "row_id": "1.6.2", "target": "Lists > Galaxies", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.3", "target": "Lists > Layers", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.4", "target": "Lists > Models", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.6", "target": "Lists > Connectors", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.7", "target": "Lists > Deploymens", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.10", "target": "Lists > Hierarchies", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.13", "target": "Lists > Indexes", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.14", "target": "Lists > Macros", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.16", "target": "Lists > Object Scripts", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.17", "target": "Lists > Packages", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.18", "target": "Lists > Parameters", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.19", "target": "Lists > Partitions", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.20", "target": "Lists > Predefined transformations", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.22", "target": "Lists > OLAP roles", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.23", "target": "Lists > SQL Script", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.6.25", "target": "Lists > Snapshots", "lane": "Lane A", "readiness": "start_now" },
+    { "row_id": "1.5.8", "target": "Pages > Model Dimension", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.5.9", "target": "Pages > Model Fact", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.1", "target": "Lists > Encrypted strings", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.5", "target": "Lists > Schemas", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.8", "target": "Lists > Exports", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.9", "target": "Lists > Object group content", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.11", "target": "Lists > Historizations", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.12", "target": "Lists > Imports", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.15", "target": "Lists > Tables", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.21", "target": "Lists > Table references", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.24", "target": "Lists > Snapshot groups", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.26", "target": "Lists > Sources", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.27", "target": "Lists > Source references", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.28", "target": "Lists > Datamart stars", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.29", "target": "Lists > Transformations", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.6.30", "target": "Lists > User groups", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.1", "target": "Dialogs > About", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.2", "target": "Dialogs > Interface settings", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.3", "target": "Dialogs > DWH settings", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.5", "target": "Dialogs > EULA", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.8", "target": "Dialogs > Open/save in cloud", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.7.17", "target": "Dialogs > Synchronize DWH", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.8.3", "target": "Wizards > DWH wizard", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.8.9", "target": "Wizards > Create source", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.8.12", "target": "Wizards > Create DataVault object", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.8.13", "target": "Wizards > Run object script", "lane": "Lane B", "readiness": "needs_exact_plan_row" },
+    { "row_id": "1.5.1", "target": "Pages > Connector", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.6", "target": "Pages > Index", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.11", "target": "Pages > Object script", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.12", "target": "Pages > Package", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.13", "target": "Pages > OLAP Partition", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.15", "target": "Pages > Predefined transformation", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.17", "target": "Pages > OLAP role", "lane": "Lane C", "readiness": "needs_seeded_data" },
+    { "row_id": "1.5.18", "target": "Pages > SQL Script", "lane": "Lane C", "readiness": "needs_seeded_data" }
+  ]
+}

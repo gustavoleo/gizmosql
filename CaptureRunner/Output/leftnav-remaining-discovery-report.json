@@ -1,0 +1,7736 @@
+[
+  {
+    "row_id": "LeftNav.Filters",
+    "screen_name": "Filters",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 14742
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 20366,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Galaxies",
+    "screen_name": "Galaxies",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4321
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9842,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Groups",
+    "screen_name": "Groups",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 12812
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 17560,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Hierarchies",
+    "screen_name": "Hierarchies",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 3975
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 8921,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Indexes",
+    "screen_name": "Indexes",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 3864
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9518,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Layers",
+    "screen_name": "Layers",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4459
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9536,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Macros",
+    "screen_name": "Macros",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4010
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 8837,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Models",
+    "screen_name": "Models",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4495
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9635,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.ObjectScripts",
+    "screen_name": "Object scripts",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4672
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 10499,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.Partitions",
+    "screen_name": "Partitions",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4164
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9025,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.PredefinedTransformations",
+    "screen_name": "Predefined transformations",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4386
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 8784,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.TreeScripts",
+    "screen_name": "Scripts",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 8774
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 13903,
+      "fallback_used": "focus_change",
+      "retry_count": 1
+    }
+  },
+  {
+    "row_id": "LeftNav.Snapshots",
+    "screen_name": "Snapshots",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5115
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9825,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "LeftNav.TestCases",
+    "screen_name": "Test cases",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 4386
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 315,
+      "elements_found": [
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtAnonStatement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtDescription"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtFriendlyName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColIncrement"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColPKOrdinalPos"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtIdentityColSeed"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtName"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPersistOfTable"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPostScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPreScript"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtPrimaryKey"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPostParsed"
+        },
+        {
+          "name": "Original",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreOriginal"
+        },
+        {
+          "name": "Parsed",
+          "control_type": "RadioButton",
+          "automation_id": "rbPreParsed"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "TabItem",
+          "automation_id": "tabCalcColumns"
+        },
+        {
+          "name": "Columns",
+          "control_type": "TabItem",
+          "automation_id": "tabColumns"
+        },
+        {
+          "name": "Table Definition",
+          "control_type": "TabItem",
+          "automation_id": "tabDefinition"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "TabItem",
+          "automation_id": "tabDependencies"
+        },
+        {
+          "name": "Measures",
+          "control_type": "TabItem",
+          "automation_id": "tabMeasures"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TabItem",
+          "automation_id": "tabScripts"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Is in-memory table",
+          "control_type": "Text",
+          "automation_id": "lIsInMemory"
+        },
+        {
+          "name": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Anonymization",
+          "control_type": "Text"
+        },
+        {
+          "name": "Backup and Restore",
+          "control_type": "Text"
+        },
+        {
+          "name": "Calculated columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "check statement",
+          "control_type": "Text"
+        },
+        {
+          "name": "Columns",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Compression Type",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Dependencies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Description",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "Don\u0027t inherit PK",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Friendly name",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Has primary key",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hist of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hub of table",
+          "control_type": "Text"
+        },
+        {
+          "name": "Identity column",
+          "control_type": "Text"
+        },
+        {
+          "name": "Increment",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 315,
+        "second_scan_count": 315,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 56 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 9495,
+      "retry_count": 0
+    }
+  }
+]

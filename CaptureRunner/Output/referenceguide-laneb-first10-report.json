@@ -1,0 +1,6524 @@
+[
+  {
+    "row_id": "1.5.8",
+    "screen_name": "Model Dimension",
+    "module": "Pages",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 10867
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Model Dimension",
+        "Pages",
+        "Dimensions",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "full",
+      "confidence": "high"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Use UIA tree navigation with element re-validation after the screen opens.",
+    "diagnostics": {
+      "duration_ms": 17462,
+      "retry_count": 0,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.5.9",
+    "screen_name": "Model Fact",
+    "module": "Pages",
+    "open_result": {
+      "success": true,
+      "method_used": "already_open",
+      "duration_ms": 1328
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Model Fact",
+        "Pages",
+        "Facts",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "full",
+      "confidence": "high"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Use the current UIA anchors directly; the screen already exposes stable controls.",
+    "diagnostics": {
+      "duration_ms": 7981,
+      "retry_count": 0,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.1",
+    "screen_name": "Encrypted strings",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "focus_change",
+      "duration_ms": 14201
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "name": "Encrypted strings",
+          "control_type": "Button"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Lists",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 20267,
+      "fallback_used": "focus_change",
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.5",
+    "screen_name": "Schemas",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 6035
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Schemas",
+        "Lists",
+        "Save",
+        "automation_id:cboSchema",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12203,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.8",
+    "screen_name": "Exports",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 6074
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Exports",
+        "Lists",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 11721,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.9",
+    "screen_name": "Object group content",
+    "module": "Lists",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 9990
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Object group content",
+        "Lists",
+        "Objects",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "full",
+      "confidence": "high"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Use UIA tree navigation with element re-validation after the screen opens.",
+    "diagnostics": {
+      "duration_ms": 16046,
+      "retry_count": 0,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.11",
+    "screen_name": "Historizations",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 5726
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Historizations",
+        "Lists",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12003,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.12",
+    "screen_name": "Imports",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 5961
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Imports",
+        "Lists",
+        "Save",
+        "automation_id:txtName",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 11639,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.15",
+    "screen_name": "Tables",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 6271
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Tables",
+        "Lists",
+        "Save",
+        "automation_id:cboSchema",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12030,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  },
+  {
+    "row_id": "1.6.21",
+    "screen_name": "Table references",
+    "module": "Lists",
+    "open_result": {
+      "success": false,
+      "method_used": "none",
+      "duration_ms": 6251
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 458,
+      "elements_found": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Edit",
+          "automation_id": "dfFilter"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "dfObjectID"
+        },
+        {
+          "control_type": "Edit",
+          "automation_id": "txtLockedBy"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageDown"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PageUp"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineDownButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "PART_LineUpButton"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+          "control_type": "Text",
+          "automation_id": "titleTextBlock"
+        },
+        {
+          "name": "File",
+          "control_type": "TabItem",
+          "automation_id": "tabFile"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Layers",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Macros",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Models",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Roles",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Snapshots",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Test cases",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Actual filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        },
+        {
+          "name": "Core layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data mart",
+          "control_type": "Text"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        },
+        {
+          "name": "Datamart layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "dbo.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployment",
+          "control_type": "Text"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "Diagram filter",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Calendar",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Snapshot",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.DIM_Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "DWH.FACT_Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "ETL",
+          "control_type": "Text"
+        },
+        {
+          "name": "File",
+          "control_type": "Text"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxies",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Galaxy/Star",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Group",
+          "control_type": "Text"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        },
+        {
+          "name": "Help",
+          "control_type": "Text"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "HP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Categories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerCustomerDemo",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.CustomerDemographics",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Customers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Employees",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.EmployeeTerritories",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Order Details",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Orders",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Products",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Region",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Shippers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Suppliers",
+          "control_type": "Text"
+        },
+        {
+          "name": "IMP.Territories",
+          "control_type": "Text"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "IP",
+          "control_type": "Text"
+        },
+        {
+          "name": "Layers",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Locked by",
+          "control_type": "Text"
+        },
+        {
+          "name": "Macros",
+          "control_type": "Text"
+        },
+        {
+          "name": "Models",
+          "control_type": "Text"
+        },
+        {
+          "name": "Northwind",
+          "control_type": "Text"
+        },
+        {
+          "name": "Object scripts",
+          "control_type": "Text"
+        },
+        {
+          "name": "Options",
+          "control_type": "Text"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        },
+        {
+          "name": "Parameters",
+          "control_type": "Text"
+        },
+        {
+          "name": "Partitions",
+          "control_type": "Text"
+        },
+        {
+          "name": "Persisted staging layer",
+          "control_type": "Text"
+        },
+        {
+          "name": "Predefined transformations",
+          "control_type": "Text"
+        },
+        {
+          "name": "Roles",
+          "control_type": "Text"
+        },
+        {
+          "name": "Scripts",
+          "control_type": "Text"
+        }
+      ],
+      "missing_elements": [
+        "Table references",
+        "Lists",
+        "References",
+        "Save",
+        "automation_id:cboSchema",
+        "automation_id:cmdSave"
+      ],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 458,
+        "second_scan_count": 458,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": false,
+      "expected_control_match": false,
+      "control_match": false,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "low"
+    },
+    "limitations": [
+      "Detected 47 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12076,
+      "retry_count": 1,
+      "preflight": {
+        "profile_name": "certified-dual-monitor",
+        "passed": true,
+        "actual_displays": [
+          {
+            "DeviceName": "\\\\.\\DISPLAY2",
+            "Primary": false,
+            "Left": -1080,
+            "Top": 112,
+            "Width": 1080,
+            "Height": 1920,
+            "WorkingLeft": -1080,
+            "WorkingTop": 112,
+            "WorkingWidth": 1080,
+            "WorkingHeight": 1872,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY3",
+            "Primary": false,
+            "Left": 3840,
+            "Top": 112,
+            "Width": 1920,
+            "Height": 1080,
+            "WorkingLeft": 3840,
+            "WorkingTop": 112,
+            "WorkingWidth": 1920,
+            "WorkingHeight": 1032,
+            "ScalePercent": 100
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY1",
+            "Primary": false,
+            "Left": -3640,
+            "Top": 98,
+            "Width": 2560,
+            "Height": 1440,
+            "WorkingLeft": -3640,
+            "WorkingTop": 98,
+            "WorkingWidth": 2560,
+            "WorkingHeight": 1368,
+            "ScalePercent": 150
+          },
+          {
+            "DeviceName": "\\\\.\\DISPLAY5",
+            "Primary": true,
+            "Left": 0,
+            "Top": 0,
+            "Width": 3840,
+            "Height": 2160,
+            "WorkingLeft": 0,
+            "WorkingTop": 0,
+            "WorkingWidth": 3840,
+            "WorkingHeight": 2100,
+            "ScalePercent": 125
+          }
+        ],
+        "checks": [
+          {
+            "name": "interactive_windows_session",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "target_executable_exists",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "operator_display_profile",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "capture_operator_distinct",
+            "passed": true,
+            "message": "ok"
+          },
+          {
+            "name": "single_target_process",
+            "passed": true,
+            "message": "ok"
+          }
+        ]
+      }
+    },
+    "capture": {
+      "enabled": false,
+      "attempted": false,
+      "success": false,
+      "method": "none",
+      "duration_ms": 0,
+      "note": "Snagit capture is disabled."
+    },
+    "placement": {
+      "attempted": true,
+      "success": true,
+      "device_name": "\\\\.\\DISPLAY5",
+      "left": -9,
+      "top": -9,
+      "width": 3858,
+      "height": 2118,
+      "center_on_target": true,
+      "contained_in_target": true,
+      "overlapped_other_display": false,
+      "note": "Placement verified against \\\\.\\DISPLAY5: center_on_target=True, contained_in_target=True, significant_overlap=False, raw_overlap=\\\\.\\DISPLAY2:17280px, \\\\.\\DISPLAY3:9720px."
+    }
+  }
+]

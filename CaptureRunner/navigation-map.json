@@ -1,0 +1,2909 @@
+[
+  {
+    "row_id": "1.5.1",
+    "target": "Pages > Connector",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Edit connector",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit connector"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailConnectors"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.2",
+    "target": "Pages > Export",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Export -> PACKAGE -> EXPORT -> Edit export",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Export"
+      },
+      {
+        "kind": "select_object",
+        "name": "PACKAGE"
+      },
+      {
+        "kind": "select_object",
+        "name": "EXPORT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit export"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailExport"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.3",
+    "target": "Pages > OLAP Hierarchy",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Hierarchies",
+    "primary_route_text": "Hierarchies -> TABLE -> HIERARCHY -> Edit hierarchy",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Hierarchies"
+      },
+      {
+        "kind": "select_object",
+        "name": "TABLE"
+      },
+      {
+        "kind": "select_object",
+        "name": "HIERARCHY"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit hierarchy"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailHierarchies"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.4",
+    "target": "Pages > Historization",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Historization -> PACKAGE -> HISTORIZATION -> Edit historization",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Historization"
+      },
+      {
+        "kind": "select_object",
+        "name": "PACKAGE"
+      },
+      {
+        "kind": "select_object",
+        "name": "HISTORIZATION"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit historization"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailHist"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.5",
+    "target": "Pages > Import",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Import -> PACKAGE -> IMPORT -> Edit import",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Import"
+      },
+      {
+        "kind": "select_object",
+        "name": "PACKAGE"
+      },
+      {
+        "kind": "select_object",
+        "name": "IMPORT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit import"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailImp"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.6",
+    "target": "Pages > Index",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Indexes",
+    "primary_route_text": "Indexes -> INDEX -> Edit index",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Indexes"
+      },
+      {
+        "kind": "select_object",
+        "name": "INDEX"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit index"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailIndexes"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.7",
+    "target": "Pages > Macro",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Macros",
+    "primary_route_text": "Macros -> MACRO -> Edit macro",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Macros"
+      },
+      {
+        "kind": "select_object",
+        "name": "MACRO"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit macro"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailMacros"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.8",
+    "target": "Pages > Model Dimension",
+    "family": "left-nav detail",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Models",
+    "primary_route_text": "Models -> MODEL -> Dimensions -> DIMENSION -> Edit dimension",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Models"
+      },
+      {
+        "kind": "select_object",
+        "name": "MODEL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Dimensions"
+      },
+      {
+        "kind": "select_object",
+        "name": "DIMENSION"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit dimension"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "automation_ids": [
+        "cmbGroup",
+        "leftall",
+        "rightall"
+      ],
+      "controls": [
+        "Dimensions"
+      ]
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.9",
+    "target": "Pages > Model Fact",
+    "family": "left-nav detail",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Models",
+    "primary_route_text": "Models -> MODEL -> Facts -> FACT -> Edit fact",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Models"
+      },
+      {
+        "kind": "select_object",
+        "name": "MODEL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Facts"
+      },
+      {
+        "kind": "select_object",
+        "name": "FACT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit fact"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "automation_ids": [
+        "cmbGroup",
+        "leftall",
+        "rightall"
+      ],
+      "controls": [
+        "Facts"
+      ]
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.10",
+    "target": "Pages > Table",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Model",
+    "primary_route_text": "Model -> Layers -> LAYER -> SCHEMA -> Tables -> TABLE -> Edit table",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Model"
+      },
+      {
+        "kind": "invoke",
+        "name": "Layers"
+      },
+      {
+        "kind": "select_object",
+        "name": "LAYER"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCHEMA"
+      },
+      {
+        "kind": "invoke",
+        "name": "Tables"
+      },
+      {
+        "kind": "select_object",
+        "name": "TABLE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit table"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailObjects"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.11",
+    "target": "Pages > Object script",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Object scripts",
+    "primary_route_text": "Object scripts -> [Any] -> SCRIPT -> Edit object script",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Object scripts"
+      },
+      {
+        "kind": "invoke",
+        "name": "[Any]"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCRIPT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit object script"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailObjectScripts"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.12",
+    "target": "Pages > Package",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> [Any] -> PACKAGE -> Edit package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "[Any]"
+      },
+      {
+        "kind": "select_object",
+        "name": "PACKAGE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailPackages"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.13",
+    "target": "Pages > OLAP Partition",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Partitions",
+    "primary_route_text": "Partitions -> PARTITION -> Edit partition",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Partitions"
+      },
+      {
+        "kind": "select_object",
+        "name": "PARTITION"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit partition"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailPartitions"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.14",
+    "target": "Pages > Persisting",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Persisting -> PERSISTING -> Edit package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Persisting"
+      },
+      {
+        "kind": "select_object",
+        "name": "PERSISTING"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailPers"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.15",
+    "target": "Pages > Predefined transformation",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Predefined transformations",
+    "primary_route_text": "Predefined transformations -> PREDEFINED TRANSFORMATION -> Edit predefined transformation",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Predefined transformations"
+      },
+      {
+        "kind": "select_object",
+        "name": "PREDEFINED TRANSFORMATION"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit predefined transformation"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailPredefinedTransformations"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.16",
+    "target": "Pages > Table reference",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Layers",
+    "primary_route_text": "Layers -> LAYER -> SCHEMA -> Tables -> TABLE -> References -> REFERENCE -> Edit table reference",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Layers"
+      },
+      {
+        "kind": "select_object",
+        "name": "LAYER"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCHEMA"
+      },
+      {
+        "kind": "invoke",
+        "name": "Tables"
+      },
+      {
+        "kind": "select_object",
+        "name": "TABLE"
+      },
+      {
+        "kind": "invoke",
+        "name": "References"
+      },
+      {
+        "kind": "select_object",
+        "name": "REFERENCE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit table reference"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailReferences"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.17",
+    "target": "Pages > OLAP role",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Roles",
+    "primary_route_text": "Roles -> ROLE -> Edit role",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Roles"
+      },
+      {
+        "kind": "select_object",
+        "name": "ROLE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit role"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailRoles"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.18",
+    "target": "Pages > SQL Script",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Scripts",
+    "primary_route_text": "Scripts -> [Any] -> SCRIPT -> Edit script",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Scripts"
+      },
+      {
+        "kind": "invoke",
+        "name": "[Any]"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCRIPT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit script"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailScript"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.19",
+    "target": "Pages > Snapshot group",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Snapshots",
+    "primary_route_text": "Snapshots -> Snapshot groups -> SNAPSHOT GROUP -> Edit snapshot group",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Snapshots"
+      },
+      {
+        "kind": "invoke",
+        "name": "Snapshot groups"
+      },
+      {
+        "kind": "select_object",
+        "name": "SNAPSHOT GROUP"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit snapshot group"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailSnapshotGroup"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.20",
+    "target": "Pages > Snapshot",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Snapshots",
+    "primary_route_text": "Snapshots -> SNAPSHOT -> Edit snapshot",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Snapshots"
+      },
+      {
+        "kind": "select_object",
+        "name": "SNAPSHOT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit snapshot"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailSnapshots"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.21",
+    "target": "Pages > Source",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Sources -> SOURCE -> Edit source",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "invoke",
+        "name": "Sources"
+      },
+      {
+        "kind": "select_object",
+        "name": "SOURCE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit source"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailSource"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.22",
+    "target": "Pages > Source refererence",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Sources -> SOURCE -> References -> REFERENCE -> Edit source reference",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "invoke",
+        "name": "Sources"
+      },
+      {
+        "kind": "select_object",
+        "name": "SOURCE"
+      },
+      {
+        "kind": "invoke",
+        "name": "References"
+      },
+      {
+        "kind": "select_object",
+        "name": "REFERENCE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit source reference"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailSrcReferences"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.23",
+    "target": "Pages > Star",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "{SearchStars}",
+    "primary_route_text": "{SearchStars} -> STAR -> doubleclick",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "{SearchStars}->STAR->doubleclick"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "screen_key": "DetailStars"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.24",
+    "target": "Pages > Transformation",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Model",
+    "primary_route_text": "Model -> Layers -> LAYER -> SCHEMA -> Transformations -> TRANSFORMATION -> Edit transformation",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Model"
+      },
+      {
+        "kind": "invoke",
+        "name": "Layers"
+      },
+      {
+        "kind": "select_object",
+        "name": "LAYER"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCHEMA"
+      },
+      {
+        "kind": "invoke",
+        "name": "Transformations"
+      },
+      {
+        "kind": "select_object",
+        "name": "TRANSFORMATION"
+      },
+      {
+        "kind": "context_action",
+        "name": "Edit transformation"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "DetailTransformations"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.25",
+    "target": "Pages > Users in user group",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "{SearchUserGroups}",
+    "primary_route_text": "{SearchUserGroups} -> USER GROUP -> doubleclick",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "{SearchUserGroups}->USER GROUP->doubleclick"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "screen_key": "DetailUserRoles"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.5.26",
+    "target": "Pages > Deployment",
+    "family": "context page",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Deployments",
+    "primary_route_text": "Deployments -> DEPLOYMENT -> Edit/Run deployment",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Deployments"
+      },
+      {
+        "kind": "select_object",
+        "name": "DEPLOYMENT"
+      },
+      {
+        "kind": "invoke",
+        "name": "Edit/Run deployment"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "screen_key": "NewSSIS"
+    },
+    "reset_needed": "reset selected object",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.1",
+    "target": "Lists > Encrypted strings",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Options",
+    "primary_route_text": "Options -> Encrypted strings",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Options"
+      },
+      {
+        "kind": "invoke",
+        "name": "Encrypted strings"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "Encrypted strings"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.2",
+    "target": "Lists > Galaxies",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Data mart",
+    "primary_route_text": "Data mart -> Galaxies",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Data mart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Galaxies"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.3",
+    "target": "Lists > Layers",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Layers",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Layers"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.4",
+    "target": "Lists > Models",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Data mart",
+    "primary_route_text": "Data mart -> Models",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Data mart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Models"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.5",
+    "target": "Lists > Schemas",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Schemas",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Schemas"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "cboSchema"
+      ],
+      "controls": [
+        "Schemas"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.6",
+    "target": "Lists > Connectors",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Sources",
+    "primary_route_text": "Sources -> Connectors",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Sources"
+      },
+      {
+        "kind": "invoke",
+        "name": "Connectors"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "btnHome",
+        "cmdCreate",
+        "cmdSave"
+      ],
+      "controls": [
+        "Connect",
+        "Save",
+        "Create in DWH"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "partial, follow-up"
+    },
+    "notes": "Wave 1 native capture opened and captured this screen, but it did not meet Connectors-specific anchor criteria."
+  },
+  {
+    "row_id": "1.6.7",
+    "target": "Lists > Deploymens",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Deployment",
+    "primary_route_text": "Deployment -> Deployment package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Deployment"
+      },
+      {
+        "kind": "invoke",
+        "name": "Deployment package"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.8",
+    "target": "Lists > Exports",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Exports",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Exports"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "txtName",
+        "cmdSave"
+      ],
+      "controls": [
+        "Exports"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.9",
+    "target": "Lists > Object group content",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Groups",
+    "primary_route_text": "Groups -> GROUP -> List objects",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Groups"
+      },
+      {
+        "kind": "select_object",
+        "name": "GROUP"
+      },
+      {
+        "kind": "list_action",
+        "name": "List objects"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "screen_key": "List objects"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.10",
+    "target": "Lists > Hierarchies",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Data mart",
+    "primary_route_text": "Data mart -> Hierarchies",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Data mart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Hierarchies"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.11",
+    "target": "Lists > Historizations",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Historizations",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Historizations"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "txtName",
+        "cmdSave"
+      ],
+      "controls": [
+        "Historizations"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.12",
+    "target": "Lists > Imports",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Imports",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Imports"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "txtName",
+        "cmdSave"
+      ],
+      "controls": [
+        "Imports"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.13",
+    "target": "Lists > Indexes",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Indexes",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Indexes"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.14",
+    "target": "Lists > Macros",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Macros",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Macros"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.15",
+    "target": "Lists > Tables",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Tables",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Tables"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "cboSchema",
+        "cmdSave"
+      ],
+      "controls": [
+        "Tables"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.16",
+    "target": "Lists > Object Scripts",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Object scripts",
+    "primary_route_text": "Object scripts -> List object scripts",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Object scripts"
+      },
+      {
+        "kind": "list_action",
+        "name": "List object scripts"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.17",
+    "target": "Lists > Packages",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Packages",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Packages"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.18",
+    "target": "Lists > Parameters",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Parameters",
+    "primary_route_text": "Parameters -> List Parameters",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Parameters"
+      },
+      {
+        "kind": "list_action",
+        "name": "List Parameters"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.19",
+    "target": "Lists > Partitions",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Data mart",
+    "primary_route_text": "Data mart -> Partitions",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Data mart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Partitions"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.20",
+    "target": "Lists > Predefined transformations",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> Predefined transformations",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "Predefined transformations"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.21",
+    "target": "Lists > Table references",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "DWH",
+    "primary_route_text": "DWH -> References",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "DWH"
+      },
+      {
+        "kind": "invoke",
+        "name": "References"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "cboSchema",
+        "cbInheritReferences"
+      ],
+      "controls": [
+        "References"
+      ]
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "referenceguide-laneb-first10-pass2-plan.json + Output/referenceguide-laneb-first10-pass2-report.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.22",
+    "target": "Lists > OLAP roles",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "Data mart",
+    "primary_route_text": "Data mart -> Roles",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Data mart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Roles"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.23",
+    "target": "Lists > SQL Script",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Scripts",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Scripts"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.24",
+    "target": "Lists > Snapshot groups",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Snapshots",
+    "primary_route_text": "Snapshots -> Snapshot groups -> List snapshot groups",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Snapshots"
+      },
+      {
+        "kind": "invoke",
+        "name": "Snapshot groups"
+      },
+      {
+        "kind": "list_action",
+        "name": "List snapshot groups"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchSnapshotGroups"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.25",
+    "target": "Lists > Snapshots",
+    "family": "left-nav list",
+    "readiness": "verified",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Snapshots",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Snapshots"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "automation_ids": [
+        "dfFilter",
+        "txtName",
+        "cmdSave"
+      ],
+      "selected_navigation": true
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "wave1-startnow-native-plan.json + Output/wave1-startnow-native-report.json",
+      "status": "verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.26",
+    "target": "Lists > Sources",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Sources",
+    "primary_route_text": "Sources -> Sources",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Sources"
+      },
+      {
+        "kind": "invoke",
+        "name": "Sources"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchSources"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.27",
+    "target": "Lists > Source references",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Sources",
+    "primary_route_text": "Sources -> References",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Sources"
+      },
+      {
+        "kind": "invoke",
+        "name": "References"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchSrcReferences"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.28",
+    "target": "Lists > Datamart stars",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "Datamart",
+    "primary_route_text": "Datamart -> Stars",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Datamart"
+      },
+      {
+        "kind": "invoke",
+        "name": "Stars"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchStars"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.29",
+    "target": "Lists > Transformations",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "tree",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Transformations",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Transformations"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchTransformations"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.6.30",
+    "target": "Lists > User groups",
+    "family": "left-nav list",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Options",
+    "primary_route_text": "Options -> User groups",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Options"
+      },
+      {
+        "kind": "invoke",
+        "name": "User groups"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "screen_key": "SearchUserGroups"
+    },
+    "reset_needed": "none",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.1",
+    "target": "Dialogs > About",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Help",
+    "primary_route_text": "Help -> About",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Help"
+      },
+      {
+        "kind": "invoke",
+        "name": "About"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "About"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-plan.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.2",
+    "target": "Dialogs > Interface settings",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Options",
+    "primary_route_text": "Options -> Interface settings",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Options"
+      },
+      {
+        "kind": "invoke",
+        "name": "Interface settings"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "Interface settings"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-plan.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.3",
+    "target": "Dialogs > DWH settings",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Options",
+    "primary_route_text": "Options -> DWH settings",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Options"
+      },
+      {
+        "kind": "invoke",
+        "name": "DWH settings"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "DWH settings"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-plan.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.4",
+    "target": "Dialogs > Error description",
+    "family": "special-state dialog",
+    "readiness": "harness",
+    "route_type": "harness",
+    "module": "Harness",
+    "primary_route_text": "Harness -> Force ErrorWindow",
+    "primary_steps": [
+      {
+        "kind": "harness",
+        "name": "Harness -> Force ErrorWindow"
+      }
+    ],
+    "required_state": "forced app state",
+    "validation_target": {
+      "window_title": "ErrorWindow"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.5",
+    "target": "Dialogs > EULA",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "Help",
+    "primary_route_text": "Help -> EULA",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "Help"
+      },
+      {
+        "kind": "invoke",
+        "name": "EULA"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "EULA"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-plan.json",
+      "status": "authored, not verified"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.6",
+    "target": "Dialogs > Input dialog",
+    "family": "special-state dialog",
+    "readiness": "harness",
+    "route_type": "harness",
+    "module": "Harness",
+    "primary_route_text": "Harness -> Force InputDialog",
+    "primary_steps": [
+      {
+        "kind": "harness",
+        "name": "Harness -> Force InputDialog"
+      }
+    ],
+    "required_state": "forced app state",
+    "validation_target": {
+      "window_title": "InputDialog"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.7",
+    "target": "Dialogs > Input dialog with dropbox",
+    "family": "special-state dialog",
+    "readiness": "harness",
+    "route_type": "harness",
+    "module": "Harness",
+    "primary_route_text": "Harness -> Force InputDialogCombo",
+    "primary_steps": [
+      {
+        "kind": "harness",
+        "name": "Harness -> Force InputDialogCombo"
+      }
+    ],
+    "required_state": "forced app state",
+    "validation_target": {
+      "window_title": "InputDialogCombo"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.8",
+    "target": "Dialogs > Open/save in cloud",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "File",
+    "primary_route_text": "File -> Load from cloud",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "File"
+      },
+      {
+        "kind": "invoke",
+        "name": "Load from cloud"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "Load from cloud"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-file-plan.json + Output/referenceguide-toolbar-file-report-pass2.json",
+      "status": "partial, follow-up"
+    },
+    "notes": "Toolbar route exists, but the last dry run followed DWH Wizard without a clean shell reset."
+  },
+  {
+    "row_id": "1.7.9",
+    "target": "Dialogs > Login",
+    "family": "special-state dialog",
+    "readiness": "harness",
+    "route_type": "harness",
+    "module": "Harness",
+    "primary_route_text": "Harness -> Force LoginWindow",
+    "primary_steps": [
+      {
+        "kind": "harness",
+        "name": "Harness -> Force LoginWindow"
+      }
+    ],
+    "required_state": "forced app state",
+    "validation_target": {
+      "window_title": "LoginWindow"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.10",
+    "target": "Dialogs > Preview source data",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Sources -> SOURCE -> Preview data",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "invoke",
+        "name": "Sources"
+      },
+      {
+        "kind": "select_object",
+        "name": "SOURCE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Preview data"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Preview"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.11",
+    "target": "Dialogs > Upgrade repository",
+    "family": "special-state dialog",
+    "readiness": "harness",
+    "route_type": "harness",
+    "module": "Harness",
+    "primary_route_text": "Harness -> Force PublishDatabase",
+    "primary_steps": [
+      {
+        "kind": "harness",
+        "name": "Harness -> Force PublishDatabase"
+      }
+    ],
+    "required_state": "forced app state",
+    "validation_target": {
+      "window_title": "PublishDatabase"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.12",
+    "target": "Dialogs > Refresh source metadata",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Refresh used sources",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "context_action",
+        "name": "Refresh used sources"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "RefreshSources"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.13",
+    "target": "Dialogs > Search",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Find on diagram",
+    "primary_route_text": "Find on diagram",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Find on diagram"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "SearchDialog"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.14",
+    "target": "Dialogs > Object groups",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "ANY OBJECT",
+    "primary_route_text": "ANY OBJECT -> Object groups",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "ANY OBJECT->Object groups"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "window_title": "SearchGroups"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.15",
+    "target": "Dialogs > Tumbnail diagram",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "DIAGRAM",
+    "primary_route_text": "DIAGRAM -> Show tumbnail",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "DIAGRAM->Show tumbnail"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "window_title": "SmallDiagram"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.16",
+    "target": "Dialogs > Source constraints",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "{DetailSource}",
+    "primary_route_text": "{DetailSource} -> Constraints",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "{DetailSource}->Constraints"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "window_title": "SourceConstraint"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.7.17",
+    "target": "Dialogs > Synchronize DWH",
+    "family": "toolbar dialog",
+    "readiness": "author-next",
+    "route_type": "toolbar",
+    "module": "File",
+    "primary_route_text": "File -> Synchronize DWH",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "File"
+      },
+      {
+        "kind": "invoke",
+        "name": "Synchronize DWH"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "Synchronize DWH"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "referenceguide-toolbar-file-plan.json + Output/referenceguide-toolbar-file-report-pass2.json",
+      "status": "partial, follow-up"
+    },
+    "notes": "Toolbar route exists, but the last dry run followed DWH Wizard without a clean shell reset."
+  },
+  {
+    "row_id": "1.8.1",
+    "target": "Wizards > Hash keys",
+    "family": "diagram/manual",
+    "readiness": "manual",
+    "route_type": "manual",
+    "module": "DIAGRAM",
+    "primary_route_text": "DIAGRAM -> Add/refresh hash keys",
+    "primary_steps": [
+      {
+        "kind": "manual",
+        "name": "DIAGRAM->Add/refresh hash keys"
+      }
+    ],
+    "required_state": "diagram state",
+    "validation_target": {
+      "window_title": "Assistent_Hash"
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": ""
+  },
+  {
+    "row_id": "1.8.2",
+    "target": "Wizards > Create calendar dimension",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Calendar dimension",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Calendar dimension"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewDateTrans"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.3",
+    "target": "Wizards > DWH wizard",
+    "family": "toolbar wizard",
+    "readiness": "verified",
+    "route_type": "toolbar",
+    "module": "File",
+    "primary_route_text": "File -> DWH Wizard",
+    "primary_steps": [
+      {
+        "kind": "toolbar_tab",
+        "name": "File"
+      },
+      {
+        "kind": "invoke",
+        "name": "DWH Wizard"
+      }
+    ],
+    "required_state": "clean shell",
+    "validation_target": {
+      "window_title": "DWH Wizard",
+      "automation_ids": [
+        "cmdBack"
+      ]
+    },
+    "reset_needed": "return to shell",
+    "evidence": {
+      "source": "referenceguide-toolbar-file-plan.json + Output/referenceguide-toolbar-file-report-pass2.json",
+      "status": "verified"
+    },
+    "notes": "Verified through wizard controls inside the main shell; later File routes still need clean reset between runs."
+  },
+  {
+    "row_id": "1.8.4",
+    "target": "Wizards > Create export",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Export -> Add export package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Export"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add export package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewExport"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.5",
+    "target": "Wizards > Create historization",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Historization -> Add historization package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Historization"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add historization package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewHist"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.6",
+    "target": "Wizards > Create import",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Import -> Add import package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Import"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add import package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewImp"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.7",
+    "target": "Wizards > Persist transformation",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Packages",
+    "primary_route_text": "Packages -> Pertisting -> Add pertisting package",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Packages"
+      },
+      {
+        "kind": "invoke",
+        "name": "Pertisting"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add pertisting package"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewPers"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.8",
+    "target": "Wizards > Create snapshot dimension",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Snapshot dimension",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Snapshot dimension"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewSnapshotTrans"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.9",
+    "target": "Wizards > Create source",
+    "family": "context dialog",
+    "readiness": "author-next",
+    "route_type": "context",
+    "module": "Connectors",
+    "primary_route_text": "Connectors -> CONNECTOR -> Sources -> Read source from connector",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Connectors"
+      },
+      {
+        "kind": "select_object",
+        "name": "CONNECTOR"
+      },
+      {
+        "kind": "invoke",
+        "name": "Sources"
+      },
+      {
+        "kind": "context_action",
+        "name": "Read source from connector"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "window_title": "Assistent_NewSource"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.10",
+    "target": "Wizards > Create time dimension",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "ETL",
+    "primary_route_text": "ETL -> Time dimension",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "ETL"
+      },
+      {
+        "kind": "invoke",
+        "name": "Time dimension"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewTimeTrans"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.11",
+    "target": "Wizards > Create transformation",
+    "family": "context dialog",
+    "readiness": "seed-data",
+    "route_type": "context",
+    "module": "Model",
+    "primary_route_text": "Model -> Layers -> LAYER -> SCHEMA -> Transformations -> Add transformation",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Model"
+      },
+      {
+        "kind": "invoke",
+        "name": "Layers"
+      },
+      {
+        "kind": "select_object",
+        "name": "LAYER"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCHEMA"
+      },
+      {
+        "kind": "invoke",
+        "name": "Transformations"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add transformation"
+      }
+    ],
+    "required_state": "seeded object",
+    "validation_target": {
+      "window_title": "Assistent_NewTransformation"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.12",
+    "target": "Wizards > Create DataVault object",
+    "family": "context dialog",
+    "readiness": "author-next",
+    "route_type": "context",
+    "module": "Model",
+    "primary_route_text": "Model -> Layers -> LAYER -> SCHEMA -> Tables -> TABLE -> Add vault",
+    "primary_steps": [
+      {
+        "kind": "left_nav",
+        "name": "Model"
+      },
+      {
+        "kind": "invoke",
+        "name": "Layers"
+      },
+      {
+        "kind": "select_object",
+        "name": "LAYER"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCHEMA"
+      },
+      {
+        "kind": "invoke",
+        "name": "Tables"
+      },
+      {
+        "kind": "select_object",
+        "name": "TABLE"
+      },
+      {
+        "kind": "context_action",
+        "name": "Add vault"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "window_title": "Assistent_NewVault"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  },
+  {
+    "row_id": "1.8.13",
+    "target": "Wizards > Run object script",
+    "family": "context dialog",
+    "readiness": "author-next",
+    "route_type": "context",
+    "module": "ANY OBJECT",
+    "primary_route_text": "ANY OBJECT  ->  Run script -> SCRIPT",
+    "primary_steps": [
+      {
+        "kind": "context_action",
+        "name": "ANY OBJECT"
+      },
+      {
+        "kind": "context_action",
+        "name": "Run script"
+      },
+      {
+        "kind": "select_object",
+        "name": "SCRIPT"
+      }
+    ],
+    "required_state": "selected object",
+    "validation_target": {
+      "window_title": "AssistentRunScript"
+    },
+    "reset_needed": "close dialog",
+    "evidence": {
+      "source": "ReferenceGuideScreenshotExecutionMatrix.md",
+      "status": "inferred from matrix"
+    },
+    "notes": "Wizard launched from a context route; family is normalized as context dialog in this v1 map."
+  }
+]

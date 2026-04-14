@@ -1,0 +1,1767 @@
+[
+  {
+    "row_id": "Navigation.Connectors",
+    "screen_name": "Connectors",
+    "module": "Sources",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 15214
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Sources",
+          "control_type": "TabItem"
+        },
+        {
+          "name": "Sources",
+          "control_type": "Header"
+        },
+        {
+          "name": "Sources",
+          "control_type": "Text"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Connectors",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 22760,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.DataWarehouse",
+    "screen_name": "Data warehouse",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5842
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Data warehouse",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Data warehouse",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 13610,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Deployments",
+    "screen_name": "Deployments",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5896
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Deployments",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Deployments",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 14153,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Filters",
+    "screen_name": "Filters",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 11150
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Filters",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Filters",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 18687,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Groups",
+    "screen_name": "Groups",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5185
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Groups",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Groups",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12100,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Hierarchies",
+    "screen_name": "Hierarchies",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5396
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Hierarchies",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Hierarchies",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 13141,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Indexes",
+    "screen_name": "Indexes",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5190
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Indexes",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Indexes",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12178,
+      "retry_count": 0
+    }
+  },
+  {
+    "row_id": "Navigation.Packages",
+    "screen_name": "Packages",
+    "open_result": {
+      "success": true,
+      "method_used": "tree_navigation",
+      "duration_ms": 5202
+    },
+    "uia_detection": {
+      "window_found": true,
+      "window_title": "Edit Table     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "total_descendants": 573,
+      "elements_found": [
+        {
+          "name": "Packages",
+          "control_type": "TreeItem"
+        },
+        {
+          "name": "Packages",
+          "control_type": "Text"
+        }
+      ],
+      "candidate_controls": [
+        {
+          "control_type": "Button",
+          "automation_id": "leftall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "leftone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightone"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "rightall"
+        },
+        {
+          "control_type": "Button",
+          "automation_id": "Expander"
+        },
+        {
+          "name": "Cancel",
+          "control_type": "Button",
+          "automation_id": "cmdBack"
+        },
+        {
+          "name": "Close",
+          "control_type": "Button"
+        },
+        {
+          "name": "Connect",
+          "control_type": "Button"
+        },
+        {
+          "name": "Create in DWH",
+          "control_type": "Button",
+          "automation_id": "cmdCreate"
+        },
+        {
+          "name": "DWH Wizard",
+          "control_type": "Button"
+        },
+        {
+          "name": "Find on diagram",
+          "control_type": "Button"
+        },
+        {
+          "name": "Home",
+          "control_type": "Button",
+          "automation_id": "btnHome"
+        },
+        {
+          "name": "Load from cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Load from file",
+          "control_type": "Button",
+          "automation_id": "btnOpen"
+        },
+        {
+          "name": "Load project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Minimize",
+          "control_type": "Button"
+        },
+        {
+          "name": "New",
+          "control_type": "Button"
+        },
+        {
+          "name": "Restore",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save",
+          "control_type": "Button",
+          "automation_id": "cmdSave"
+        },
+        {
+          "name": "Save project",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to cloud",
+          "control_type": "Button"
+        },
+        {
+          "name": "Save to file",
+          "control_type": "Button"
+        },
+        {
+          "name": "Sync DWH",
+          "control_type": "Button",
+          "automation_id": "pbSynchronize"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbPrimaryKey"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbClustered"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbInheritReferences"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbDontInheritPK"
+        },
+        {
+          "control_type": "CheckBox",
+          "automation_id": "cbIsInMemory"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cmbGroup"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSchema"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboTableType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboCompressionType"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHistOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboHubOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboSatOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboLinkOfTable"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritFriendlyName"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDescription"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboInheritDisplayFolder"
+        },
+        {
+          "control_type": "ComboBox",
+          "automation_id": "cboIdentityColType"
+        }
+      ],
+      "missing_elements": [],
+      "stability": {
+        "consistent": true,
+        "first_scan_count": 573,
+        "second_scan_count": 573,
+        "difference_count": 0
+      }
+    },
+    "validation": {
+      "title_match": false,
+      "selected_navigation_match": true,
+      "expected_control_match": false,
+      "control_match": true,
+      "target_element_found": true
+    },
+    "classification": {
+      "automatable": "partial",
+      "confidence": "medium"
+    },
+    "limitations": [
+      "Detected 96 interactive controls without AutomationId.",
+      "Custom-rendered or canvas-like controls were detected; UIA coverage may be incomplete."
+    ],
+    "recommendation": "Navigation is possible, but adding stable AutomationIds would make the flow reliable enough for production automation.",
+    "diagnostics": {
+      "duration_ms": 12388,
+      "retry_count": 0
+    }
+  }
+]

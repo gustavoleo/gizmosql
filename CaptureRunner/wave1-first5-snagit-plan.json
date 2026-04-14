@@ -1,0 +1,77 @@
+[
+  {
+    "row_id": "1.6.6",
+    "screen_name": "Connectors",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "Sources",
+        "Connectors"
+      ],
+      "expected_controls": [
+        "Connectors"
+      ],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.3",
+    "screen_name": "Layers",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "DWH",
+        "Layers"
+      ],
+      "expected_controls": [
+        "Layers"
+      ],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.17",
+    "screen_name": "Packages",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "ETL",
+        "Packages"
+      ],
+      "expected_controls": [
+        "Packages"
+      ],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.18",
+    "screen_name": "Parameters",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "Parameters",
+        "List Parameters"
+      ],
+      "expected_controls": [
+        "Parameters"
+      ],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.23",
+    "screen_name": "Scripts",
+    "module": "Lists",
+    "hints": {
+      "tree_path": [
+        "ETL",
+        "Scripts"
+      ],
+      "expected_controls": [
+        "Scripts"
+      ],
+      "require_selected_navigation": true
+    }
+  }
+]

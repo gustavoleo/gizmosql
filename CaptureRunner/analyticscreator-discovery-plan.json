@@ -1,0 +1,59 @@
+[
+  {
+    "row_id": "Navigation.Connectors",
+    "screen_name": "Connectors",
+    "module": "Sources",
+    "hints": {
+      "tree_path": ["Connectors"]
+    }
+  },
+  {
+    "row_id": "Navigation.DataWarehouse",
+    "screen_name": "Data warehouse",
+    "hints": {
+      "tree_path": ["Data warehouse"]
+    }
+  },
+  {
+    "row_id": "Navigation.Deployments",
+    "screen_name": "Deployments",
+    "hints": {
+      "tree_path": ["Deployments"]
+    }
+  },
+  {
+    "row_id": "Navigation.Filters",
+    "screen_name": "Filters",
+    "hints": {
+      "tree_path": ["Filters"]
+    }
+  },
+  {
+    "row_id": "Navigation.Groups",
+    "screen_name": "Groups",
+    "hints": {
+      "tree_path": ["Groups"]
+    }
+  },
+  {
+    "row_id": "Navigation.Hierarchies",
+    "screen_name": "Hierarchies",
+    "hints": {
+      "tree_path": ["Hierarchies"]
+    }
+  },
+  {
+    "row_id": "Navigation.Indexes",
+    "screen_name": "Indexes",
+    "hints": {
+      "tree_path": ["Indexes"]
+    }
+  },
+  {
+    "row_id": "Navigation.Packages",
+    "screen_name": "Packages",
+    "hints": {
+      "tree_path": ["Packages"]
+    }
+  }
+]

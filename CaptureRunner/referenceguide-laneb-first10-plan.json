@@ -1,0 +1,157 @@
+[
+  {
+    "row_id": "1.5.8",
+    "screen_name": "Model Dimension",
+    "module": "Pages",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_controls": ["Dimensions", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Dimensions",
+        "control_type": "Button",
+        "required": false,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "dfFilter",
+        "required": false,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.5.9",
+    "screen_name": "Model Fact",
+    "module": "Pages",
+    "hints": {
+      "tree_path": ["Models"],
+      "expected_controls": ["Facts", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "Facts",
+        "control_type": "Button",
+        "required": false,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "dfFilter",
+        "required": false,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.1",
+    "screen_name": "Encrypted strings",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Encrypted strings"],
+      "expected_controls": ["Encrypted strings", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.5",
+    "screen_name": "Schemas",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Schemas"],
+      "expected_controls": ["Schemas", "Save"],
+      "expected_automation_ids": ["dfFilter", "cboSchema", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.8",
+    "screen_name": "Exports",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Exports"],
+      "expected_controls": ["Exports", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.9",
+    "screen_name": "Object group content",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Groups"],
+      "expected_controls": ["Groups", "Objects", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    },
+    "actions": [
+      {
+        "kind": "Invoke",
+        "name": "List objects",
+        "control_type": "Button",
+        "required": false,
+        "timeout_ms": 4000
+      },
+      {
+        "kind": "WaitForElement",
+        "automation_id": "dfFilter",
+        "required": false,
+        "timeout_ms": 4000
+      }
+    ]
+  },
+  {
+    "row_id": "1.6.11",
+    "screen_name": "Historizations",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Historizations"],
+      "expected_controls": ["Historizations", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.12",
+    "screen_name": "Imports",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Imports"],
+      "expected_controls": ["Imports", "Save"],
+      "expected_automation_ids": ["dfFilter", "txtName", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.15",
+    "screen_name": "Tables",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["Tables"],
+      "expected_controls": ["Tables", "Save"],
+      "expected_automation_ids": ["dfFilter", "cboSchema", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  },
+  {
+    "row_id": "1.6.21",
+    "screen_name": "Table references",
+    "module": "Lists",
+    "hints": {
+      "tree_path": ["References"],
+      "expected_controls": ["References", "Save"],
+      "expected_automation_ids": ["dfFilter", "cboSchema", "cmdSave"],
+      "require_selected_navigation": true
+    }
+  }
+]

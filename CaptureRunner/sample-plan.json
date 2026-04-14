@@ -1,0 +1,16 @@
+[
+  {
+    "row_id": "Entities.Connectors",
+    "screen_name": "Connectors",
+    "module": "Sources",
+    "hints": {
+      "tree_path": [
+        "Sources",
+        "Connectors"
+      ],
+      "shortcut": [
+        "Alt+2"
+      ]
+    }
+  }
+]
