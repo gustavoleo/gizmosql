@@ -233,7 +233,7 @@ public sealed class SnagitCaptureService
 
         if (!extension.Equals(".snagx", StringComparison.OrdinalIgnoreCase))
         {
-            var outputFile = Path.Combine(outputDirectory, BuildOutputFileName(plan, extension));
+            var outputFile = Path.Combine(outputDirectory, CaptureOutputFileNameBuilder.Build(plan, extension));
             File.Copy(sourceFile, outputFile, overwrite: true);
             return outputFile;
         }
@@ -258,28 +258,11 @@ public sealed class SnagitCaptureService
             imageExtension = ".png";
         }
 
-        var extractedFile = Path.Combine(outputDirectory, BuildOutputFileName(plan, imageExtension));
+        var extractedFile = Path.Combine(outputDirectory, CaptureOutputFileNameBuilder.Build(plan, imageExtension));
         using var sourceStream = imageEntry.Open();
         using var targetStream = File.Create(extractedFile);
         sourceStream.CopyTo(targetStream);
         return extractedFile;
-    }
-
-    private static string BuildOutputFileName(ScreenPlan plan, string extension)
-    {
-        return $"{Sanitize(plan.RowId)}-{Sanitize(plan.ScreenName)}{extension}";
-    }
-
-    private static string Sanitize(string value)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        var characters = value
-            .Trim()
-            .Select(ch => invalid.Contains(ch) || char.IsWhiteSpace(ch) ? '-' : char.ToLowerInvariant(ch))
-            .ToArray();
-
-        return new string(characters)
-            .Trim('-');
     }
 
     private static ResolvedCaptureSettings ResolveSettings(ScreenPlan plan, ScannerOptions options)

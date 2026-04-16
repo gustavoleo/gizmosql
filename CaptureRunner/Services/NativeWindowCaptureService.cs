@@ -52,7 +52,7 @@ public sealed class NativeWindowCaptureService
 
             var outputFile = Path.Combine(
                 options.CaptureOutputDirectory,
-                BuildOutputFileName(plan, ".png"));
+                CaptureOutputFileNameBuilder.Build(plan, ".png"));
 
             bitmap.Save(outputFile, ImageFormat.Png);
 
@@ -128,22 +128,6 @@ public sealed class NativeWindowCaptureService
         }
 
         return IntPtr.Zero;
-    }
-
-    private static string BuildOutputFileName(ScreenPlan plan, string extension)
-    {
-        return $"{Sanitize(plan.RowId)}-{Sanitize(plan.ScreenName)}{extension}";
-    }
-
-    private static string Sanitize(string value)
-    {
-        var invalid = Path.GetInvalidFileNameChars().ToHashSet();
-        var characters = value
-            .Trim()
-            .Select(ch => invalid.Contains(ch) || char.IsWhiteSpace(ch) ? '-' : char.ToLowerInvariant(ch))
-            .ToArray();
-
-        return new string(characters).Trim('-');
     }
 
     [StructLayout(LayoutKind.Sequential)]

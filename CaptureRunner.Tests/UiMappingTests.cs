@@ -335,4 +335,37 @@ public sealed class UiMappingTests
             }
         }
     }
+
+    [Fact]
+    public void CaptureOutputFileNameBuilder_KeepsShortNamesReadable()
+    {
+        var plan = new ScreenPlan
+        {
+            RowId = "1.6.18",
+            ScreenName = "Parameters"
+        };
+
+        var fileName = CaptureOutputFileNameBuilder.Build(plan, ".png");
+
+        Assert.Equal("1.6.18-parameters.png", fileName);
+    }
+
+    [Fact]
+    public void CaptureOutputFileNameBuilder_CompactsLongNames()
+    {
+        var plan = new ScreenPlan
+        {
+            RowId = "current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a",
+            ScreenName = "Current Northwind shell"
+        };
+
+        var fileName = CaptureOutputFileNameBuilder.Build(plan, ".png");
+
+        Assert.EndsWith(".png", fileName);
+        Assert.True(fileName.Length <= 84, "Compact file names should stay comfortably below Windows path pressure.");
+        Assert.NotEqual(
+            "current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a-current-northwind-shell.png",
+            fileName);
+        Assert.Contains("current-shell", fileName);
+    }
 }
