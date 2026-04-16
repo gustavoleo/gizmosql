@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Filters",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TreeItem",
+      "name": "Filters",
+      "control_type": "TreeItem",
+      "action": "select"
+    }
+  ]
+}

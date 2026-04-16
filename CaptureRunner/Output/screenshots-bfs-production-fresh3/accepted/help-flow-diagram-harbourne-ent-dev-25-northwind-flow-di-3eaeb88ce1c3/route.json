@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Help",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TabItem",
+      "name": "Help",
+      "control_type": "TabItem",
+      "action": "select"
+    }
+  ]
+}

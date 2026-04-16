@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Predefined transformations",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TreeItem",
+      "name": "Predefined transformations",
+      "control_type": "TreeItem",
+      "action": "select"
+    }
+  ]
+}

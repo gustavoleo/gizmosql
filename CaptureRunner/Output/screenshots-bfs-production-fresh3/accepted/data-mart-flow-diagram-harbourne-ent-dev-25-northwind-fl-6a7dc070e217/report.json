@@ -1,0 +1,48 @@
+{
+  "screen_id": "data-mart-flow-diagram-harbourne-ent-dev-25-northwind-fl-6a7dc070e217",
+  "route": {
+    "route_type": "safe_navigation",
+    "route_text": "Data mart",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      },
+      {
+        "kind": "TabItem",
+        "name": "Data mart",
+        "control_type": "TabItem",
+        "action": "select"
+      }
+    ]
+  },
+  "validation_passed": true,
+  "capture": {
+    "enabled": true,
+    "attempted": true,
+    "success": true,
+    "method": "native_window_png",
+    "source_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\data-mart-flow-diagram-harbourne-ent-dev-25-northwind-fl-6a7dc070e217\\data-mart-flow-diagram-harbourne-ent-dev-25-northwind-fl-6a7dc070e217-data-mart.png",
+    "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\data-mart-flow-diagram-harbourne-ent-dev-25-northwind-fl-6a7dc070e217\\data-mart-flow-diagram-harbourne-ent-dev-25-northwind-fl-6a7dc070e217-data-mart.png",
+    "duration_ms": 189,
+    "note": "Captured window area to PNG with 600 DPI metadata."
+  },
+  "png_validation": {
+    "exists": true,
+    "width": 3858,
+    "height": 2118,
+    "horizontal_dpi": 599.9988,
+    "vertical_dpi": 599.9988,
+    "expected_dpi": 600,
+    "valid": true,
+    "note": "PNG evidence passed dimension and DPI checks."
+  },
+  "readiness": {
+    "status": "accepted",
+    "confidence": "high",
+    "reasons": [
+      "Bootstrap, validation anchors, and native PNG evidence passed."
+    ]
+  }
+}

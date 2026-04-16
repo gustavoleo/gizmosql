@@ -1,0 +1,48 @@
+{
+  "screen_id": "partitions-flow-diagram-harbourne-ent-dev-25-northwind-f-0a2fcc687c88",
+  "route": {
+    "route_type": "safe_navigation",
+    "route_text": "Partitions",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      },
+      {
+        "kind": "TreeItem",
+        "name": "Partitions",
+        "control_type": "TreeItem",
+        "action": "select"
+      }
+    ]
+  },
+  "validation_passed": true,
+  "capture": {
+    "enabled": true,
+    "attempted": true,
+    "success": true,
+    "method": "native_window_png",
+    "source_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\partitions-flow-diagram-harbourne-ent-dev-25-northwind-f-0a2fcc687c88\\partitions-flow-diagram-harbourne-ent-dev-25-northwind-f-0a2fcc687c88-partitions.png",
+    "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\partitions-flow-diagram-harbourne-ent-dev-25-northwind-f-0a2fcc687c88\\partitions-flow-diagram-harbourne-ent-dev-25-northwind-f-0a2fcc687c88-partitions.png",
+    "duration_ms": 195,
+    "note": "Captured window area to PNG with 600 DPI metadata."
+  },
+  "png_validation": {
+    "exists": true,
+    "width": 3858,
+    "height": 2118,
+    "horizontal_dpi": 599.9988,
+    "vertical_dpi": 599.9988,
+    "expected_dpi": 600,
+    "valid": true,
+    "note": "PNG evidence passed dimension and DPI checks."
+  },
+  "readiness": {
+    "status": "accepted",
+    "confidence": "high",
+    "reasons": [
+      "Bootstrap, validation anchors, and native PNG evidence passed."
+    ]
+  }
+}

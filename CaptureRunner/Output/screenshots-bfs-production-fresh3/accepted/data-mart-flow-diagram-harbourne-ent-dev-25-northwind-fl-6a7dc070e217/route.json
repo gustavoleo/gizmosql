@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Data mart",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TabItem",
+      "name": "Data mart",
+      "control_type": "TabItem",
+      "action": "select"
+    }
+  ]
+}

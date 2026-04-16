@@ -1,0 +1,23 @@
+{
+  "route_type": "safe_dialog_open",
+  "route_text": "Help \u003E About",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TabItem",
+      "name": "Help",
+      "control_type": "TabItem",
+      "action": "select"
+    },
+    {
+      "kind": "Button",
+      "name": "About",
+      "control_type": "Button",
+      "action": "invoke"
+    }
+  ]
+}

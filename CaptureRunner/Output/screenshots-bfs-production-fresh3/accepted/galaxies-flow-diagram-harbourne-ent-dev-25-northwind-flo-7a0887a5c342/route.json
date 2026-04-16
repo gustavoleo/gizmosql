@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Galaxies",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TreeItem",
+      "name": "Galaxies",
+      "control_type": "TreeItem",
+      "action": "select"
+    }
+  ]
+}

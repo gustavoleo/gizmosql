@@ -1,0 +1,46 @@
+{
+  "application_started_or_attached": true,
+  "login_detected": true,
+  "login_attempted": true,
+  "login_success": true,
+  "repository_name": "Northwind",
+  "repository_selection_detected": true,
+  "repository_selection_attempted": true,
+  "repository_selected": true,
+  "repository_verified": true,
+  "method_used": "saved_password_login",
+  "active_window_title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+  "duration_ms": 18912,
+  "windows_seen": [
+    {
+      "title": "AnalyticsCreator",
+      "name": "AnalyticsCreator",
+      "control_type": "Window",
+      "process_id": 53052
+    },
+    {
+      "title": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "name": "Flow diagram     [HARBOURNE\\ENT_DEV_25]\\[Northwind]",
+      "control_type": "Window",
+      "process_id": 53052
+    }
+  ],
+  "candidate_login_actions": [
+    {
+      "name": "OK",
+      "control_type": "Button"
+    }
+  ],
+  "candidate_repository_selectors": [
+    {
+      "automation_id": "cmbName",
+      "control_type": "ComboBox"
+    }
+  ],
+  "notes": [
+    "Invoked login action \u0027OK\u0027 through UIA InvokePattern.",
+    "Invoked repository open action \u0027Connect\u0027 through UIA InvokePattern.",
+    "Selected repository \u0027Northwind\u0027 with focused Enter fallback. Invoked repository confirm action \u0027OK\u0027 through UIA InvokePattern.",
+    "Repository \u0027Northwind\u0027 was verified after saved-password login."
+  ]
+}

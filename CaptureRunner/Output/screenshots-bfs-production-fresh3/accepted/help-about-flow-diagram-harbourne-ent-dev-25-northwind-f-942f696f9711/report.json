@@ -1,0 +1,54 @@
+{
+  "screen_id": "help-about-flow-diagram-harbourne-ent-dev-25-northwind-f-942f696f9711",
+  "route": {
+    "route_type": "safe_dialog_open",
+    "route_text": "Help \u003E About",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      },
+      {
+        "kind": "TabItem",
+        "name": "Help",
+        "control_type": "TabItem",
+        "action": "select"
+      },
+      {
+        "kind": "Button",
+        "name": "About",
+        "control_type": "Button",
+        "action": "invoke"
+      }
+    ]
+  },
+  "validation_passed": true,
+  "capture": {
+    "enabled": true,
+    "attempted": true,
+    "success": true,
+    "method": "native_window_png",
+    "source_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\help-about-flow-diagram-harbourne-ent-dev-25-northwind-f-942f696f9711\\help-about-flow-diagram-harbourne-ent-dev-25-northwind-f-942f696f9711-help---about.png",
+    "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\help-about-flow-diagram-harbourne-ent-dev-25-northwind-f-942f696f9711\\help-about-flow-diagram-harbourne-ent-dev-25-northwind-f-942f696f9711-help---about.png",
+    "duration_ms": 190,
+    "note": "Captured window area to PNG with 600 DPI metadata."
+  },
+  "png_validation": {
+    "exists": true,
+    "width": 3858,
+    "height": 2118,
+    "horizontal_dpi": 599.9988,
+    "vertical_dpi": 599.9988,
+    "expected_dpi": 600,
+    "valid": true,
+    "note": "PNG evidence passed dimension and DPI checks."
+  },
+  "readiness": {
+    "status": "accepted",
+    "confidence": "high",
+    "reasons": [
+      "Bootstrap, validation anchors, and native PNG evidence passed."
+    ]
+  }
+}

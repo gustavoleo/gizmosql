@@ -84,6 +84,8 @@ Internal engineering docs and tooling:
 
 - [CaptureRunner README](CaptureRunner/README.md)
 - [CaptureRunner Authoring Guide](CaptureRunner/AuthoringGuide.md)
+- [CaptureRunner Current Status](CaptureRunner/CurrentStatus.md)
+- [CaptureRunner Quick Start](CaptureRunner/QuickStart_EN.md)
 - [CaptureRunner Navigation Map](CaptureRunner/NavigationMap.md)
 
 ---
@@ -113,7 +115,7 @@ This is the top-level map of the repository. Use it to find the right starting p
 | [helm-chart](/mnt/e/DDD/GitHub/gizmosql/helm-chart) | Kubernetes packaging for GizmoSQL deployment. | Change Helm-based deployment behavior. |
 | [third_party](/mnt/e/DDD/GitHub/gizmosql/third_party) | Dependency build definitions and patching glue for vendored components. | Adjust dependency versions or build integration. |
 | [tls](/mnt/e/DDD/GitHub/gizmosql/tls) | Local certificate generation helpers and TLS notes. | Work on development TLS setup. |
-| [CaptureRunner](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner) | Windows UI automation scanner, capture tooling, navigation plans, reports, and reference-guide workflow docs. | Work on AnalyticsCreator screen discovery and screenshot automation. |
+| [CaptureRunner](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner) | Windows UI automation bootstrap, mapper, native PNG capture tooling, navigation plans, reports, and reference-guide workflow docs. | Work on AnalyticsCreator screen discovery, verification, and screenshot automation. |
 | [CaptureRunner.Tests](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner.Tests) | Unit tests for CaptureRunner monitor logic, placement logic, and toolbar navigation helpers. | Verify CaptureRunner behavior safely. |
 
 ### Quick Orientation By Task

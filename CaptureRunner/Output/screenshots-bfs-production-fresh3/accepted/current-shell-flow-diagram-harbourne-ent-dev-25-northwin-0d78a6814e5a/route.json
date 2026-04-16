@@ -1,0 +1,11 @@
+{
+  "route_type": "current",
+  "route_text": "Current Northwind shell",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    }
+  ]
+}

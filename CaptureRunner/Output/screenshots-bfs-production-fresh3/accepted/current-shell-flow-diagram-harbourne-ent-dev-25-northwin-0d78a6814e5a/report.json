@@ -1,0 +1,42 @@
+{
+  "screen_id": "current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a",
+  "route": {
+    "route_type": "current",
+    "route_text": "Current Northwind shell",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      }
+    ]
+  },
+  "validation_passed": true,
+  "capture": {
+    "enabled": true,
+    "attempted": true,
+    "success": true,
+    "method": "native_window_png",
+    "source_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a\\current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a-current-northwind-shell.png",
+    "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a\\current-shell-flow-diagram-harbourne-ent-dev-25-northwin-0d78a6814e5a-current-northwind-shell.png",
+    "duration_ms": 220,
+    "note": "Captured window area to PNG with 600 DPI metadata."
+  },
+  "png_validation": {
+    "exists": true,
+    "width": 3858,
+    "height": 2118,
+    "horizontal_dpi": 599.9988,
+    "vertical_dpi": 599.9988,
+    "expected_dpi": 600,
+    "valid": true,
+    "note": "PNG evidence passed dimension and DPI checks."
+  },
+  "readiness": {
+    "status": "accepted",
+    "confidence": "high",
+    "reasons": [
+      "Bootstrap, validation anchors, and native PNG evidence passed."
+    ]
+  }
+}

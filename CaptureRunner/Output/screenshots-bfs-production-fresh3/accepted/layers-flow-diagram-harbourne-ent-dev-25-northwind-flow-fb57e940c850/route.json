@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Layers",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TreeItem",
+      "name": "Layers",
+      "control_type": "TreeItem",
+      "action": "select"
+    }
+  ]
+}

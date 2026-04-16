@@ -1,0 +1,55 @@
+{
+  "screen_id": "file-find-on-diagram-flow-diagram-harbourne-ent-dev-25-n-5c7587921695",
+  "route": {
+    "route_type": "safe_dialog_open",
+    "route_text": "File \u003E Find on diagram",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      },
+      {
+        "kind": "TabItem",
+        "name": "File",
+        "automation_id": "tabFile",
+        "control_type": "TabItem",
+        "action": "select"
+      },
+      {
+        "kind": "Button",
+        "name": "Find on diagram",
+        "control_type": "Button",
+        "action": "invoke"
+      }
+    ]
+  },
+  "validation_passed": true,
+  "capture": {
+    "enabled": true,
+    "attempted": true,
+    "success": true,
+    "method": "native_window_png",
+    "source_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\file-find-on-diagram-flow-diagram-harbourne-ent-dev-25-n-5c7587921695\\file-find-on-diagram-flow-diagram-harbourne-ent-dev-25-n-5c7587921695-file---find-on-diagram.png",
+    "output_file": "E:\\DDD\\GitHub\\gizmosql\\CaptureRunner\\Output\\screenshots-bfs-production-fresh3\\accepted\\file-find-on-diagram-flow-diagram-harbourne-ent-dev-25-n-5c7587921695\\file-find-on-diagram-flow-diagram-harbourne-ent-dev-25-n-5c7587921695-file---find-on-diagram.png",
+    "duration_ms": 195,
+    "note": "Captured window area to PNG with 600 DPI metadata."
+  },
+  "png_validation": {
+    "exists": true,
+    "width": 3858,
+    "height": 2118,
+    "horizontal_dpi": 599.9988,
+    "vertical_dpi": 599.9988,
+    "expected_dpi": 600,
+    "valid": true,
+    "note": "PNG evidence passed dimension and DPI checks."
+  },
+  "readiness": {
+    "status": "accepted",
+    "confidence": "high",
+    "reasons": [
+      "Bootstrap, validation anchors, and native PNG evidence passed."
+    ]
+  }
+}

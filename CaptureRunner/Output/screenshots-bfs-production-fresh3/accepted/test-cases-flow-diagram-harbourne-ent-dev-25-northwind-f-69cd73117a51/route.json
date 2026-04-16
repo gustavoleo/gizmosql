@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "Test cases",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TreeItem",
+      "name": "Test cases",
+      "control_type": "TreeItem",
+      "action": "select"
+    }
+  ]
+}

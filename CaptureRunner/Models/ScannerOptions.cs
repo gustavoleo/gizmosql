@@ -17,6 +17,38 @@ public sealed class ScannerOptions
 
     public EnvironmentProfile? EnvironmentProfile { get; set; }
 
+    public bool BootstrapOnly { get; set; }
+
+    public string? BootstrapProfilePath { get; set; }
+
+    public BootstrapProfile? BootstrapProfile { get; set; }
+
+    public string? StartupStateOutputPath { get; set; }
+
+    public string? RepositoryName { get; set; }
+
+    public bool MapUi { get; set; }
+
+    public string? UiMapOutputPath { get; set; }
+
+    public string? UiMapMarkdownOutputPath { get; set; }
+
+    public string? RouteRecipesPath { get; set; }
+
+    public List<UiRoute> RouteRecipes { get; set; } = new();
+
+    public string ScreenshotOutputRoot { get; set; } = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "Output", "screenshots"));
+
+    public double AcceptedThreshold { get; set; } = 0.98;
+
+    public int MapMaxScreens { get; set; } = 100;
+
+    public int MapMaxDepth { get; set; } = 2;
+
+    public int MapBranchingFactor { get; set; } = 50;
+
+    public TimeSpan MapTraversalTimeout { get; set; } = TimeSpan.FromMinutes(10);
+
     public TimeSpan StartupTimeout { get; set; } = TimeSpan.FromSeconds(20);
 
     public TimeSpan NavigationTimeout { get; set; } = TimeSpan.FromSeconds(4);

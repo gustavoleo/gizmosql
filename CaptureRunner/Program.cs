@@ -62,6 +62,14 @@ internal static class Program
         var nativeWindowCaptureService = new NativeWindowCaptureService();
         var scanner = new ScreenScanner(windowService, explorer, navigationEngine, validator, snagitCaptureService, nativeWindowCaptureService, windowPlacementService);
         var discoverer = new WindowDiscoverer(windowService, treeService);
+        var startupBootstrapper = new StartupBootstrapper();
+        var uiMappingRunner = new UiMappingRunner(
+            windowService,
+            new UiInteractionExtractor(),
+            nativeWindowCaptureService,
+            new PngEvidenceValidator());
+        var uiMapMarkdownWriter = new UiMapMarkdownWriter();
+        var routePromotionSummaryService = new RoutePromotionSummaryService();
 
         AppSession? session = null;
         OperatorNoticeService? operatorNotice = null;
@@ -80,6 +88,31 @@ internal static class Program
 
                 var environmentProfileContent = File.ReadAllText(options.EnvironmentProfilePath);
                 options.EnvironmentProfile = JsonSerializer.Deserialize<EnvironmentProfile>(environmentProfileContent, jsonOptions);
+            }
+
+            if (!string.IsNullOrWhiteSpace(options.BootstrapProfilePath))
+            {
+                if (!File.Exists(options.BootstrapProfilePath))
+                {
+                    Console.Error.WriteLine($"Bootstrap profile not found: {options.BootstrapProfilePath}");
+                    return 1;
+                }
+
+                var bootstrapProfileContent = File.ReadAllText(options.BootstrapProfilePath);
+                options.BootstrapProfile = JsonSerializer.Deserialize<BootstrapProfile>(bootstrapProfileContent, jsonOptions);
+            }
+
+            if (!string.IsNullOrWhiteSpace(options.RouteRecipesPath))
+            {
+                if (!File.Exists(options.RouteRecipesPath))
+                {
+                    Console.Error.WriteLine($"Route recipe file not found: {options.RouteRecipesPath}");
+                    return 1;
+                }
+
+                var routeRecipeContent = File.ReadAllText(options.RouteRecipesPath);
+                options.RouteRecipes = JsonSerializer.Deserialize<List<UiRoute>>(routeRecipeContent, jsonOptions)
+                    ?? new List<UiRoute>();
             }
 
             var preflight = environmentPreflightService.Run(options);
@@ -101,7 +134,7 @@ internal static class Program
 
             var operatorDisplay = displayTopologyService.FindMatch(options.EnvironmentProfile?.DisplayProfile.OperatorDisplay, preflight.ActualDisplays);
 
-            if (!string.IsNullOrWhiteSpace(options.PlanPath))
+            if (!options.BootstrapOnly && !options.MapUi && !string.IsNullOrWhiteSpace(options.PlanPath))
             {
                 if (!File.Exists(options.PlanPath))
                 {
@@ -120,7 +153,7 @@ internal static class Program
 
             var requiresCaptureCursorControl = !options.WorkerMode && screens.Any(options.IsSnagitCaptureEnabled);
 
-            if (options.ShowOperatorNotice && !options.WorkerMode)
+            if (options.ShowOperatorNotice && !options.WorkerMode && !options.BootstrapOnly && !options.MapUi)
             {
                 operatorNotice = new OperatorNoticeService(operatorDisplay, options.OperatorMessage);
                 operatorNotice.Show();
@@ -130,7 +163,7 @@ internal static class Program
             {
                 Console.WriteLine("Mouse parking skipped: Snagit capture is enabled and may need temporary cursor control on the capture display.");
             }
-            else if (!options.WorkerMode)
+            else if (!options.WorkerMode && !options.BootstrapOnly && !options.MapUi)
             {
                 mouseParking = new MouseParkingService(operatorDisplay);
                 mouseParking.Start();
@@ -138,6 +171,79 @@ internal static class Program
 
             session = windowService.EnsureSession(options.ExecutablePath, options.StartupTimeout);
             using var automation = new UIA3Automation();
+
+            if (options.BootstrapOnly)
+            {
+                var startupStateOutputPath = options.StartupStateOutputPath
+                    ?? Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "Output", "startup-state.json"));
+                Directory.CreateDirectory(Path.GetDirectoryName(startupStateOutputPath) ?? Environment.CurrentDirectory);
+
+                var startupState = startupBootstrapper.Run(session, automation, options);
+                File.WriteAllText(startupStateOutputPath, JsonSerializer.Serialize(startupState, jsonOptions));
+                Console.WriteLine($"Startup state written to {startupStateOutputPath}");
+                return StartupBootstrapper.GetExitCode(startupState);
+            }
+
+            if (options.MapUi)
+            {
+                var startupStateOutputPath = options.StartupStateOutputPath
+                    ?? Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "Output", "startup-state.json"));
+                Directory.CreateDirectory(Path.GetDirectoryName(startupStateOutputPath) ?? Environment.CurrentDirectory);
+
+                var startupState = startupBootstrapper.Run(session, automation, options);
+                File.WriteAllText(startupStateOutputPath, JsonSerializer.Serialize(startupState, jsonOptions));
+                options.StartupStateOutputPath = startupStateOutputPath;
+
+                if (!startupState.RepositoryVerified)
+                {
+                    Console.Error.WriteLine($"Bootstrap failed: repository '{startupState.RepositoryName}' was not verified.");
+                    return StartupBootstrapper.GetExitCode(startupState);
+                }
+
+                var uiMap = uiMappingRunner.Run(session, automation, options, startupState, jsonOptions);
+
+                Directory.CreateDirectory(Path.GetDirectoryName(options.UiMapOutputPath!) ?? Environment.CurrentDirectory);
+                Directory.CreateDirectory(Path.GetDirectoryName(options.UiMapMarkdownOutputPath!) ?? Environment.CurrentDirectory);
+                File.WriteAllText(options.UiMapOutputPath!, JsonSerializer.Serialize(uiMap, jsonOptions));
+                File.WriteAllText(options.UiMapMarkdownOutputPath!, uiMapMarkdownWriter.Render(uiMap));
+
+                var coverageOutputPath = Path.Combine(
+                    Path.GetDirectoryName(options.UiMapOutputPath!) ?? Environment.CurrentDirectory,
+                    "coverage-summary.json");
+                File.WriteAllText(coverageOutputPath, JsonSerializer.Serialize(uiMap.Coverage, jsonOptions));
+
+                var rejectedRoutes = UiMappingRunner.BuildRejectedRoutesArtifact(uiMap.Screens);
+                var rejectedRoutesOutputPath = Path.Combine(
+                    Path.GetDirectoryName(options.UiMapOutputPath!) ?? Environment.CurrentDirectory,
+                    "rejected-routes.json");
+                File.WriteAllText(
+                    rejectedRoutesOutputPath,
+                    JsonSerializer.Serialize(rejectedRoutes, jsonOptions));
+
+                var remainingQueuedRoutesOutputPath = Path.Combine(
+                    Path.GetDirectoryName(options.UiMapOutputPath!) ?? Environment.CurrentDirectory,
+                    "remaining-queued-routes.json");
+                File.WriteAllText(remainingQueuedRoutesOutputPath, JsonSerializer.Serialize(uiMap.RemainingQueuedRoutes, jsonOptions));
+
+                var routePromotionSummaryOutputPath = Path.Combine(
+                    Path.GetDirectoryName(options.UiMapOutputPath!) ?? Environment.CurrentDirectory,
+                    "route-promotion-summary.json");
+                File.WriteAllText(
+                    routePromotionSummaryOutputPath,
+                    JsonSerializer.Serialize(
+                        routePromotionSummaryService.Build(uiMap, rejectedRoutes, options.RouteRecipes),
+                        jsonOptions));
+
+                Console.WriteLine($"Startup state written to {startupStateOutputPath}");
+                Console.WriteLine($"UI map written to {options.UiMapOutputPath}");
+                Console.WriteLine($"UI map Markdown written to {options.UiMapMarkdownOutputPath}");
+                Console.WriteLine($"Coverage summary written to {coverageOutputPath}");
+                Console.WriteLine($"Rejected routes written to {rejectedRoutesOutputPath}");
+                Console.WriteLine($"Remaining queued routes written to {remainingQueuedRoutesOutputPath}");
+                Console.WriteLine($"Route promotion summary written to {routePromotionSummaryOutputPath}");
+
+                return uiMap.Coverage.ThresholdMet ? 0 : 2;
+            }
 
             if (!string.IsNullOrWhiteSpace(options.DiscoveryOutputPath))
             {
@@ -237,6 +343,48 @@ internal static class Program
                 case "--environment-profile":
                     options.EnvironmentProfilePath = GetNextValue(args, ref index, arg);
                     break;
+                case "--bootstrap-only":
+                    options.BootstrapOnly = true;
+                    break;
+                case "--bootstrap-profile":
+                    options.BootstrapProfilePath = GetNextValue(args, ref index, arg);
+                    break;
+                case "--startup-state-output":
+                    options.StartupStateOutputPath = GetNextValue(args, ref index, arg);
+                    break;
+                case "--repository-name":
+                    options.RepositoryName = GetNextValue(args, ref index, arg);
+                    break;
+                case "--map-ui":
+                    options.MapUi = true;
+                    break;
+                case "--ui-map-output":
+                    options.UiMapOutputPath = GetNextValue(args, ref index, arg);
+                    break;
+                case "--ui-map-markdown-output":
+                    options.UiMapMarkdownOutputPath = GetNextValue(args, ref index, arg);
+                    break;
+                case "--route-recipes":
+                    options.RouteRecipesPath = GetNextValue(args, ref index, arg);
+                    break;
+                case "--screenshot-output-root":
+                    options.ScreenshotOutputRoot = GetNextValue(args, ref index, arg);
+                    break;
+                case "--accepted-threshold":
+                    options.AcceptedThreshold = ParseRatio(GetNextValue(args, ref index, arg), arg);
+                    break;
+                case "--map-max-screens":
+                    options.MapMaxScreens = ParsePositiveInt(GetNextValue(args, ref index, arg), arg);
+                    break;
+                case "--map-max-depth":
+                    options.MapMaxDepth = ParsePositiveInt(GetNextValue(args, ref index, arg), arg);
+                    break;
+                case "--map-branching-factor":
+                    options.MapBranchingFactor = ParsePositiveInt(GetNextValue(args, ref index, arg), arg);
+                    break;
+                case "--map-traversal-timeout-ms":
+                    options.MapTraversalTimeout = TimeSpan.FromMilliseconds(ParsePositiveInt(GetNextValue(args, ref index, arg), arg));
+                    break;
                 case "--startup-timeout-ms":
                     options.StartupTimeout = TimeSpan.FromMilliseconds(ParsePositiveInt(GetNextValue(args, ref index, arg), arg));
                     break;
@@ -298,9 +446,18 @@ internal static class Program
             throw new ArgumentException("Missing required argument: --exe <path-to-application>");
         }
 
-        if (string.IsNullOrWhiteSpace(options.PlanPath) && string.IsNullOrWhiteSpace(options.DiscoveryOutputPath))
+        if (!options.BootstrapOnly
+            && !options.MapUi
+            && string.IsNullOrWhiteSpace(options.PlanPath)
+            && string.IsNullOrWhiteSpace(options.DiscoveryOutputPath))
         {
             throw new ArgumentException("Missing required argument: provide --plan <path-to-plan.json>, --discover-output <path>, or both.");
+        }
+
+        if (options.MapUi)
+        {
+            options.CaptureBackend = CaptureBackend.Native;
+            options.NativePngDpi ??= 600;
         }
 
         if (options.CaptureBackend == CaptureBackend.Snagit
@@ -320,8 +477,34 @@ internal static class Program
             options.EnvironmentProfilePath = Path.GetFullPath(options.EnvironmentProfilePath);
         }
 
+        if (!string.IsNullOrWhiteSpace(options.BootstrapProfilePath))
+        {
+            options.BootstrapProfilePath = Path.GetFullPath(options.BootstrapProfilePath);
+        }
+        else if (options.MapUi)
+        {
+            options.BootstrapProfilePath = ResolveDefaultBootstrapProfilePath();
+        }
+
+        if (!string.IsNullOrWhiteSpace(options.StartupStateOutputPath))
+        {
+            options.StartupStateOutputPath = Path.GetFullPath(options.StartupStateOutputPath);
+        }
+        else if (options.BootstrapOnly || options.MapUi)
+        {
+            options.StartupStateOutputPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "Output", "startup-state.json"));
+        }
+
+        if (!string.IsNullOrWhiteSpace(options.RouteRecipesPath))
+        {
+            options.RouteRecipesPath = Path.GetFullPath(options.RouteRecipesPath);
+        }
+
         options.OutputPath = Path.GetFullPath(options.OutputPath);
         options.CaptureOutputDirectory = Path.GetFullPath(options.CaptureOutputDirectory);
+        options.ScreenshotOutputRoot = Path.GetFullPath(options.ScreenshotOutputRoot);
+        options.UiMapOutputPath = Path.GetFullPath(options.UiMapOutputPath ?? Path.Combine(Environment.CurrentDirectory, "Output", "ui-map.json"));
+        options.UiMapMarkdownOutputPath = Path.GetFullPath(options.UiMapMarkdownOutputPath ?? Path.Combine(Environment.CurrentDirectory, "Output", "UiMap.md"));
         if (!string.IsNullOrWhiteSpace(options.DiscoveryOutputPath))
         {
             options.DiscoveryOutputPath = Path.GetFullPath(options.DiscoveryOutputPath);
@@ -371,6 +554,18 @@ internal static class Program
         return parsed;
     }
 
+    private static double ParseRatio(string value, string option)
+    {
+        if (!double.TryParse(value, NumberStyles.Float, CultureInfo.InvariantCulture, out var parsed)
+            || parsed < 0
+            || parsed > 1)
+        {
+            throw new ArgumentException($"Invalid value for {option}: {value}. Expected a number from 0 to 1.");
+        }
+
+        return parsed;
+    }
+
     private static CaptureBackend ParseCaptureBackend(string value, string option)
     {
         if (!Enum.TryParse<CaptureBackend>(value, ignoreCase: true, out var parsed))
@@ -391,6 +586,18 @@ internal static class Program
         return parsed;
     }
 
+    private static string? ResolveDefaultBootstrapProfilePath()
+    {
+        var candidates = new[]
+        {
+            Path.Combine(Environment.CurrentDirectory, "CaptureRunner", "Profiles", "northwind-bootstrap.json"),
+            Path.Combine(Environment.CurrentDirectory, "Profiles", "northwind-bootstrap.json"),
+            Path.Combine(AppContext.BaseDirectory, "Profiles", "northwind-bootstrap.json")
+        };
+
+        return candidates.FirstOrDefault(File.Exists);
+    }
+
     private static void PrintUsage()
     {
         Console.WriteLine(
@@ -398,10 +605,18 @@ internal static class Program
             Usage:
               CaptureRunner --exe <path-to-app.exe> (--plan <plan.json> | --discover-output <discovery.json> | both) [--output <report.json>] [--environment-profile <profile.json>] [--strict-preflight | --allow-preflight-warnings] [--startup-timeout-ms 20000] [--navigation-timeout-ms 4000] [--screen-timeout-ms 120000] [--capture-timeout-ms 20000] [--keep-open] [--no-operator-notice] [--operator-message "<text>"] [--capture-backend <snagit|native>] [--snagit-hotkey "Ctrl+Shift+5"] [--snagit-exe "C:\Program Files\TechSmith\Snagit\SnagitCapture.exe"] [--snagit-watch-dir <folder>] [--native-capture-area <window|client>] [--png-dpi <dpi>] [--capture-output-dir <folder>]
 
+              CaptureRunner --exe <path-to-app.exe> --bootstrap-only [--bootstrap-profile <profile.json>] [--repository-name Northwind] [--startup-state-output <startup-state.json>] [--environment-profile <profile.json>] [--keep-open]
+
+              CaptureRunner --exe <path-to-app.exe> --map-ui [--bootstrap-profile <profile.json>] [--repository-name Northwind] [--ui-map-output <ui-map.json>] [--ui-map-markdown-output <UiMap.md>] [--route-recipes <recipes.json>] [--screenshot-output-root <folder>] [--accepted-threshold 0.98] [--map-max-screens 100] [--map-max-depth 2] [--map-branching-factor 50] [--map-traversal-timeout-ms 600000] [--environment-profile <profile.json>] [--keep-open]
+
             Example:
               CaptureRunner --exe "C:\Path\To\App.exe" --plan ".\sample-plan.json" --output ".\Output\report.json"
 
               CaptureRunner --exe "C:\Path\To\App.exe" --discover-output ".\Output\discovery.json"
+
+              CaptureRunner --exe "C:\Path\To\AnalyticsCreator.exe" --bootstrap-only --bootstrap-profile ".\Profiles\northwind-bootstrap.json" --repository-name Northwind --startup-state-output ".\Output\startup-state.json" --environment-profile ".\Profiles\certified-dual-monitor.json" --keep-open
+
+              CaptureRunner --exe "C:\Path\To\AnalyticsCreator.exe" --map-ui --bootstrap-profile ".\Profiles\northwind-bootstrap.json" --repository-name Northwind --ui-map-output ".\Output\ui-map.json" --ui-map-markdown-output ".\Output\UiMap.md" --screenshot-output-root ".\Output\screenshots" --accepted-threshold 0.98 --keep-open
 
               CaptureRunner --exe "C:\Path\To\App.exe" --plan ".\wave1-snagit-poc-plan.json" --output ".\Output\wave1-snagit-poc-report.json" --environment-profile ".\Profiles\certified-single-4k.json" --snagit-hotkey "Ctrl+Shift+5" --snagit-exe "C:\Program Files\TechSmith\Snagit\SnagitCapture.exe" --snagit-watch-dir "C:\SnagitDrop" --capture-output-dir ".\Output\captures" --keep-open
 

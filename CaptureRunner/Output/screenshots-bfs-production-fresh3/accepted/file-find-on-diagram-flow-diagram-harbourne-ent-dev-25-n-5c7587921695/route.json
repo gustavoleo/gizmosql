@@ -1,0 +1,24 @@
+{
+  "route_type": "safe_dialog_open",
+  "route_text": "File \u003E Find on diagram",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TabItem",
+      "name": "File",
+      "automation_id": "tabFile",
+      "control_type": "TabItem",
+      "action": "select"
+    },
+    {
+      "kind": "Button",
+      "name": "Find on diagram",
+      "control_type": "Button",
+      "action": "invoke"
+    }
+  ]
+}

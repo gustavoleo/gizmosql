@@ -1,78 +1,150 @@
 # CaptureRunner Authoring Guide
 
-This is the single human guide for adding new screens and new navigation paths to `CaptureRunner`.
+This is the working authoring guide for `CaptureRunner`.
 
-Use this file for instructions. It is written in **Markdown** for humans.
+Use it for four things:
 
-Use JSON for files that `CaptureRunner` executes:
+1. bootstrap profiles
+2. route recipes
+3. authored screen plans
+4. route promotion after a fresh mapper run
 
-- `*-plan.json` for screen plans
-- `Profiles/*.json` for environment profiles
+The current rule is simple:
 
-YAML is not supported today. The loader in [Program.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Program.cs) uses `System.Text.Json` for plans and profiles.
+- use JSON for everything `CaptureRunner` executes
+- trust runtime evidence, not guesses
+- only promote new routes that appear in the mapper artifacts
 
-## The 5-Minute Version
+## Choose the right file type
 
-1. Find the closest screen in [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md).
-2. Copy the closest existing JSON row.
-3. Change the route and validation anchors.
-4. Test one row only.
-5. Trust the report, not your guess.
-6. Promote the row only after the report proves it.
-
-## What File Type To Use
-
-| file | format | purpose |
+| file | format | use it for |
 |---|---|---|
-| [AuthoringGuide.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/AuthoringGuide.md) | Markdown | Human instructions for contributors. |
-| `temp-one-row-plan.json` | JSON | One-row plan file for testing a new screen. |
-| [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json) | JSON | Canonical combined plan baseline. |
-| `Profiles/*.json` | JSON | Certified monitor and environment profiles. |
+| `Profiles/northwind-bootstrap.json` | JSON | startup, saved-password login, repository selection, repository verification |
+| `Profiles/*.json` | JSON | monitor/environment profiles |
+| `Profiles/high-value-route-recipes.json` | JSON | multi-step routes that should always be seeded into the mapper queue |
+| `*-plan.json` | JSON | explicit authored plan execution |
+| `Output/*/ui-map.json` | JSON | runtime-discovered screen map |
+| `Output/*/UiMap.md` | Markdown | human-readable map of the same run |
+| `Output/*/rejected-routes.json` | JSON | routes that opened but failed evidence or were rejected |
+| `Output/*/remaining-queued-routes.json` | JSON | routes still queued when traversal stopped |
+| `Output/*/route-promotion-summary.json` | JSON | grouped suggestions derived from rejected routes first, then remaining queued routes |
 
-## How To Add A New Screen
+## The current promotion workflow
 
-### Step 1: Identify the screen family
+Always start from a fresh cold-start `--map-ui` run.
 
-Start from [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md). Find the closest existing screen in one of these families:
+Promotion order:
 
-- `left-nav list`
-- `toolbar dialog`
-- `toolbar wizard`
-- `left-nav detail`
-- `context page`
-- `context dialog`
+1. inspect `rejected-routes.json`
+2. if it is empty, inspect `remaining-queued-routes.json`
+3. use `route-promotion-summary.json` to group the real stalled leaf actions
+4. add or refine route recipes only for routes that appear in those artifacts
+5. rerun the same fresh command
 
-If the closest route is marked `seed-data`, `harness`, or `manual`, do not treat it like a normal simple row. See [When Not To Author A Normal Row](#when-not-to-author-a-normal-row).
+Do not add routes because the toolbar, tab, or dialog is "probably there". The route must appear in the artifacts first.
 
-### Step 2: Copy the closest JSON row
+## Bootstrap profiles
 
-Do not start from an empty file unless you have to.
+Bootstrap profiles exist so every automated run starts from the same application state.
 
-Recommended starting points:
+Current default:
 
-- `left-nav list`: copy from [wave1-startnow-native-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-startnow-native-plan.json)
-- `toolbar dialog/wizard`: copy from [referenceguide-toolbar-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-toolbar-plan.json)
-- `authored but not verified`: copy from [referenceguide-laneb-first10-pass2-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-laneb-first10-pass2-plan.json)
+- [Profiles/northwind-bootstrap.json](Profiles/northwind-bootstrap.json)
 
-### Step 3: Update the row
+Current `Northwind` bootstrap contract:
 
-At minimum, update:
+- accept saved-password login
+- use repository selector `cmbName`
+- confirm with a positive action such as `OK` or `Connect`
+- verify the final shell contains `Northwind`
 
-- `row_id`
-- `screen_name`
-- `module`
-- `hints`
-- `actions`
+Keep bootstrap profiles conservative. They should identify startup actions and repository verification anchors, not encode broader navigation logic.
 
-Use the real schema from:
+## Route recipes
 
-- [InputPlan.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/InputPlan.cs)
-- [PlanAction.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/PlanAction.cs)
-- [CaptureHints.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/CaptureHints.cs)
+Route recipes seed known safe multi-step routes into the mapper queue.
 
-### Step 4: Run discovery
+Use them for:
 
-Use discovery before you lock anchors:
+- toolbar dialogs
+- toolbar wizards
+- safe entry points that require a parent tab before the leaf button exists
+
+Current seeded examples:
+
+- `Help > About`
+- `Help > EULA`
+- `File > Find on diagram`
+- `File > DWH Wizard`
+
+See:
+
+- [Profiles/high-value-route-recipes.json](Profiles/high-value-route-recipes.json)
+
+### When to add a route recipe
+
+Add a route recipe only when:
+
+- a fresh run produced a rejected or remaining queued route for that exact leaf
+- the route is safe and non-destructive
+- the leaf depends on a parent route that UIA discovery cannot infer reliably from the current shell snapshot
+
+### Route recipe template
+
+```json
+[
+  {
+    "route_type": "safe_dialog_open",
+    "route_text": "Help > About",
+    "steps": [
+      {
+        "kind": "bootstrap",
+        "name": "Northwind",
+        "action": "verify"
+      },
+      {
+        "kind": "TabItem",
+        "name": "Help",
+        "control_type": "TabItem",
+        "action": "select"
+      },
+      {
+        "kind": "Button",
+        "name": "About",
+        "control_type": "Button",
+        "action": "invoke"
+      }
+    ]
+  }
+]
+```
+
+## Authored screen plans
+
+Authored plans still matter when you want a fixed row set or a curated batch outside the automatic mapper.
+
+Use authored plans for:
+
+- one-row validation
+- regression checks on known screens
+- tightly curated screenshot batches
+- screen families that need explicit post-navigation actions
+
+Relevant schema:
+
+- `Models/InputPlan.cs`
+- `Models/PlanAction.cs`
+- `Models/CaptureHints.cs`
+
+### One-row workflow
+
+1. run discovery first
+2. copy the closest existing row
+3. set the route and anchors
+4. run one row only
+5. inspect the report before promoting the row
+
+### Discovery command
 
 ```powershell
 dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
@@ -81,135 +153,7 @@ dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
   --keep-open
 ```
 
-Look for:
-
-- likely screen names
-- likely modules
-- `automation_id` values
-- visible control names you can validate against
-
-### Step 5: Test one row only
-
-Never start by adding many new rows at once.
-
-Create a one-row plan file, run it, inspect the result, then decide if the route is real.
-
-### Step 6: Read the result
-
-Use the report to decide what happened:
-
-- `full/high`: strong candidate
-- `partial`: route may open, but anchors are weak or wrong
-- `none`: wrong route or wrong anchors
-- `capture.success = true`: screenshot path worked
-
-### Step 7: Promote the row
-
-Promotion order:
-
-1. one-row test plan
-2. authored plan file
-3. curated plan
-4. navigation map or production batch once stable
-
-Do not call a row verified until the report proves it.
-
-## How To Add A New Path
-
-### Left-nav list
-
-Use this for screens like:
-
-- `Parameters`
-- `Layers`
-- `Macros`
-- `Snapshots`
-
-Typical shape:
-
-- `tree_path` points to the left navigation entry
-- `expected_automation_ids` prove the shell
-- `require_selected_navigation = true` prevents false positives
-
-Use this when the page opens by selecting a normal navigation node.
-
-### Toolbar dialog or wizard
-
-Use this for screens like:
-
-- `File -> DWH Wizard`
-- `Help -> About`
-- `Options -> DWH settings`
-
-Typical shape:
-
-- `tree_path` points to the top-level toolbar tab such as `File`, `Options`, or `Help`
-- first action is usually `Invoke`
-- second action is often `WaitForWindow`
-
-Use `WaitForWindow` when a new dialog or wizard should appear.
-
-### Context/detail route
-
-Use this for screens that need an already-selected object, such as:
-
-- `Pages > Source`
-- `Pages > Table`
-- `Pages > Model Dimension`
-
-Typical shape:
-
-- start from a left-nav family
-- use `actions` to move deeper
-- select or open the object-specific surface
-- validate with stronger anchors than the shared shell
-
-### When to use `WaitForWindow`
-
-Use `WaitForWindow` when success means:
-
-- a dialog opened
-- a wizard opened
-- a modal changed the active surface
-
-Good examples:
-
-- `About`
-- `DWH Wizard`
-- `EULA`
-
-### When to use `WaitForElement`
-
-Use `WaitForElement` when success means:
-
-- the screen stayed inside the main shell
-- a tab, list, or editor surface changed
-- a stable control should appear
-
-Good examples:
-
-- `cboSchema`
-- `cmdSave`
-- `cmbGroup`
-- `leftall`
-
-### When `SendKeys` is allowed
-
-Use `SendKeys` only when:
-
-- direct UIA invocation is not available
-- the target is real but not exposed cleanly
-- you already tried a direct route first
-
-It is fallback only, not the default authoring strategy.
-
-## Copy-Paste JSON Templates
-
-All examples below are **plan JSON**, not documentation format. Save them as `.json`.
-
-### 1. Left-nav list template
-
-Based on the current `Parameters` pattern:
+### One-row plan template
 
 ```json
 [
@@ -226,11 +170,7 @@ Based on the current `Parameters` pattern:
 ]
 ```
 
-Use this shape for simple list pages like `Layers`, `Macros`, and `Snapshots`.
-
-### 2. Toolbar wizard template
-
-Based on the current `DWH Wizard` pattern:
+### Toolbar dialog or wizard plan template
 
 ```json
 [
@@ -267,290 +207,40 @@ Based on the current `DWH Wizard` pattern:
 ]
 ```
 
-Use this shape for:
+## Validation rules
 
-- toolbar dialogs
-- toolbar wizards
-- modal windows launched from `File`, `Options`, or `Help`
+Use stable anchors whenever possible:
 
-### 3. Context/detail route template
+- window title containing the expected repository or dialog title
+- explicit `automation_id`
+- expected visible control names
+- selected navigation state when the shell is shared
 
-Based on the current `Model Dimension` authored pattern:
+Do not mark a screen verified unless:
 
-```json
-[
-  {
-    "row_id": "1.5.8",
-    "screen_name": "Model Dimension",
-    "module": "Pages",
-    "hints": {
-      "tree_path": ["Models"],
-      "expected_controls": ["Dimensions"],
-      "expected_automation_ids": ["cmbGroup", "leftall", "rightall"],
-      "use_only_expected_controls": true,
-      "require_expected_control_match": true
-    },
-    "actions": [
-      {
-        "kind": "Invoke",
-        "name": "Dimensions",
-        "control_type": "Button",
-        "required": true,
-        "timeout_ms": 4000
-      },
-      {
-        "kind": "WaitForElement",
-        "automation_id": "cmbGroup",
-        "required": true,
-        "timeout_ms": 4000
-      },
-      {
-        "kind": "WaitForElement",
-        "automation_id": "leftall",
-        "required": true,
-        "timeout_ms": 4000
-      },
-      {
-        "kind": "WaitForElement",
-        "automation_id": "rightall",
-        "required": true,
-        "timeout_ms": 4000
-      }
-    ]
-  }
-]
-```
+- the navigation report passed
+- the validation anchors passed
+- a PNG screenshot exists for that run when capture is expected
 
-Use this shape when:
+## Safety rules
 
-- a normal left-nav selection is not enough
-- you need one or more deeper actions
-- the target is a detail surface rather than a top-level list
+- prefer UIA `Invoke`, `SelectionItem`, `ExpandCollapse`, and `Value` patterns
+- treat keyboard fallback as scoped fallback only
+- never use mouse-coordinate automation as the primary route
+- do not add destructive routes to recipes
+- treat unknown confirmation dialogs as blocked until proven safe
+- assume dialogs and wizards must be explicitly closed after capture
 
-### 4. Optional native capture block
+## What not to do
 
-Use this only if you want the one-row test to save a screenshot too:
+- do not promote routes from memory or from the authored workbook alone
+- do not author recipe families from empty artifacts
+- do not mark a screen accepted because it opened once without evidence
+- do not weaken anchors to force acceptance
 
-```json
-"capture": {
-  "mode": "Default"
-}
-```
+## Related files
 
-Current recommended runtime defaults are controlled from the command line:
-
-- `--capture-backend native`
-- `--native-capture-area client`
-- `--png-dpi 600`
-
-## How To Choose Validation Anchors
-
-Anchor priority is:
-
-1. `expected_automation_ids`
-2. `require_selected_navigation`
-3. `expected_controls`
-
-### 1. Prefer `expected_automation_ids`
-
-These are the strongest anchors.
-
-Good current examples:
-
-- `dfFilter`
-- `txtName`
-- `cmdSave`
-- `cboSchema`
-- `cmdBack`
-- `cmbGroup`
-
-### 2. Use `require_selected_navigation`
-
-This matters for shared-shell pages where many screens expose the same controls.
-
-Use it on list families like:
-
-- `Parameters`
-- `Layers`
-- `Macros`
-- `Packages`
-
-### 3. Use `expected_controls` only when needed
-
-These are visible names, not stable internal IDs.
-
-Use them when:
-
-- there is no useful automation ID
-- the visible label is specific enough
-
-Good examples:
-
-- `Dimensions`
-- `Facts`
-- `Historizations`
-- `DWH Wizard`
-
-Bad examples by themselves:
-
-- `Save`
-- `Close`
-- `Cancel`
-
-Those are too generic unless paired with stronger anchors.
-
-## How To Test One Screen
-
-Recommended first-proof command:
-
-```powershell
-dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
-  --exe "C:\Path\To\AnalyticsCreator.exe" `
-  --plan .\CaptureRunner\temp-one-row-plan.json `
-  --output .\CaptureRunner\Output\temp-one-row-report.json `
-  --environment-profile .\CaptureRunner\Profiles\certified-dual-monitor.json `
-  --capture-backend native `
-  --native-capture-area client `
-  --png-dpi 600 `
-  --capture-output-dir .\CaptureRunner\Output\captures-temp `
-  --screen-timeout-ms 120000 `
-  --keep-open
-```
-
-Default rules:
-
-- use native capture first
-- test one row only
-- keep the app open during iteration
-- do not move the mouse or use the keyboard during the run
-
-## How To Read The Result
-
-### `full/high`
-
-The route is a strong candidate.
-
-Usually means:
-
-- navigation worked
-- validation anchors matched
-- the result is stable enough to promote
-
-### `partial`
-
-Something opened, but the proof is weak.
-
-Typical reasons:
-
-- generic anchors matched
-- wrong screen inside the same shell
-- route opened but screen-specific controls did not appear
-
-Do not promote this as verified.
-
-### `none`
-
-Treat this as failure.
-
-Typical reasons:
-
-- wrong route
-- wrong anchors
-- screen never opened
-
-### `capture.success = true`
-
-This only tells you the screenshot path worked.
-
-It does **not** automatically mean the route is verified.
-
-The route still needs the validation result to be good.
-
-## When Not To Author A Normal Row
-
-Stop and classify the route instead if it belongs in one of these buckets.
-
-### `seed-data`
-
-Use this when the route needs real objects to exist first.
-
-Examples:
-
-- `Source`
-- `Table`
-- `Package`
-- `Transformation`
-
-### `harness`
-
-Use this when the screen only appears after a forced state.
-
-Examples:
-
-- `Error description`
-- `Login`
-- `Upgrade repository`
-
-### `manual`
-
-Use this when the route depends on unstable diagram or object-context behavior.
-
-Examples:
-
-- `Star`
-- `Object groups`
-- `Source constraints`
-- `Hash keys`
-
-If a route belongs here, do not pretend it is a simple authoring task.
-
-## Advanced Reference
-
-### Current plan schema
-
-Main fields in a row:
-
-- `row_id`
-- `screen_name`
-- `module`
-- `hints`
-- `required_profile`
-- `actions`
-- `capture`
-
-See:
-
-- [InputPlan.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/InputPlan.cs)
-- [PlanAction.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/PlanAction.cs)
-- [CaptureHints.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/CaptureHints.cs)
-
-### Supported action kinds
-
-Current supported actions are:
-
-- `Invoke`
-- `WaitForElement`
-- `WaitForWindow`
-- `SendKeys`
-- `Delay`
-
-### Current default authoring decisions
-
-- instructions format: Markdown
-- plan/profile format: JSON
-- first-proof screenshot backend: native
-- first test scope: one row
-- shell examples: PowerShell
-- promotion rule: report must prove the row
-
-### Best source of truth before you add anything
-
-Check these in this order:
-
-1. [NavigationMap.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/NavigationMap.md)
-2. [referenceguide-laneb-first10-pass2-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-laneb-first10-pass2-plan.json)
-3. [referenceguide-toolbar-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/referenceguide-toolbar-plan.json)
-4. [wave1-startnow-native-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-startnow-native-plan.json)
-5. [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json)
-
-If you cannot find a close example in those files, run discovery before you invent anything.
+- [README.md](README.md)
+- [CurrentStatus.md](CurrentStatus.md)
+- [QuickStart_EN.md](QuickStart_EN.md)
+- [NavigationMap.md](NavigationMap.md)

@@ -1,0 +1,30 @@
+{
+  "repository_name": "Northwind",
+  "login_mode": "saved-password",
+  "login_window_titles": [
+    "Login",
+    "LoginWindow",
+    "AnalyticsCreator"
+  ],
+  "login_positive_actions": [
+    "Login",
+    "Connect",
+    "Continue",
+    "Sign in",
+    "OK"
+  ],
+  "repository_selector_automation_ids": [
+    "cmbName"
+  ],
+  "repository_confirm_actions": [
+    "OK",
+    "Connect",
+    "Login",
+    "Continue",
+    "Sign in"
+  ],
+  "repository_validation": {
+    "window_title_contains": "Northwind",
+    "visible_text_contains": "Northwind"
+  }
+}

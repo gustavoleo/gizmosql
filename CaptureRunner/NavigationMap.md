@@ -2,6 +2,22 @@
 
 This map is the canonical screen-by-screen navigation reference for the `86` concrete reference-guide targets tracked in `CaptureRunner`. It is derived from the execution matrix, go/no-go queue, curated plans, and proven reports already present under `CaptureRunner`. Its purpose is to keep screenshot production, plan authoring, and route validation aligned on one workbook-ordered source of truth.
 
+Use this file as the authored workbook reference.
+
+For runtime truth from the automatic mapper, use the latest fresh-run artifacts under `CaptureRunner/Output/*`, especially:
+
+- `ui-map.json`
+- `coverage-summary.json`
+- `rejected-routes.json`
+- `remaining-queued-routes.json`
+- `route-promotion-summary.json`
+
+Promotion rule:
+
+- inspect `rejected-routes.json` first
+- if it is empty, inspect `remaining-queued-routes.json`
+- only promote routes that appear in those artifacts
+
 Sources:
 
 - [ReferenceGuideScreenshotExecutionMatrix.md](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/ReferenceGuideScreenshotExecutionMatrix.md)

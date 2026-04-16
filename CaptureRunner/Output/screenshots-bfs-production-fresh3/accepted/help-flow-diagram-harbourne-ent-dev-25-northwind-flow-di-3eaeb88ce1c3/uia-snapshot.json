@@ -1,0 +1,1202 @@
+[
+  {
+    "interaction_id": "button-home-ribbonbutton",
+    "name": "Home",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 10,
+      "top": 69,
+      "width": 88,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-data-mart-ribbontab",
+    "name": "Data mart",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 209,
+      "top": 37,
+      "width": 99,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-deployment-ribbontab",
+    "name": "Deployment",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 364,
+      "top": 37,
+      "width": 114,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-dwh-ribbontab",
+    "name": "DWH",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 142,
+      "top": 37,
+      "width": 67,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-etl-ribbontab",
+    "name": "ETL",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 308,
+      "top": 37,
+      "width": 56,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-tabfile-file-ribbontab",
+    "name": "File",
+    "automation_id": "tabFile",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 1,
+      "top": 37,
+      "width": 56,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-help-ribbontab",
+    "name": "Help",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 1,
+      "top": 37,
+      "width": 3838,
+      "height": 137
+    },
+    "is_enabled": true,
+    "is_selected": true,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-options-ribbontab",
+    "name": "Options",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 478,
+      "top": 37,
+      "width": 86,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tabitem-sources-ribbontab",
+    "name": "Sources",
+    "control_type": "TabItem",
+    "class_name": "RibbonTab",
+    "bounds": {
+      "left": 57,
+      "top": 37,
+      "width": 85,
+      "height": 27
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "supported_patterns": [
+      "SelectionItem"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-connectors-treeviewitem",
+    "name": "Connectors",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 223,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-data-warehouse-treeviewitem",
+    "name": "Data warehouse",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 4,
+      "top": 188,
+      "width": 805,
+      "height": 693
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Expanded",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-deployments-treeviewitem",
+    "name": "Deployments",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 748,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-filters-treeviewitem",
+    "name": "Filters",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 643,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-galaxies-treeviewitem",
+    "name": "Galaxies",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 398,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-groups-treeviewitem",
+    "name": "Groups",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 783,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-hierarchies-treeviewitem",
+    "name": "Hierarchies",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 433,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-indexes-treeviewitem",
+    "name": "Indexes",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 328,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-layers-treeviewitem",
+    "name": "Layers",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 258,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-macros-treeviewitem",
+    "name": "Macros",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 538,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-models-treeviewitem",
+    "name": "Models",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 818,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-object-scripts-treeviewitem",
+    "name": "Object scripts",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 608,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-packages-treeviewitem",
+    "name": "Packages",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 293,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-parameters-treeviewitem",
+    "name": "Parameters",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 503,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-partitions-treeviewitem",
+    "name": "Partitions",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 468,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-predefined-transformations-treeviewitem",
+    "name": "Predefined transformations",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 678,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-roles-treeviewitem",
+    "name": "Roles",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 363,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-scripts-treeviewitem",
+    "name": "Scripts",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 573,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-snapshots-treeviewitem",
+    "name": "Snapshots",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 713,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "treeitem-test-cases-treeviewitem",
+    "name": "Test cases",
+    "control_type": "TreeItem",
+    "class_name": "TreeViewItem",
+    "bounds": {
+      "left": 37,
+      "top": 853,
+      "width": 772,
+      "height": 28
+    },
+    "is_enabled": true,
+    "is_selected": false,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "SelectionItem",
+      "ExpandCollapse"
+    ],
+    "kind": "safe_navigation",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-about-ribbonbutton",
+    "name": "About",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 763,
+      "top": 69,
+      "width": 87,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "safe_dialog_open",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-eula-ribbonbutton",
+    "name": "EULA",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 675,
+      "top": 69,
+      "width": 88,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "safe_dialog_open",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": true,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "combobox-cmbgroup-combobox",
+    "automation_id": "cmbGroup",
+    "control_type": "ComboBox",
+    "class_name": "ComboBox",
+    "bounds": {
+      "left": 1275,
+      "top": 66,
+      "width": 285,
+      "height": 25
+    },
+    "is_enabled": true,
+    "expand_collapse_state": "Collapsed",
+    "supported_patterns": [
+      "ExpandCollapse"
+    ],
+    "kind": "selection",
+    "risk": "state_change",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "listitem-system-windows-controls-ribbon-ribbonbutton-ribboncontrol",
+    "name": "System.Windows.Controls.Ribbon.RibbonButton",
+    "control_type": "ListItem",
+    "class_name": "RibbonControl",
+    "bounds": {
+      "left": 10,
+      "top": 69,
+      "width": 88,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [],
+    "kind": "selection",
+    "risk": "state_change",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "edit-dffilter-textbox",
+    "automation_id": "dfFilter",
+    "control_type": "Edit",
+    "class_name": "TextBox",
+    "bounds": {
+      "left": 1275,
+      "top": 149,
+      "width": 285,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Value"
+    ],
+    "kind": "input_edit",
+    "risk": "data_entry",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "edit-dfobjectid-textbox",
+    "automation_id": "dfObjectID",
+    "control_type": "Edit",
+    "class_name": "TextBox",
+    "bounds": {
+      "left": 1275,
+      "top": 121,
+      "width": 285,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Value"
+    ],
+    "kind": "input_edit",
+    "risk": "data_entry",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "edit-txtlockedby-textbox",
+    "automation_id": "txtLockedBy",
+    "control_type": "Edit",
+    "class_name": "TextBox",
+    "bounds": {
+      "left": 1021,
+      "top": 184,
+      "width": 375,
+      "height": 30
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Value"
+    ],
+    "kind": "input_edit",
+    "risk": "data_entry",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-close",
+    "name": "Close",
+    "control_type": "Button",
+    "bounds": {
+      "left": 3779,
+      "top": 0,
+      "width": 61,
+      "height": 28
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "safe_close",
+    "risk": "safe",
+    "readiness": "ready",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-expander-button",
+    "automation_id": "Expander",
+    "control_type": "Button",
+    "class_name": "Button",
+    "bounds": {
+      "left": 6,
+      "top": 188,
+      "width": 28,
+      "height": 28
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Toggle"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-leftall-button",
+    "automation_id": "leftall",
+    "control_type": "Button",
+    "class_name": "Button",
+    "bounds": {
+      "left": 1275,
+      "top": 94,
+      "width": 31,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Toggle"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-leftone-button",
+    "automation_id": "leftone",
+    "control_type": "Button",
+    "class_name": "Button",
+    "bounds": {
+      "left": 1300,
+      "top": 94,
+      "width": 31,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Toggle"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-rightall-button",
+    "automation_id": "rightall",
+    "control_type": "Button",
+    "class_name": "Button",
+    "bounds": {
+      "left": 1350,
+      "top": 94,
+      "width": 31,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Toggle"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-rightone-button",
+    "automation_id": "rightone",
+    "control_type": "Button",
+    "class_name": "Button",
+    "bounds": {
+      "left": 1325,
+      "top": 94,
+      "width": 31,
+      "height": 25
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Toggle"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-community-ribbonbutton",
+    "name": "Community",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 483,
+      "top": 69,
+      "width": 87,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-export-in-word-ribbonbutton",
+    "name": "Export in Word",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 203,
+      "top": 69,
+      "width": 87,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-export-to-visio-ribbonbutton",
+    "name": "Export to Visio",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 115,
+      "top": 69,
+      "width": 88,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-version-history-ribbonbutton",
+    "name": "Version history",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 588,
+      "top": 69,
+      "width": 87,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-videos-ribbonbutton",
+    "name": "Videos",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 395,
+      "top": 69,
+      "width": 88,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-wikipedia-ribbonbutton",
+    "name": "Wikipedia",
+    "control_type": "Button",
+    "class_name": "RibbonButton",
+    "bounds": {
+      "left": 308,
+      "top": 69,
+      "width": 87,
+      "height": 83
+    },
+    "is_enabled": true,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "unknown_invoke",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tab-ribmain-ribbon",
+    "automation_id": "ribMain",
+    "control_type": "Tab",
+    "class_name": "Ribbon",
+    "bounds": {
+      "left": 0,
+      "top": 5,
+      "width": 3840,
+      "height": 173
+    },
+    "is_enabled": true,
+    "expand_collapse_state": "Expanded",
+    "supported_patterns": [
+      "ExpandCollapse"
+    ],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "tree-tvrepository-treeview",
+    "automation_id": "tvRepository",
+    "control_type": "Tree",
+    "class_name": "TreeView",
+    "bounds": {
+      "left": 0,
+      "top": 178,
+      "width": 813,
+      "height": 1922
+    },
+    "is_enabled": true,
+    "supported_patterns": [],
+    "kind": "unknown",
+    "risk": "unknown",
+    "readiness": "review",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-pagedown-repeatbutton",
+    "automation_id": "PageDown",
+    "control_type": "Button",
+    "class_name": "RepeatButton",
+    "bounds": {
+      "left": 3798,
+      "top": 2034,
+      "width": 38,
+      "height": 24
+    },
+    "is_enabled": false,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "blocked",
+    "risk": "blocked",
+    "readiness": "blocked",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-pageup-repeatbutton",
+    "automation_id": "PageUp",
+    "control_type": "Button",
+    "class_name": "RepeatButton",
+    "bounds": {
+      "left": 0,
+      "top": 0,
+      "width": 0,
+      "height": 0
+    },
+    "is_enabled": false,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "blocked",
+    "risk": "blocked",
+    "readiness": "blocked",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-part-linedownbutton-repeatbutton",
+    "automation_id": "PART_LineDownButton",
+    "control_type": "Button",
+    "class_name": "RepeatButton",
+    "bounds": {
+      "left": 3798,
+      "top": 2058,
+      "width": 38,
+      "height": 38
+    },
+    "is_enabled": false,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "blocked",
+    "risk": "blocked",
+    "readiness": "blocked",
+    "route_candidate": false,
+    "source": "uia"
+  },
+  {
+    "interaction_id": "button-part-lineupbutton-repeatbutton",
+    "automation_id": "PART_LineUpButton",
+    "control_type": "Button",
+    "class_name": "RepeatButton",
+    "bounds": {
+      "left": 3798,
+      "top": 220,
+      "width": 38,
+      "height": 38
+    },
+    "is_enabled": false,
+    "supported_patterns": [
+      "Invoke"
+    ],
+    "kind": "blocked",
+    "risk": "blocked",
+    "readiness": "blocked",
+    "route_candidate": false,
+    "source": "uia"
+  }
+]

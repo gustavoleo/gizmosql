@@ -1,0 +1,11 @@
+{
+  "discovered_count": 32,
+  "accepted_count": 32,
+  "review_count": 0,
+  "rejected_count": 0,
+  "blocked_count": 0,
+  "accepted_ratio": 1,
+  "accepted_threshold": 0.98,
+  "threshold_met": true,
+  "notes": []
+}

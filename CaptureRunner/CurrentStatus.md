@@ -1,97 +1,98 @@
 # CaptureRunner Current Status
 
-This file is the handoff note for the next development session.
+This is the handoff note for the next session.
 
-## Current Baseline
+## Current baseline
 
-- Core scanner baseline is still the curated master pair:
-  - [analyticscreator-master-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/analyticscreator-master-plan.json)
-  - [analyticscreator-master-report.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/analyticscreator-master-report.json)
-- Snagit integration is now real, not theoretical.
-- `CaptureRunner` can watch Snagit `.snagx` output, extract the primary PNG, and save a managed screenshot file.
+`CaptureRunner` now has a working production lane for `AnalyticsCreator`:
 
-## Confirmed Working
+- bootstrap to saved-password login
+- select and verify the `Northwind` repository
+- run bounded BFS UI traversal with reset-to-shell between routes
+- capture native PNG screenshots with `600 DPI` metadata
+- close dialogs, wizards, and detail surfaces after capture
+- write runtime map, coverage, rejection, queue, and promotion artifacts
 
-### One-row Snagit proof
+`Snagit` remains optional for legacy plan-driven runs. It is no longer the primary screenshot path.
 
-- Plan:
-  - [wave1-snagit-poc-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-snagit-poc-plan.json)
-- Report:
-  - [wave1-snagit-poc-report-snagx.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/wave1-snagit-poc-report-snagx.json)
-- Managed screenshot:
-  - [1.6.18-parameters.png](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/captures/1.6.18-parameters.png)
+## Latest verified fresh run
 
-Result:
+Cold-start run:
 
-- `1.6.18 Parameters` reached `full / high`
-- Snagit package output was detected in `C:\Users\lainoborgo\Documents\Snagit`
-- the primary PNG was extracted successfully into the managed output folder
-
-### First-5 Wave 1 batch
-
-- Plan:
-  - [wave1-first5-snagit-plan.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/wave1-first5-snagit-plan.json)
-- Report:
-  - [wave1-first5-snagit-report.json](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/wave1-first5-snagit-report.json)
-- Managed screenshot:
-  - [1.6.23-scripts.png](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Output/captures-wave1-first5/1.6.23-scripts.png)
+- startup state: [Output/bfs-production-fresh3/startup-state.json](Output/bfs-production-fresh3/startup-state.json)
+- UI map JSON: [Output/bfs-production-fresh3/ui-map.json](Output/bfs-production-fresh3/ui-map.json)
+- UI map Markdown: [Output/bfs-production-fresh3/UiMap.md](Output/bfs-production-fresh3/UiMap.md)
+- coverage summary: [Output/bfs-production-fresh3/coverage-summary.json](Output/bfs-production-fresh3/coverage-summary.json)
+- rejected routes: [Output/bfs-production-fresh3/rejected-routes.json](Output/bfs-production-fresh3/rejected-routes.json)
+- remaining queued routes: [Output/bfs-production-fresh3/remaining-queued-routes.json](Output/bfs-production-fresh3/remaining-queued-routes.json)
+- promotion summary: [Output/bfs-production-fresh3/route-promotion-summary.json](Output/bfs-production-fresh3/route-promotion-summary.json)
+- screenshots root: `CaptureRunner/Output/screenshots-bfs-production-fresh3`
 
 Result:
 
-- `1.6.23 Scripts` succeeded end to end as `full / high`
-- `1.6.6 Connectors` timed out
-- `1.6.3 Layers` timed out
-- `1.6.17 Packages` timed out
-- `1.6.18 Parameters` timed out in the batch plan even though the one-row proof works
+- `32` discovered
+- `32` accepted
+- `0` review
+- `0` rejected
+- `0` blocked
+- `accepted_ratio = 1.0`
+- `promotion_source = none`
 
-## What This Means
+## What is now working
 
-- Snagit is no longer the blocker.
-- The remaining blocker is navigation fidelity for Wave 1 list screens.
-- The current `tree_path` model is strong enough for some screens, but not enough for the first batch of list-family routes.
+- startup bootstrap recognizes the saved-password login path
+- repository selection uses `cmbName` and confirms `Northwind`
+- mapper traversal is UIA-first and resets to shell between queued routes
+- deeper BFS replay preserves alternate routes instead of losing them
+- dialog and wizard routes are closed explicitly after capture
+- mapper emits:
+  - `ui-map.json`
+  - `UiMap.md`
+  - `coverage-summary.json`
+  - `rejected-routes.json`
+  - `remaining-queued-routes.json`
+  - `route-promotion-summary.json`
+- route promotion is now evidence-driven instead of inferred
 
-## Important Runtime Facts
+## Current promotion rule
 
-- Use the Snagit watch folder:
-  - `C:\Users\lainoborgo\Documents\Snagit`
-- Your working preset is:
-  - `ac_refguide_4k_png`
-- Current trigger path is:
-  - `Ctrl+Shift+Alt+5`
-  - this relies on `Repeat last capture`
-- `CaptureRunner` now supports `.snagx` packages automatically.
+On every fresh run:
 
-## Do Not Repeat
+1. inspect `rejected-routes.json`
+2. if empty, inspect `remaining-queued-routes.json`
+3. use `route-promotion-summary.json` only as a grouped helper
+4. promote only the routes that appear there
 
-- Do not patch Snagit live runtime state in:
-  - `C:\Users\lainoborgo\AppData\Local\TechSmith\Snagit\25\Presets7.xml`
-- That caused Snagit to show `Unable to capture`.
-- Editing the exported preset file in Documents is safe.
-- The active capture preset still needs to be managed through Snagit UI unless we later discover a supported runtime format.
+Do not add new recipe families when both artifacts are empty.
 
-## Next Development Step
+## Main remaining limits
 
-Implement a stronger navigation/action model for list screenshots.
+- The mapper currently covers the safe reachable screen set proven by UIA traversal from the verified shell. It does not claim seeded-data, destructive, or manual-only surfaces unless evidence exists.
+- Some context/detail pages may still need seeded data or object selection state that the current safe traversal does not synthesize.
+- Any new route that leaves a modal or editor surface open must be treated as a bug until the cleanup path is explicit.
 
-Recommended shape:
+## Next clean run
 
-- keep `tree_path` for the primary route
-- add one explicit post-navigation action list for things like:
-  - `List Parameters`
-  - `List object scripts`
-  - secondary menu/button invocations
-  - context actions after selecting the family node
+The next larger test should keep the same bootstrap and promotion gate, but use a broader frontier:
 
-That work should start in:
+```powershell
+dotnet run --project .\CaptureRunner\CaptureRunner.csproj -- `
+  --exe "C:\Path\To\AnalyticsCreator.exe" `
+  --map-ui `
+  --bootstrap-profile .\CaptureRunner\Profiles\northwind-bootstrap.json `
+  --repository-name Northwind `
+  --route-recipes .\CaptureRunner\Profiles\high-value-route-recipes.json `
+  --ui-map-output .\CaptureRunner\Output\bfs-production-large\ui-map.json `
+  --ui-map-markdown-output .\CaptureRunner\Output\bfs-production-large\UiMap.md `
+  --startup-state-output .\CaptureRunner\Output\bfs-production-large\startup-state.json `
+  --screenshot-output-root .\CaptureRunner\Output\screenshots-bfs-production-large `
+  --map-max-screens 200 `
+  --map-max-depth 2 `
+  --map-branching-factor 75 `
+  --map-traversal-timeout-ms 900000 `
+  --accepted-threshold 0.98 `
+  --environment-profile .\CaptureRunner\Profiles\certified-dual-monitor.json `
+  --keep-open
+```
 
-- [InputPlan.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Models/InputPlan.cs)
-- [NavigationEngine.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/NavigationEngine.cs)
-- [Validator.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Runner/Validator.cs)
-- [TreeService.cs](/mnt/e/DDD/GitHub/gizmosql/CaptureRunner/Services/TreeService.cs)
-
-## Good Resume Point For Tomorrow
-
-1. Extend the plan schema with an explicit action step after tree navigation.
-2. Re-author the first-5 Wave 1 plan using those actions.
-3. Re-run the same first-5 batch with Snagit enabled.
-4. Promote any rows that pass into the production capture lane.
+Keep the promotion rule unchanged after that run.

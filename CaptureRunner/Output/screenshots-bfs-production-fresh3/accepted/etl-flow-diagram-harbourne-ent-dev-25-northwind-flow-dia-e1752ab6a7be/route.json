@@ -1,0 +1,17 @@
+{
+  "route_type": "safe_navigation",
+  "route_text": "ETL",
+  "steps": [
+    {
+      "kind": "bootstrap",
+      "name": "Northwind",
+      "action": "verify"
+    },
+    {
+      "kind": "TabItem",
+      "name": "ETL",
+      "control_type": "TabItem",
+      "action": "select"
+    }
+  ]
+}
